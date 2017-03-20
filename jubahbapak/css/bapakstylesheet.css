@@ -1,0 +1,321 @@
+﻿body
+{ 
+    background-color:rosybrown;
+    font-family:Arial;
+
+}
+h1 {color:black;
+    text-align:center;
+}
+
+div.motherdiv
+{
+    margin: 10px auto;
+    vertical-align:top;
+    width:1000px;
+}
+div.logo
+{
+    text-align: center;
+    padding: 1px;
+    margin: 1px;
+    background-color:lightgrey;
+    border:5px solid #222;
+}
+
+
+.selected
+{
+    background-color:sienna;
+    color:white;
+}
+
+div#navbar
+{
+    background-color:antiquewhite;
+    text-align:center;
+    z-index:3;
+    position:relative;
+}
+div#navbar ul
+{
+    list-style-type:none;
+}
+
+div#navbar ul li
+{
+    display:inline-block;
+}
+
+div#navbar ul li a
+{
+    padding-left:40px;
+    padding-right:40px;
+    display:block;
+    text-decoration:none;
+}
+
+ 
+div#navbar ul li:hover
+{
+    background-color: azure;
+    text-decoration:none;
+}
+
+div#navbar ul li:hover ul
+{
+    display:block;
+}
+
+div#navbar ul ul
+{
+    display: none;
+    position:absolute;
+    background-color:azure;
+    padding-right:3px;
+}
+
+div#navbar ul ul li
+{
+    display:block;
+    padding-bottom:5px;
+    padding-top:20px;
+    margin-left:-20px;
+}
+
+div#navbar ul ul li a
+{
+    display:block;
+    text-align:left;
+    text-decoration:none;
+}
+
+img.bannercontent
+{
+    width:950px;
+    height:500px;
+}
+
+
+
+
+
+.bannerslider
+{
+    z-index:1;
+    overflow:hidden;
+    height:350px;
+    position:relative;
+}
+
+.bannerslider figure div
+{
+    width: 20%;
+    float:left;
+    z-index:1;
+}
+
+.bannerslider figure img
+{
+    width:100%;
+    float:left;
+    z-index:1;
+}
+
+.bannerslider figure
+{
+    position: relative;
+    width: 500%;
+    margin:0;
+    left:0;
+    animation: 20s slide infinite;
+    z-index:1;
+}
+
+@keyframes slide
+{
+    0%
+    {
+        left: 0%;
+    }
+    10%
+    {
+        left: 0%;
+    }
+    12%
+    {
+        left: -100%;
+    }
+
+    22%
+    {
+        left: -100%;
+    }
+
+    24%
+    {
+        left: -200%;
+    }
+
+    34%
+    {
+        left: -200%;
+    }
+
+    36%
+    {
+        left: -300%
+    }
+
+    46%
+    {
+        left: -300%;
+    }
+
+    48%
+    {
+        left: -400%;
+    }
+
+    58%
+    {
+        left: -400%;
+    }
+
+    60%
+    {
+        left: -300%;
+    }
+    70%
+    {
+        left: -300%;
+    }
+    72%
+    {
+        left: -200%;
+    }
+    82%
+    {
+        left: -200%;
+    }
+    84%
+    {
+        left:-200%;
+    }
+    94%
+    {
+        left: -100%;
+    }
+    96%
+    {
+        left: 0%;
+    }
+
+
+}
+
+
+
+
+div.featured
+{
+    background-color:sandybrown;
+    text-align:center;
+    padding: 15px 0 10px 0;
+}
+div.featured a
+{
+    text-decoration:none;
+}
+
+div.list
+{
+    background-color: cornsilk;
+    text-align:left;
+}
+ol
+{
+    list-style:none;
+}
+
+li
+{
+    padding:5px 0 5px 0;
+}
+
+
+
+
+
+div.products
+{
+    text-align: left;
+    padding-left:5px;
+    background-color:burlywood;
+    font-size:30px;
+    font-style:oblique;
+}
+
+div#itemwrapper
+{
+    background-color:blue;
+    width:inherit;
+    height:600px;
+    margin-left:auto;
+    margin-right:auto;
+    padding-left: 55px;
+}
+div.item
+{
+    height:200px;
+    width:200px;
+    float:left;
+    border:5px solid burlywood;
+    margin:50px 20px 0px 60px;
+
+}
+div#prod1
+{
+    background-color:antiquewhite;
+}
+div#prod2
+{
+    background-color:aqua;
+}
+div#prod3
+{
+    background-color:beige;
+}
+div#prod4
+{
+    background-color:blanchedalmond;
+}
+div#prod5
+{   background-color:aliceblue;
+
+}
+div#prod6
+{
+    background-color: azure;
+}
+
+div.footer
+{
+    text-align:center;
+    background-color:cadetblue;
+    width:auto;
+    margin-left:auto;
+    margin-right:auto;
+}
+div.footerindex
+{ 
+    text-align:center;
+    background-color:cadetblue;
+    width:auto;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+
+
+
