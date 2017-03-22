@@ -31,14 +31,91 @@
     </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
 
-       <div class="featured">
-            <b>FEATURED ITEMS</b><br />
-            <div class="list">
-                <ol>
-                    <li><a href="">One</a><br /><img src="" /></li>
-                    <li><a href="">One</a><br /><img src="" /></li>
-                    <li><a href="">One</a><br /><img src="" /></li>
-                </ol>
+       <div class="sale"> ON SALE </div>
+        <div class="newitemwrapper">
+            <div class="item1" id="prod1">
+            <img src="img/jubahlaki.jpg" alt="jubah lakilaki"/>
+                <div class="prodtext">
+                    <h4>For men</h4>
+                    <p>Jubah suitable for men of any age and sizes</p>
+                    <a class="morebutton" href="#" title="moreinfo">More info</a>
+                </div>
+            </div>
+
+            <div class="item1" id="prod1">
+            <img src="img/jubahlaki.jpg" alt="jubah lakilaki"/>
+                <div class="prodtext">
+                    <h4>For men</h4>
+                    <p>Jubah suitable for men of any age and sizes</p>
+                    <a class="morebutton" href="#" title="moreinfo">More info</a>
+                </div>
+            </div>
+
+            <div class="item1" id="prod1">
+            <img src="img/jubahlaki.jpg" alt="jubah lakilaki"/>
+                <div class="prodtext">
+                    <h4>For men</h4>
+                    <p>Jubah suitable for men of any age and sizes</p>
+                    <a class="morebutton" href="#" title="moreinfo">More info</a>
+                </div>
+            </div>
+
+        </div>
+
+    <div class="new"> NEW </div>
+        <div class="newitemwrapper">
+            <div class="item1" id="prod1">
+            <img src="img/jubahlaki.jpg" alt="jubah lakilaki"/>
+                <div class="prodtext">
+                    <h4>For men</h4>
+                    <p>Jubah suitable for men of any age and sizes</p>
+                    <a class="morebutton" href="#" title="moreinfo">More info</a>
+                </div>
+            </div>
+
+            <div class="item1" id="prod1">
+            <img src="img/jubahlaki.jpg" alt="jubah lakilaki"/>
+                <div class="prodtext">
+                    <h4>For men</h4>
+                    <p>Jubah suitable for men of any age and sizes</p>
+                    <a class="morebutton" href="#" title="moreinfo">More info</a>
+                </div>
+            </div>
+
+            <div class="item1" id="prod1">
+            <img src="img/jubahlaki.jpg" alt="jubah lakilaki"/>
+                <div class="prodtext">
+                    <h4>For men</h4>
+                    <p>Jubah suitable for men of any age and sizes</p>
+                    <a class="morebutton" href="#" title="moreinfo">More info</a>
+                </div>
+            </div>
+
+             <div class="item1" id="prod1">
+            <img src="img/jubahlaki.jpg" alt="jubah lakilaki"/>
+                <div class="prodtext">
+                    <h4>For men</h4>
+                    <p>Jubah suitable for men of any age and sizes</p>
+                    <a class="morebutton" href="#" title="moreinfo">More info</a>
+                </div>
+            </div>
+
+            <div class="item1" id="prod1">
+            <img src="img/jubahlaki.jpg" alt="jubah lakilaki"/>
+                <div class="prodtext">
+                    <h4>For men</h4>
+                    <p>Jubah suitable for men of any age and sizes</p>
+                    <a class="morebutton" href="#" title="moreinfo">More info</a>
+                </div>
+            </div>
+
+            <div class="item1" id="prod1">
+            <img src="img/jubahlaki.jpg" alt="jubah lakilaki"/>
+                <div class="prodtext">
+                    <h4>For men</h4>
+                    <p>Jubah suitable for men of any age and sizes</p>
+                    <a class="morebutton" href="#" title="moreinfo">More info</a>
+                </div>
             </div>
         </div>
 

@@ -32,11 +32,83 @@
 <asp:Content ID="Content4" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
      <div class="products"> PRODUCTS </div>
         <div id="itemwrapper">
-            <div class="item" id="prod1"><a href="">1</a></div>
-            <div class="item" id="prod2"><a href="">2</a></div>
-            <div class="item" id="prod3"><a href="">3</a></div>
-            <div class="item" id="prod4"><a href="">4</a></div>
-            <div class="item" id="prod5"><a href="">5</a></div>
-            <div class="item" id="prod6"><a href="">5</a></div>
+                         <div class="item1" id="prod1">
+            <img src="img/jubahlaki.jpg" alt="jubah lakilaki"/>
+                <div class="prodtext">
+                    <h4>For men</h4>
+                    <p>Jubah suitable for men of any age and sizes</p>
+                    <a class="morebutton" href="#" title="moreinfo">More info</a>
+                </div>
+            </div>
+
+            <div class="item1" id="prod1">
+            <img src="img/jubahlaki.jpg" alt="jubah lakilaki"/>
+                <div class="prodtext">
+                    <h4>For men</h4>
+                    <p>Jubah suitable for men of any age and sizes</p>
+                    <a class="morebutton" href="#" title="moreinfo">More info</a>
+                </div>
+            </div>
+
+            <div class="item1" id="prod1">
+            <img src="img/jubahlaki.jpg" alt="jubah lakilaki"/>
+                <div class="prodtext">
+                    <h4>For men</h4>
+                    <p>Jubah suitable for men of any age and sizes</p>
+                    <a class="morebutton" href="#" title="moreinfo">More info</a>
+                </div>
+            </div>
+                         <div class="item1" id="prod1">
+            <img src="img/jubahlaki.jpg" alt="jubah lakilaki"/>
+                <div class="prodtext">
+                    <h4>For men</h4>
+                    <p>Jubah suitable for men of any age and sizes</p>
+                    <a class="morebutton" href="#" title="moreinfo">More info</a>
+                </div>
+            </div>
+
+            <div class="item1" id="prod1">
+            <img src="img/jubahlaki.jpg" alt="jubah lakilaki"/>
+                <div class="prodtext">
+                    <h4>For men</h4>
+                    <p>Jubah suitable for men of any age and sizes</p>
+                    <a class="morebutton" href="#" title="moreinfo">More info</a>
+                </div>
+            </div>
+
+            <div class="item1" id="prod1">
+            <img src="img/jubahlaki.jpg" alt="jubah lakilaki"/>
+                <div class="prodtext">
+                    <h4>For men</h4>
+                    <p>Jubah suitable for men of any age and sizes</p>
+                    <a class="morebutton" href="#" title="moreinfo">More info</a>
+                </div>
+            </div>
+                         <div class="item1" id="prod1">
+            <img src="img/jubahlaki.jpg" alt="jubah lakilaki"/>
+                <div class="prodtext">
+                    <h4>For men</h4>
+                    <p>Jubah suitable for men of any age and sizes</p>
+                    <a class="morebutton" href="#" title="moreinfo">More info</a>
+                </div>
+            </div>
+
+            <div class="item1" id="prod1">
+            <img src="img/jubahlaki.jpg" alt="jubah lakilaki"/>
+                <div class="prodtext">
+                    <h4>For men</h4>
+                    <p>Jubah suitable for men of any age and sizes</p>
+                    <a class="morebutton" href="#" title="moreinfo">More info</a>
+                </div>
+            </div>
+
+            <div class="item1" id="prod1">
+            <img src="img/jubahlaki.jpg" alt="jubah lakilaki"/>
+                <div class="prodtext">
+                    <h4>For men</h4>
+                    <p>Jubah suitable for men of any age and sizes</p>
+                    <a class="morebutton" href="#" title="moreinfo">More info</a>
+                </div>
+            </div>
         </div>
 </asp:Content>
