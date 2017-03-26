@@ -39,19 +39,19 @@
         <div class="contact"><h4>Contact us</h4>
         </div>
         <asp:Label ID="lblname" runat="server" Text="Name: "></asp:Label>
-        <asp:TextBox ID="txtname" runat="server"></asp:TextBox>
+        <asp:TextBox ID="txtname" runat="server" Width="200px"></asp:TextBox>
         <br />
         <br />
         <asp:Label ID="lblemail" runat="server" Text="Email: "></asp:Label>
-        <asp:TextBox ID="txtemail" runat="server"></asp:TextBox>
+        <asp:TextBox ID="txtemail" runat="server" Width="201px"></asp:TextBox>
         <br />
         <br />
         <asp:Label ID="lblsubject" runat="server" Text="Subject: "></asp:Label>
-        <asp:TextBox ID="txtsubject" runat="server"></asp:TextBox>
+        <asp:TextBox ID="txtsubject" runat="server" Width="189px"></asp:TextBox>
         <br />
         <br />
         <asp:Label ID="lblmessage" runat="server" Text="Message: "></asp:Label>
-        <asp:TextBox ID="txtmessage" runat="server" Height="51px" TextMode="MultiLine"></asp:TextBox>
+        <asp:TextBox ID="txtmessage" runat="server" Height="51px" TextMode="MultiLine" OnTextChanged="txtmessage_TextChanged" Width="179px"></asp:TextBox>
         <br />
         <br />
         <asp:Button ID="cancelbtn" runat="server" Text="Cancel" />

@@ -42,7 +42,7 @@
                 </div>
             </div>
 
-            <div class="item1" id="prod1">
+            <div class="item1" id="prod2">
             <img src="img/jubahlaki.jpg" alt="jubah lakilaki"/>
                 <div class="prodtext">
                     <h4>For men</h4>
@@ -51,7 +51,7 @@
                 </div>
             </div>
 
-            <div class="item1" id="prod1">
+            <div class="item1" id="prod3">
             <img src="img/jubahlaki.jpg" alt="jubah lakilaki"/>
                 <div class="prodtext">
                     <h4>For men</h4>
@@ -64,7 +64,7 @@
 
     <div class="new"> NEW </div>
         <div class="newitemwrapper">
-            <div class="item1" id="prod1">
+            <div class="item1" id="prod4">
             <img src="img/jubahlaki.jpg" alt="jubah lakilaki"/>
                 <div class="prodtext">
                     <h4>For men</h4>
@@ -73,7 +73,7 @@
                 </div>
             </div>
 
-            <div class="item1" id="prod1">
+            <div class="item1" id="prod5">
             <img src="img/jubahlaki.jpg" alt="jubah lakilaki"/>
                 <div class="prodtext">
                     <h4>For men</h4>
@@ -82,7 +82,7 @@
                 </div>
             </div>
 
-            <div class="item1" id="prod1">
+            <div class="item1" id="prod6">
             <img src="img/jubahlaki.jpg" alt="jubah lakilaki"/>
                 <div class="prodtext">
                     <h4>For men</h4>
@@ -91,7 +91,7 @@
                 </div>
             </div>
 
-             <div class="item1" id="prod1">
+             <div class="item1" id="prod7">
             <img src="img/jubahlaki.jpg" alt="jubah lakilaki"/>
                 <div class="prodtext">
                     <h4>For men</h4>
@@ -100,7 +100,7 @@
                 </div>
             </div>
 
-            <div class="item1" id="prod1">
+            <div class="item1" id="prod8">
             <img src="img/jubahlaki.jpg" alt="jubah lakilaki"/>
                 <div class="prodtext">
                     <h4>For men</h4>
@@ -109,7 +109,7 @@
                 </div>
             </div>
 
-            <div class="item1" id="prod1">
+            <div class="item1" id="prod9">
             <img src="img/jubahlaki.jpg" alt="jubah lakilaki"/>
                 <div class="prodtext">
                     <h4>For men</h4>

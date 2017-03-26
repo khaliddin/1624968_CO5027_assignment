@@ -4,6 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
+    <title></title>
     <link rel="stylesheet" href="css/bapakstylesheet.css" type="text/css" />
     
     <asp:ContentPlaceHolder ID="head" runat="server">
@@ -11,7 +12,7 @@
 </head>
 <body>
      <div class="motherdiv">
-        <div class="logo"><img src="" /><h1>JUBAH BAPAK</h1></div>
+        <div class="logo"><img src="#" /><h1>JUBAH BAPAK</h1></div>
 
          <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
         
@@ -20,11 +21,11 @@
 
         <div class="bannerslider">
             <figure>
-                <div><img class="bannercontent" src="img/bannertest.jpg"></div>
-                <div><img class="bannercontent" src="img/banner1.jpg"></div>
-                <div><img class="bannercontent" src="img/banner2.jpg"></div>
-                <div><img class="bannercontent" src="img/banner3.jpg"></div>
-                <div><img class="bannercontent" src="img/bannertest.jpg"></div>
+                <div><img class="bannercontent" src="img/bannertest.jpg"/></div>
+                <div><img class="bannercontent" src="img/banner1.jpg"/></div>
+                <div><img class="bannercontent" src="img/banner2.jpg"/></div>
+                <div><img class="bannercontent" src="img/banner3.jpg"/></div>
+                <div><img class="bannercontent" src="img/bannertest.jpg"/></div>
             </figure>
         </div>
     <form id="form1" runat="server">
@@ -39,5 +40,6 @@
               <a href="http://validator.w3.org/check?uri=referer">Validate HTML</a>
         <a href="http://jigsaw.w3.org/css-validator/check/referer">Validate CSS</a>
           </div>
+         </div>
 </body>
 </html>
