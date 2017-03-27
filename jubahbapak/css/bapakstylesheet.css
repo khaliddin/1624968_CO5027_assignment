@@ -389,10 +389,17 @@ div.mapwrapper h4
     border-bottom: 1px solid brown;
 }
 
-div.map img
+div.maplabel
+{
+    margin-left:280px;
+    font-size:30px;
+    margin-bottom:-20px;
+}
+
+div#map
 {
     border:2px solid brown;
-    width:inherit;
+    width:500px;
     height:400px;
     float:left;
     margin-left:40px;
@@ -402,7 +409,8 @@ div.mapdesc p
 {
     border: 3px solid brown;
     float:right;
-    margin: 0 100px 100px 5px;
+    margin-right:100px;
+    margin-top:-1px;
     width: 293px;
     height:382px;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;

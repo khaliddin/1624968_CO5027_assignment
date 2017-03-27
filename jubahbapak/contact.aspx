@@ -1,6 +1,9 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/masterpage.Master" AutoEventWireup="true" CodeBehind="Contact.aspx.cs" Inherits="jubahbapak.contact" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <title>JUBAH BAPAK: Contact us</title>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAZBziKpV-qWJsz__3gYCba0BzJ855GUgo&callback=initMap"
+    async defer></script>
+    <script type="text/javascript" src="js/map.js"></script>
     <style type="text/css">
         .messageinput {
             height: 88px;
@@ -66,14 +69,13 @@
     <div class="mapwrapper">
         <h4>Find us</h4>
         <div class="maplabel">
-            <p>put map here</p>
+            <h5>Map</h5>
         </div>
-        <div class="map">
-            <img src="img/map.jpg" alt="#" />
-
+        <div id="map">
+            
         </div>
         <div class="mapdesc">
-            <p>Go left then right by the forest and straight to JUBAH BAPAK</p>
+            <p>Located in the Fresco building near the Abdul Razak Hotel Apartment and Kolej Perniagaan Laksamana</p>
         </div>
     </div>
 </asp:Content>
