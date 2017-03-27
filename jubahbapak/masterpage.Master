@@ -12,7 +12,7 @@
 </head>
 <body>
      <div class="motherdiv">
-        <div class="logo"><img src="#" /><h1>JUBAH BAPAK</h1></div>
+        <div class="logo"><h1>JUBAH BAPAK</h1></div>
 
          <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
         

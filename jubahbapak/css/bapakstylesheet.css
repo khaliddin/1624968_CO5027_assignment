@@ -278,19 +278,6 @@ div#itemwrapper
 }
 
 
-
-div.item
-{
-    height:200px;
-    width:200px;
-    float:left;
-    border:5px solid burlywood;
-    margin:50px 20px 0px 60px;
-
-}
-
-
-
 .item1
 {
     float:left;
@@ -364,6 +351,9 @@ div.item1 .prodtext a.morebutton:hover
 {
     background:antiquewhite;
 }
+
+
+
 
 
 div#formwrapper

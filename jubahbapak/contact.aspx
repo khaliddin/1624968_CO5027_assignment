@@ -51,7 +51,7 @@
         <br />
         <br />
         <asp:Label ID="lblmessage" runat="server" Text="Message: "></asp:Label>
-        <asp:TextBox ID="txtmessage" runat="server" Height="51px" TextMode="MultiLine" OnTextChanged="txtmessage_TextChanged" Width="179px"></asp:TextBox>
+        <asp:TextBox ID="txtmessage" runat="server" Height="51px" TextMode="MultiLine" Width="179px"></asp:TextBox>
         <br />
         <br />
         <asp:Button ID="cancelbtn" runat="server" Text="Cancel" />
