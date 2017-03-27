@@ -8,22 +8,22 @@
             <ul>
                 <li><a class="selected" href="Default.aspx">HOME</a></li>
                 <li>
-                    <a href="product.aspx">PRODUCTS</a>
+                    <a href="Product.aspx">PRODUCTS</a>
                 </li>
                 <li>
-                    <a href="about.aspx">ABOUT US</a>
+                    <a href="About.aspx">ABOUT US</a>
                 </li>
                 <li>
-                    <a href="faq.aspx">FAQ</a>
+                    <a href="Faq.aspx">FAQ</a>
                 </li>
                 <li>
-                    <a href="contact.aspx">CONTACT US</a>
+                    <a href="Contact.aspx">CONTACT US</a>
                 </li>
                 <li>
                     <a href="#">ACCOUNT</a>
                     <ul>
-                        <li><a href="login.aspx">Log in</a></li>
-                        <li><a href="signup.aspx">Sign up</a></li>
+                        <li><a href="Login.aspx">Log in</a></li>
+                        <li><a href="Signup.aspx">Sign up</a></li>
                     </ul>
                 </li>
             </ul>

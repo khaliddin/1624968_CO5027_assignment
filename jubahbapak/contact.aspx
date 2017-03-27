@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/masterpage.Master" AutoEventWireup="true" CodeBehind="contact.aspx.cs" Inherits="jubahbapak.contact" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/masterpage.Master" AutoEventWireup="true" CodeBehind="Contact.aspx.cs" Inherits="jubahbapak.contact" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <title>JUBAH BAPAK: Contact us</title>
     <style type="text/css">
@@ -13,22 +13,22 @@
             <ul>
                 <li><a href="Default.aspx">HOME</a></li>
                 <li>
-                    <a href="product.aspx">PRODUCTS</a>
+                    <a href="Product.aspx">PRODUCTS</a>
                 </li>
                 <li>
-                    <a href="about.aspx">ABOUT US</a>
+                    <a href="About.aspx">ABOUT US</a>
                 </li>
                 <li>
-                    <a href="faq.aspx">FAQ</a>
+                    <a href="Faq.aspx">FAQ</a>
                 </li>
                 <li>
-                    <a class="selected" href="contact.aspx">CONTACT US</a>
+                    <a class="selected" href="Contact.aspx">CONTACT US</a>
                 </li>
                 <li>
                     <a href="#">ACCOUNT</a>
                     <ul>
-                        <li><a href="login.aspx">Log in</a></li>
-                        <li><a href="signup.aspx">Sign up</a></li>
+                        <li><a href="Login.aspx">Log in</a></li>
+                        <li><a href="Signup.aspx">Sign up</a></li>
                     </ul>
                 </li>
             </ul>
