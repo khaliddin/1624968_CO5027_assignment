@@ -45,7 +45,7 @@
             <div class="item1" id="prod2">
             <img src="img/jubahlaki.jpg" alt="jubah lakilaki"/>
                 <div class="prodtext">
-                    <h4>For men</h4>
+                    <h4>For lady</h4>
                     <p>Jubah suitable for men of any age and sizes</p>
                     <a class="morebutton" href="#" title="moreinfo">More info</a>
                 </div>

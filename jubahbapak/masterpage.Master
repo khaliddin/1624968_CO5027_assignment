@@ -21,11 +21,54 @@
 
         <div class="bannerslider">
             <figure>
-                <div><img class="bannercontent" src="img/bannertest.jpg"/></div>
-                <div><img class="bannercontent" src="img/banner1.jpg"/></div>
-                <div><img class="bannercontent" src="img/banner2.jpg"/></div>
-                <div><img class="bannercontent" src="img/banner3.jpg"/></div>
-                <div><img class="bannercontent" src="img/bannertest.jpg"/></div>
+                <div class="banneritem" id="banneritem1">
+                <img class="bannercontent1" src="img/bannertest.jpg"/>
+                    <div class="bannertext">
+                    <h4>For men</h4>
+                    <p>Jubah suitable for men of any age and sizes</p>
+                    <a class="morebutton" href="#" title="moreinfo">More info</a>
+                </div>
+                </div>
+                <div class="banneritem" id="banneritem2">
+                <img class="bannercontent" src="img/banner1.jpg"/>
+                    <div class="bannertext">
+                    <h4>For men</h4>
+                    <p>Jubah suitable for men of any age and sizes</p>
+                    <a class="morebutton" href="#" title="moreinfo">More info</a>
+                </div>
+                </div>
+                <div class="banneritem" id="banneritem3">
+                <img class="bannercontent" src="img/banner2.jpg"/>
+                    <div class="bannertext">
+                    <h4>For men</h4>
+                    <p>Jubah suitable for men of any age and sizes</p>
+                    <a class="morebutton" href="#" title="moreinfo">More info</a>
+                </div>
+                </div>
+                 <div class="banneritem" id="banneritem4">
+                <img class="bannercontent" src="img/banner3.jpg"/>
+                    <div class="bannertext">
+                    <h4>For men</h4>
+                    <p>Jubah suitable for men of any age and sizes</p>
+                    <a class="morebutton" href="#" title="moreinfo">More info</a>
+                </div>
+                </div>
+                 <div class="banneritem" id="banneritem5">
+                <img class="bannercontent" src="img/bannertest.jpg"/>
+                    <div class="bannertext">
+                    <h4>For men</h4>
+                    <p>Jubah suitable for men of any age and sizes</p>
+                    <a class="morebutton" href="#" title="moreinfo">More info</a>
+                </div>
+                </div>
+                 <div class="banneritem" id="banneritem6">
+                <img class="bannercontent" src="img/bannertest.jpg"/>
+                    <div class="bannertext">
+                    <h4>For men</h4>
+                    <p>Jubah suitable for men of any age and sizes</p>
+                    <a class="morebutton" href="#" title="moreinfo">More info</a>
+                </div>
+                </div>
             </figure>
         </div>
     <form id="form1" runat="server">
