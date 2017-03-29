@@ -29,5 +29,8 @@
         </div>
     </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
-
+    <div class="aboutwrap">
+        <h3>About us</h3>
+    <p>we are jubah bapak and we sell jubah for bapak bapak tanpa kira bangsa</p>
+        </div>
 </asp:Content>

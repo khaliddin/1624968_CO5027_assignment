@@ -469,6 +469,30 @@ div.mapdesc p
     padding: 7px;
 }
 
+
+div.aboutwrap
+{
+    background-color:antiquewhite;
+    height:500px;
+    padding-top:10px;
+    border:1px solid black;
+    
+}
+div.aboutwrap h3
+{
+
+    border-bottom:1px solid black;
+    font-weight:bold;
+    font-size:30px;
+    text-align:center;
+    padding-bottom:10px;
+    margin-top:-2px;
+}
+div.aboutwrap p
+{
+    margin-left:10px;
+}
+
 div.footer
 {
     background-color:lightgrey;
