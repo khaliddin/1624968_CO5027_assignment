@@ -29,5 +29,10 @@
         </div>
     </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
-
+    <div class="faqwrapper">
+    <h2>Frequently Asked Questions</h2>
+    <p>Do you sell jubah?</p>
+    <p>Yes</p>
+    </div>
+   
 </asp:Content>

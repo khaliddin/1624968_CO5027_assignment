@@ -95,9 +95,18 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Admin.aspx" />
-    <Content Include="img\go.jpg" />
+    <Content Include="img\favico.png" />
+    <Content Include="img\jubahbini.jpg" />
+    <Content Include="img\jubahcordova.jpg" />
+    <Content Include="img\jubahcotton.jpg" />
+    <Content Include="img\jubahhisan.jpg" />
     <Content Include="img\jubahlaki.jpg" />
+    <Content Include="img\jubahmoroko.jpg" />
+    <Content Include="img\jubahoblongmorocco.jpg" />
+    <Content Include="img\jubahputih.jpg" />
+    <Content Include="img\jubahslimfit.jpg" />
     <Content Include="img\map.jpg" />
+    <Content Include="img\staticmap.jpg" />
     <Content Include="js\map.js" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">

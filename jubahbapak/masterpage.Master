@@ -4,9 +4,8 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
     <link rel="stylesheet" href="css/bapakstylesheet.css" type="text/css" />
-    
+    <link rel="icon" href="img/favico.png" />
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
@@ -22,53 +21,51 @@
         <div class="bannerslider">
             <figure>
                 <div class="banneritem" id="banneritem1">
-                <img class="bannercontent1" src="img/bannertest.jpg"/>
+                <img class="bannercontent1" src="img/bannertest.jpg" alt="casual"/>
                     <div class="bannertext">
+                    <h3>FEATURED</h3><br />
                     <h4>Casual</h4>
                     <p>Jubah suitable for men of any age and sizes for use for everyday routines.</p>
                     <a class="morebutton" href="#" title="moreinfo">More info</a>
                 </div>
                 </div>
                 <div class="banneritem" id="banneritem2">
-                <img class="bannercontent" src="img/banner1.jpg"/>
+                <img class="bannercontent" src="img/banner1.jpg" alt="cotton"/>
                     <div class="bannertext">
+                        <h3>FEATURED</h3><br />
                     <h4>Cotton Jubah</h4>
                     <p>Thirty8Dreams JUBAH line-up, confortable on the skin and on the heart</p>
                     <a class="morebutton" href="#" title="moreinfo">More info</a>
                 </div>
                 </div>
                 <div class="banneritem" id="banneritem3">
-                <img class="bannercontent" src="img/banner2.jpg"/>
+                <img class="bannercontent" src="img/banner2.jpg" alt="women jubah"/>
                     <div class="bannertext">
-                    <h4>For men</h4>
-                    <p>Jubah suitable for men of any age and sizes</p>
+                        <h3>FEATURED</h3><br />
+                    <h4>Casual Womens Jubah</h4>
+                    <p>Jubah suitable for women of any age and sizes</p>
                     <a class="morebutton" href="#" title="moreinfo">More info</a>
                 </div>
                 </div>
                  <div class="banneritem" id="banneritem4">
-                <img class="bannercontent" src="img/banner3.jpg"/>
+                <img class="bannercontent" src="img/banner3.jpg" alt="children"/>
                     <div class="bannertext">
-                    <h4>For men</h4>
-                    <p>Jubah suitable for men of any age and sizes</p>
+                        <h3>FEATURED</h3><br />
+                    <h4>Children Jubah</h4>
+                    <p>Jubah suitable for younger men, as young as 4 years old</p>
                     <a class="morebutton" href="#" title="moreinfo">More info</a>
                 </div>
                 </div>
                  <div class="banneritem" id="banneritem5">
-                <img class="bannercontent" src="img/bannertest.jpg"/>
+                <img class="bannercontent" src="img/bannertest.jpg" alt="casuals"/>
                     <div class="bannertext">
-                    <h4>For men</h4>
+                        <h3>FEATURED</h3><br />
+                    <h4>Casual</h4>
                     <p>Jubah suitable for men of any age and sizes</p>
                     <a class="morebutton" href="#" title="moreinfo">More info</a>
                 </div>
                 </div>
-                 <div class="banneritem" id="banneritem6">
-                <img class="bannercontent" src="img/bannertest.jpg"/>
-                    <div class="bannertext">
-                    <h4>For men</h4>
-                    <p>Jubah suitable for men of any age and sizes</p>
-                    <a class="morebutton" href="#" title="moreinfo">More info</a>
-                </div>
-                </div>
+                 
             </figure>
         </div>
     <form id="form1" runat="server">

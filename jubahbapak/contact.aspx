@@ -69,13 +69,18 @@
     <div class="mapwrapper">
         <h4>Find us</h4>
         <div class="maplabel">
-            <h5>Map</h5>
+            <h5>Google Map</h5>
         </div>
         <div id="map">
             
         </div>
         <div class="mapdesc">
             <p>Located in the Fresco building near the Abdul Razak Hotel Apartment and Kolej Perniagaan Laksamana</p>
+        </div>
+         <span class="static">Static Map</span>
+        <div id="staticmap">
+           
+            <img src="img/staticmap.jpg" alt="static map to jubah bapak" />
         </div>
     </div>
 </asp:Content>
