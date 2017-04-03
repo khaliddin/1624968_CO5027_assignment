@@ -95,7 +95,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Admin.aspx" />
-    <Content Include="error.aspx" />
     <Content Include="img\favico.png" />
     <Content Include="img\jubahbapaklogo.jpg" />
     <Content Include="img\jubahbini.jpg" />
@@ -160,13 +159,6 @@
     </Compile>
     <Compile Include="Contact.aspx.designer.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="error.aspx.cs">
-      <DependentUpon>error.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="error.aspx.designer.cs">
-      <DependentUpon>error.aspx</DependentUpon>
     </Compile>
     <Compile Include="Faq.aspx.cs">
       <DependentUpon>Faq.aspx</DependentUpon>
