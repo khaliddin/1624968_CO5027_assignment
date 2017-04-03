@@ -20,7 +20,7 @@ div.logo
     text-align: center;
     padding: 1px;
     margin: 1px;
-    background-color:lightgrey;
+    background-color:#F8F6F6;
     border:5px solid #222;
 }
 
@@ -546,7 +546,7 @@ div.aboutwrap p
 
 div.footer
 {
-    background-color:lightgrey;
+    background-color:#F8F6F6;
     text-align:center;
     padding: 15px 0 10px 0;
     font-weight:bold;
@@ -558,7 +558,7 @@ div.footer
 div.footerindex
 { 
     text-align:center;
-    background-color:lightgrey;
+    background-color:#F8F6F6;
     width:auto;
     margin-left:auto;
     margin-right:auto;
