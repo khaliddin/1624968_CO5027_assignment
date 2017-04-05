@@ -15,9 +15,7 @@
                 <li>
                     <a href="About.aspx">ABOUT US</a>
                 </li>
-                <li>
-                    <a href="Faq.aspx">FAQ</a>
-                </li>
+               
                 <li>
                     <a class="selected" href="Contact.aspx">CONTACT US</a>
                 </li>
