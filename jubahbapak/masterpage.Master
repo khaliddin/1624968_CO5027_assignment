@@ -4,6 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
+    <title>JUBAH BAPAK</title>
     <link rel="stylesheet" href="css/bapakstylesheet.css" type="text/css" />
     <link rel="icon" href="img/favico.png" />
     <asp:ContentPlaceHolder ID="head" runat="server">
@@ -77,7 +78,7 @@
     </div>
     </form>
 
-          <div class="footerindex"><b>COPYRIGHTS 2017, JUBAH BAPAK</b>
+          <div class="footerindex"><b>&copy; COPYRIGHTS 2017, JUBAH BAPAK</b>
               <a href="http://validator.w3.org/check?uri=referer">Validate HTML</a>
         <a href="http://jigsaw.w3.org/css-validator/check/referer">Validate CSS</a>
               <a href="Admin.aspx">Admin</a>

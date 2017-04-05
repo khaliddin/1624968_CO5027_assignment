@@ -1,15 +1,9 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="./masterpage.Master" AutoEventWireup="true" CodeFile="Contact.aspx.cs" Inherits="jubahbapak.contact" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="masterpage.Master" AutoEventWireup="true" CodeFile="Contact.aspx.cs" Inherits="jubahbapak.contact" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <title>JUBAH BAPAK: Contact us</title>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAZBziKpV-qWJsz__3gYCba0BzJ855GUgo&callback=initMap"
     async defer></script>
     <script type="text/javascript" src="js/map.js"></script>
-    <style type="text/css">
-        .messageinput {
-            height: 88px;
-            width: 185px;
-        }
-    </style>
+   
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
       <div id="navbar">
@@ -31,7 +25,7 @@
                     <a href="#">ACCOUNT</a>
                     <ul>
                         <li><a href="Login.aspx">Log in</a></li>
-                        <li><a href="Signup.aspx">Sign up</a></li>
+                        <li><a href="Login.aspx">Sign up</a></li>
                     </ul>
                 </li>
             </ul>
@@ -41,24 +35,30 @@
     <div id="formwrapper">
         <div class="contact"><h4>Contact us</h4>
         </div>
-        <asp:Label ID="lblname" runat="server" Text="Name: "></asp:Label>
-        <asp:TextBox ID="txtname" runat="server" Width="200px"></asp:TextBox>
+        <div class="labelname"><asp:Label ID="lblname" runat="server" Text="Name: "></asp:Label>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:TextBox ID="txtname" runat="server" Width="262px"></asp:TextBox>
         <br />
         <br />
         <asp:Label ID="lblemail" runat="server" Text="Email: "></asp:Label>
-        <asp:TextBox ID="txtemail" runat="server" Width="201px"></asp:TextBox>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:TextBox ID="txtemail" runat="server" Width="262px"></asp:TextBox>
         <br />
         <br />
         <asp:Label ID="lblsubject" runat="server" Text="Subject: "></asp:Label>
-        <asp:TextBox ID="txtsubject" runat="server" Width="189px"></asp:TextBox>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:TextBox ID="txtsubject" runat="server" Width="262px"></asp:TextBox>
         <br />
         <br />
         <asp:Label ID="lblmessage" runat="server" Text="Message: "></asp:Label>
-        <asp:TextBox ID="txtmessage" runat="server" Height="51px" TextMode="MultiLine" Width="179px"></asp:TextBox>
+        &nbsp;
+        <asp:TextBox ID="txtmessage" runat="server" Height="51px" TextMode="MultiLine" Width="262px"></asp:TextBox>
         <br />
         <br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <asp:Button ID="cancelbtn" runat="server" Text="Cancel" />
-        <asp:Button ID="sendbtn" runat="server" Text="Send" />
+        &nbsp;&nbsp;&nbsp;
+        <asp:Button ID="sendbtn" runat="server" Text="Send" /></div>
         <br />
         <br />
         

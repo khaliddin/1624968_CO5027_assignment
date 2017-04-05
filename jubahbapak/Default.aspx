@@ -1,7 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="./masterpage.Master" AutoEventWireup="true" CodeFile="Default.aspx.cs" Inherits="jubahbapak.aspxWebpages.index" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 
-    <title>JUBAH BAPAK</title>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
       <div id="navbar">
@@ -23,7 +22,7 @@
                     <a href="#">ACCOUNT</a>
                     <ul>
                         <li><a href="Login.aspx">Log in</a></li>
-                        <li><a href="Signup.aspx">Sign up</a></li>
+                        <li><a href="Login.aspx">Sign up</a></li>
                     </ul>
                 </li>
             </ul>

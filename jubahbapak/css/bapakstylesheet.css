@@ -125,9 +125,9 @@ div#navbar ul ul li a
     width:100%; 
     height:100%;
     color: #fff;
-    -webkit-transition: all 0.3s cubic-bezier(0.4, 0, 1, 1) 0s;
-    -o-transition:all 0.3s cubic-bezier(0.4, 0, 1, 1) 0s;
-    -moz-transition: all 0.3s cubic-bezier(0.4, 0, 1, 1) 0s;
+    transition: all 0.3s cubic-bezier(0.4, 0, 1, 1) 0s;
+    transition:all 0.3s cubic-bezier(0.4, 0, 1, 1) 0s;
+    transition: all 0.3s cubic-bezier(0.4, 0, 1, 1) 0s;
     transition: all 0.3s cubic-bezier(0.4, 0, 1, 1) 0s;
 }
 
@@ -360,9 +360,9 @@ div#itemwrapper
     width:100%; 
     height:100%;
     color: #fff;
-    -webkit-transition: all 0.3s cubic-bezier(0.4, 0, 1, 1) 0s;
-    -o-transition:all 0.3s cubic-bezier(0.4, 0, 1, 1) 0s;
-    -moz-transition: all 0.3s cubic-bezier(0.4, 0, 1, 1) 0s;
+    transition: all 0.3s cubic-bezier(0.4, 0, 1, 1) 0s;
+    transition:all 0.3s cubic-bezier(0.4, 0, 1, 1) 0s;
+    transition: all 0.3s cubic-bezier(0.4, 0, 1, 1) 0s;
     transition: all 0.3s cubic-bezier(0.4, 0, 1, 1) 0s;
 }
 
@@ -416,6 +416,7 @@ div.item1 .prodtext a.morebutton:hover
 div#formwrapper
 {
     background-color:blanchedalmond;
+    height:350px;
 }
 div.contact h4
 {
@@ -425,9 +426,10 @@ div.contact h4
     border-bottom:3px solid black;
 }
 
-div.messageinput
+div.labelname
 {
-    width:200px;
+    float:left;
+    margin-left:240px;
 }
 
 
