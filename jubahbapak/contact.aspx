@@ -81,7 +81,7 @@
          <span class="static">Static Map</span>
         <div id="staticmap">
            
-            <img src="img/staticmap.jpg" alt="static map to jubah bapak" />
+            <img src="img/staticmap.jpg" alt="We are located here. Plaza Abdul Razak, Jalan Laksamana Abdul Razak, Bandar Seri Begawan BA1712 " />
         </div>
     </div>
 </asp:Content>
