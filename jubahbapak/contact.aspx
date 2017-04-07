@@ -73,7 +73,10 @@
             
         </div>
         <div class="mapdesc">
-            <p>Located in the Fresco building near the Abdul Razak Hotel Apartment and Kolej Perniagaan Laksamana</p>
+            <p>Located in the Fresco building near the Abdul Razak Hotel Apartment and Kolej Perniagaan Laksamana <br /> <br />
+                Address: <br />
+                Plaza Abdul Razak, Jalan Laksamana Abdul Razak, Bandar Seri Begawan BA1712
+            </p>
         </div>
          <span class="static">Static Map</span>
         <div id="staticmap">
