@@ -503,6 +503,68 @@ div.mapdesc p
     padding: 7px;
 }
 
+div.regsignwrapper
+{
+    width:1000px;
+    height: 550px;
+}
+
+div.loginwrap
+{
+    float:left;
+    background-color:sandybrown;
+    height:50px;
+    width:499px;
+    border:1px solid black;
+    text-align:center;
+}
+div.logincontent
+{
+    float:left;
+    background-color:antiquewhite;
+    height: 500px;
+    width:499px;
+    border:1px solid black;
+}
+
+div.usernamelabel
+{
+    margin-top:30px;
+    margin-left:100px;
+    font-weight:bold;
+}
+div.passwordlabel
+{
+    margin-left:100px;
+    font-weight:bold;
+}
+div.loginbutton
+{
+    margin-left:186px;
+}
+
+
+div.registerwrap
+{
+    float:left;
+    margin-left:500px;
+    margin-top:-555px;
+    background-color:sandybrown;
+    height:50px;
+    width:499px;
+    border:1px solid black;
+    text-align:center;
+}
+div.registercontent
+{
+    float:left;
+    margin-left:500px;
+    margin-top:-503px;
+    background-color:antiquewhite;
+    height: 500px;
+    width:499px;
+    border:1px solid black;
+}
 
 div.faqwrapper
 {
@@ -552,7 +614,7 @@ div.footer
     text-align:center;
     padding: 15px 0 10px 0;
     font-weight:bold;
-    width:auto;
+    width:1000px;
     margin-left:auto;
     margin-right:auto;
     border: 2px solid black;
@@ -561,7 +623,7 @@ div.footerindex
 { 
     text-align:center;
     background-color:#F8F6F6;
-    width:auto;
+    width:1000px;
     margin-left:auto;
     margin-right:auto;
     padding: 15px 0 10px 0;
