@@ -7,6 +7,8 @@ using System.Web.UI.WebControls;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.Owin.Security;
+using Microsoft.AspNet.Identity;
+using Microsoft.AspNet.Identity.EntityFramework;
 
 
 namespace jubahbapak
@@ -27,17 +29,25 @@ namespace jubahbapak
             //create user store and user manager
             var userstore = new UserStore<IdentityUser>(identityDbContext);
             var manager = new UserManager<IdentityUser>(userstore);
+            //create role store and role manager
+            var roleStore = new RoleStore<IdentityRole>(identityDbContext);
+            var roleManager = new RoleManager<IdentityRole>(roleStore);
             //create user
             var user = new IdentityUser() { UserName = regusernametxt.Text, Email = regemailtxt.Text };
             IdentityResult result = manager.Create (user, regpasswordtxt.Text);
             if (result.Succeeded)
             {
-                Response.Redirect("Default.aspx");
+                littext1.Text = "registration successful, welcome " + regusernametxt.Text;
             }
             else
             {
                 littext1.Text = "Error occured, registration failed: " + result.Errors.FirstOrDefault();
             }
+            //create edit delete roles
+            IdentityRole userRole = new IdentityRole("registeredUser");
+            roleManager.Create(userRole);
+            manager.AddToRole(user.Id, "registeredUser");
+            manager.Update(user);
 
         }
 
