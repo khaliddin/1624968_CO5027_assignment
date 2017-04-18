@@ -22,13 +22,13 @@ namespace jubahbapak {
         protected global::System.Web.UI.WebControls.Label lblname;
         
         /// <summary>
-        /// txtname control.
+        /// ctctxtname control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtname;
+        protected global::System.Web.UI.WebControls.TextBox ctctxtname;
         
         /// <summary>
         /// lblemail control.
@@ -40,13 +40,13 @@ namespace jubahbapak {
         protected global::System.Web.UI.WebControls.Label lblemail;
         
         /// <summary>
-        /// txtemail control.
+        /// ctctxtemail control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtemail;
+        protected global::System.Web.UI.WebControls.TextBox ctctxtemail;
         
         /// <summary>
         /// lblsubject control.
@@ -58,13 +58,13 @@ namespace jubahbapak {
         protected global::System.Web.UI.WebControls.Label lblsubject;
         
         /// <summary>
-        /// txtsubject control.
+        /// ctctxtsubject control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtsubject;
+        protected global::System.Web.UI.WebControls.TextBox ctctxtsubject;
         
         /// <summary>
         /// lblmessage control.
@@ -76,13 +76,13 @@ namespace jubahbapak {
         protected global::System.Web.UI.WebControls.Label lblmessage;
         
         /// <summary>
-        /// txtmessage control.
+        /// ctctxtmessage control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtmessage;
+        protected global::System.Web.UI.WebControls.TextBox ctctxtmessage;
         
         /// <summary>
         /// cancelbtn control.
@@ -94,12 +94,21 @@ namespace jubahbapak {
         protected global::System.Web.UI.WebControls.Button cancelbtn;
         
         /// <summary>
-        /// sendbtn control.
+        /// ctcsendbtn control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button sendbtn;
+        protected global::System.Web.UI.WebControls.Button ctcsendbtn;
+        
+        /// <summary>
+        /// ctcliteral control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal ctcliteral;
     }
 }

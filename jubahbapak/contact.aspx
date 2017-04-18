@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="masterpage.Master" AutoEventWireup="true" CodeFile="Contact.aspx.cs" Inherits="jubahbapak.contact" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="masterpage.Master" AutoEventWireup="true" CodeBehind="Contact.aspx.cs" Inherits="jubahbapak.contact" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAZBziKpV-qWJsz__3gYCba0BzJ855GUgo&callback=initMap"
     async defer></script>
@@ -35,28 +35,31 @@
         </div>
         <div class="labelname"><asp:Label ID="lblname" runat="server" Text="Name: "></asp:Label>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <asp:TextBox ID="txtname" runat="server" Width="262px"></asp:TextBox>
+        <asp:TextBox ID="ctctxtname" runat="server" Width="262px"></asp:TextBox>
         <br />
         <br />
         <asp:Label ID="lblemail" runat="server" Text="Email: "></asp:Label>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <asp:TextBox ID="txtemail" runat="server" Width="262px"></asp:TextBox>
+        <asp:TextBox ID="ctctxtemail" runat="server" Width="262px"></asp:TextBox>
         <br />
         <br />
         <asp:Label ID="lblsubject" runat="server" Text="Subject: "></asp:Label>
         &nbsp;&nbsp;&nbsp;&nbsp;
-        <asp:TextBox ID="txtsubject" runat="server" Width="262px"></asp:TextBox>
+        <asp:TextBox ID="ctctxtsubject" runat="server" Width="262px"></asp:TextBox>
         <br />
         <br />
         <asp:Label ID="lblmessage" runat="server" Text="Message: "></asp:Label>
         &nbsp;
-        <asp:TextBox ID="txtmessage" runat="server" Height="51px" TextMode="MultiLine" Width="262px"></asp:TextBox>
+        <asp:TextBox ID="ctctxtmessage" runat="server" Height="51px" TextMode="MultiLine" Width="262px"></asp:TextBox>
         <br />
         <br />
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <asp:Button ID="cancelbtn" runat="server" Text="Cancel" />
         &nbsp;&nbsp;&nbsp;
-        <asp:Button ID="sendbtn" runat="server" Text="Send" /></div>
+        <asp:Button ID="ctcsendbtn" runat="server" Text="Send" OnClick="ctcsendbtn_Click" />
+            <br />
+            <asp:Literal ID="ctcliteral" runat="server"></asp:Literal>
+        </div>
         <br />
         <br />
         

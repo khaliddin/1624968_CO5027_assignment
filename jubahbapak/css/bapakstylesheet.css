@@ -416,7 +416,7 @@ div.item1 .prodtext a.morebutton:hover
 div#formwrapper
 {
     background-color:blanchedalmond;
-    height:350px;
+    height:400px;
 }
 div.contact h4
 {
@@ -430,6 +430,7 @@ div.labelname
 {
     float:left;
     margin-left:240px;
+    height: 304px;
 }
 
 
