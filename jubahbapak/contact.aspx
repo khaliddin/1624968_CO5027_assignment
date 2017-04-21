@@ -36,21 +36,25 @@
         <div class="labelname"><asp:Label ID="lblname" runat="server" Text="Name: "></asp:Label>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <asp:TextBox ID="ctctxtname" runat="server" Width="262px"></asp:TextBox>
+        &nbsp;<asp:Literal ID="nametxterrorlit" runat="server"></asp:Literal>
         <br />
         <br />
         <asp:Label ID="lblemail" runat="server" Text="Email: "></asp:Label>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <asp:TextBox ID="ctctxtemail" runat="server" Width="262px"></asp:TextBox>
+            <asp:Literal ID="emailtxterrorlit" runat="server"></asp:Literal>
         <br />
         <br />
         <asp:Label ID="lblsubject" runat="server" Text="Subject: "></asp:Label>
         &nbsp;&nbsp;&nbsp;&nbsp;
         <asp:TextBox ID="ctctxtsubject" runat="server" Width="262px"></asp:TextBox>
+            <asp:Literal ID="sbjtxterrorlit" runat="server"></asp:Literal>
         <br />
         <br />
         <asp:Label ID="lblmessage" runat="server" Text="Message: "></asp:Label>
         &nbsp;
         <asp:TextBox ID="ctctxtmessage" runat="server" Height="51px" TextMode="MultiLine" Width="262px"></asp:TextBox>
+            <asp:Literal ID="msgtxterrorlit" runat="server"></asp:Literal>
         <br />
         <br />
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;

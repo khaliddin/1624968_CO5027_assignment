@@ -10,141 +10,105 @@
 namespace jubahbapak {
     
     
-    public partial class contact {
+    public partial class entity {
         
         /// <summary>
-        /// lblname control.
+        /// form1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblname;
+        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// ctctxtname control.
+        /// titlelabel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox ctctxtname;
+        protected global::System.Web.UI.WebControls.Label titlelabel;
         
         /// <summary>
-        /// nametxterrorlit control.
+        /// txtTitle control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Literal nametxterrorlit;
+        protected global::System.Web.UI.WebControls.TextBox txtTitle;
         
         /// <summary>
-        /// lblemail control.
+        /// lblBody control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblemail;
+        protected global::System.Web.UI.WebControls.Label lblBody;
         
         /// <summary>
-        /// ctctxtemail control.
+        /// bodytxt control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox ctctxtemail;
+        protected global::System.Web.UI.WebControls.TextBox bodytxt;
         
         /// <summary>
-        /// emailtxterrorlit control.
+        /// btnAddEntry control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Literal emailtxterrorlit;
+        protected global::System.Web.UI.WebControls.Button btnAddEntry;
         
         /// <summary>
-        /// lblsubject control.
+        /// imgselect control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblsubject;
+        protected global::System.Web.UI.WebControls.FileUpload imgselect;
         
         /// <summary>
-        /// ctctxtsubject control.
+        /// uploadbtn control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox ctctxtsubject;
+        protected global::System.Web.UI.WebControls.Button uploadbtn;
         
         /// <summary>
-        /// sbjtxterrorlit control.
+        /// lblalttxt control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Literal sbjtxterrorlit;
+        protected global::System.Web.UI.WebControls.Label lblalttxt;
         
         /// <summary>
-        /// lblmessage control.
+        /// txtAltText control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblmessage;
+        protected global::System.Web.UI.WebControls.TextBox txtAltText;
         
         /// <summary>
-        /// ctctxtmessage control.
+        /// litResult control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox ctctxtmessage;
-        
-        /// <summary>
-        /// msgtxterrorlit control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Literal msgtxterrorlit;
-        
-        /// <summary>
-        /// cancelbtn control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button cancelbtn;
-        
-        /// <summary>
-        /// ctcsendbtn control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button ctcsendbtn;
-        
-        /// <summary>
-        /// ctcliteral control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Literal ctcliteral;
+        protected global::System.Web.UI.WebControls.Literal litResult;
     }
 }

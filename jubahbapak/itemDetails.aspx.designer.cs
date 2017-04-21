@@ -10,42 +10,51 @@
 namespace jubahbapak {
     
     
-    public partial class Admin {
+    public partial class WebForm2 {
         
         /// <summary>
-        /// form1 control.
+        /// prodImage control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+        protected global::System.Web.UI.WebControls.Image prodImage;
         
         /// <summary>
-        /// FormView1 control.
+        /// prodNameLit control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.FormView FormView1;
+        protected global::System.Web.UI.WebControls.Literal prodNameLit;
         
         /// <summary>
-        /// jubahbapak_prodTBL control.
+        /// prodDetLit control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource jubahbapak_prodTBL;
+        protected global::System.Web.UI.WebControls.Literal prodDetLit;
         
         /// <summary>
-        /// GridView1 control.
+        /// prodPriceLit control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView GridView1;
+        protected global::System.Web.UI.WebControls.Literal prodPriceLit;
+        
+        /// <summary>
+        /// prodQtyLit control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal prodQtyLit;
     }
 }

@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="./masterpage.Master" AutoEventWireup="true" CodeBehind="Product.aspx.cs" Inherits="jubahbapak.product" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="masterpage.Master" AutoEventWireup="true" CodeBehind="Product.aspx.cs" Inherits="jubahbapak.product" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 
@@ -27,85 +27,31 @@
         </div>
     </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
-     <div class="products"> PRODUCTS </div>
+    <div class="products"> PRODUCTS </div>
+    <asp:Repeater ID="prodrepeat" runat="server">
+
+        <HeaderTemplate></HeaderTemplate>
+        
+        <ItemTemplate>
+
+     
         <div id="itemwrapper">
              <div class="item1" id="prod1">
-            <img src="img/jubahlaki.jpg" alt="jubah lakilaki"/>
+           <img src="../prodImg/<%#Eval("imgName") %><%#Eval("extension") %>" alt="<%#Eval("altText") %>"/>
                 <div class="prodtext">
-                    <h4>For men</h4>
-                    <p>Jubah suitable for men of any age and sizes</p>
-                    <a class="morebutton" href="#" title="moreinfo">More info</a>
+                    <h4><%#Eval("prod_name") %></h4>
+                    <p><%#Eval("prod_details") %></p>
+                    <a class="morebutton" href="itemDetails.aspx?id=<%#Eval("id") %>" title="moreinfo">More info</a>
                 </div>
             </div>
+            </div>
+            </ItemTemplate>
+       
+        <FooterTemplate>    
+</FooterTemplate>
+        
+        </asp:Repeater>
+    </asp:Content>
+           
+            
 
-            <div class="item1" id="prod2">
-            <img src="img/jubahlaki.jpg" alt="jubah lakilaki"/>
-                <div class="prodtext">
-                    <h4>For men</h4>
-                    <p>Jubah suitable for men of any age and sizes</p>
-                    <a class="morebutton" href="#" title="moreinfo">More info</a>
-                </div>
-            </div>
-
-            <div class="item1" id="prod3">
-            <img src="img/jubahlaki.jpg" alt="jubah lakilaki"/>
-                <div class="prodtext">
-                    <h4>For men</h4>
-                    <p>Jubah suitable for men of any age and sizes</p>
-                    <a class="morebutton" href="#" title="moreinfo">More info</a>
-                </div>
-            </div>
-                         <div class="item1" id="prod4">
-            <img src="img/jubahlaki.jpg" alt="jubah lakilaki"/>
-                <div class="prodtext">
-                    <h4>For men</h4>
-                    <p>Jubah suitable for men of any age and sizes</p>
-                    <a class="morebutton" href="#" title="moreinfo">More info</a>
-                </div>
-            </div>
-
-            <div class="item1" id="prod5">
-            <img src="img/jubahlaki.jpg" alt="jubah lakilaki"/>
-                <div class="prodtext">
-                    <h4>For men</h4>
-                    <p>Jubah suitable for men of any age and sizes</p>
-                    <a class="morebutton" href="#" title="moreinfo">More info</a>
-                </div>
-            </div>
-
-            <div class="item1" id="prod6">
-            <img src="img/jubahlaki.jpg" alt="jubah lakilaki"/>
-                <div class="prodtext">
-                    <h4>For men</h4>
-                    <p>Jubah suitable for men of any age and sizes</p>
-                    <a class="morebutton" href="#" title="moreinfo">More info</a>
-                </div>
-            </div>
-                         <div class="item1" id="prod7">
-            <img src="img/jubahlaki.jpg" alt="jubah lakilaki"/>
-                <div class="prodtext">
-                    <h4>For men</h4>
-                    <p>Jubah suitable for men of any age and sizes</p>
-                    <a class="morebutton" href="#" title="moreinfo">More info</a>
-                </div>
-            </div>
-
-            <div class="item1" id="prod8">
-            <img src="img/jubahlaki.jpg" alt="jubah lakilaki"/>
-                <div class="prodtext">
-                    <h4>For men</h4>
-                    <p>Jubah suitable for men of any age and sizes</p>
-                    <a class="morebutton" href="#" title="moreinfo">More info</a>
-                </div>
-            </div>
-
-            <div class="item1" id="prod9">
-            <img src="img/jubahlaki.jpg" alt="jubah lakilaki"/>
-                <div class="prodtext">
-                    <h4>For men</h4>
-                    <p>Jubah suitable for men of any age and sizes</p>
-                    <a class="morebutton" href="#" title="moreinfo">More info</a>
-                </div>
-            </div>
-        </div>
-</asp:Content>

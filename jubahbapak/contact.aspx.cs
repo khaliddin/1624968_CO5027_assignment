@@ -17,33 +17,201 @@ namespace jubahbapak
 
         protected void ctcsendbtn_Click(object sender, EventArgs e)
         {
-            SmtpClient client = new SmtpClient();
-            client.DeliveryMethod = SmtpDeliveryMethod.Network;
-            client.EnableSsl = true;
-            client.Host = "smtp.gmail.com";
-            client.Port = 587;
-
-            // Smtp authentication
-            System.Net.NetworkCredential userpass = new System.Net.NetworkCredential("traderalid@gmail.com", "123456_654321");
-            client.UseDefaultCredentials = false;
-            client.Credentials = userpass;
-
-            MailMessage msg = new MailMessage();
-            msg.From = new MailAddress(ctctxtemail.Text);
-            msg.To.Add(new MailAddress("khaliddin.26@gmail.com"));
-
-            msg.Subject = ctctxtsubject.Text;
-            msg.IsBodyHtml = true;
-            msg.Body = string.Format("From: " + ctctxtname.Text + ",   Email: " + ctctxtemail.Text +",   Message: "+ ctctxtmessage.Text);
-
-            try
+            //all fields are empty
+            if (string.IsNullOrWhiteSpace(ctctxtname.Text) &&
+                string.IsNullOrWhiteSpace(ctctxtemail.Text) && 
+                string.IsNullOrWhiteSpace(ctctxtsubject.Text) &&
+                string.IsNullOrWhiteSpace(ctctxtmessage.Text))
             {
-                client.Send(msg);
-                ctcliteral.Text = "Your message has been successfully sent.";
+                nametxterrorlit.Text = "Please fill in name";
+                emailtxterrorlit.Text = "Please enter your email here";
+                sbjtxterrorlit.Text = "Give a subject for your message";
+                msgtxterrorlit.Text = "Type what you want to tell us here.";
             }
-            catch (Exception ex)
+            //name and email fields are empty
+            else if (string.IsNullOrWhiteSpace(ctctxtname.Text) &&
+                string.IsNullOrWhiteSpace(ctctxtemail.Text) &&
+                (!string.IsNullOrWhiteSpace(ctctxtsubject.Text)) &&
+                (!string.IsNullOrWhiteSpace(ctctxtmessage.Text)))
             {
-                ctcliteral.Text = "Error occured while sending your message." + ex.Message;
+                nametxterrorlit.Text = "Please fill in name";
+                emailtxterrorlit.Text = "Please enter your email here";
+                sbjtxterrorlit.Text = "";
+                msgtxterrorlit.Text = "";
+            }
+            //name and subject fields are empty
+            else if (string.IsNullOrWhiteSpace(ctctxtname.Text) &&
+                (!string.IsNullOrWhiteSpace(ctctxtemail.Text)) &&
+                string.IsNullOrWhiteSpace(ctctxtsubject.Text) &&
+                (!string.IsNullOrWhiteSpace(ctctxtmessage.Text)))
+            {
+                nametxterrorlit.Text = "Please fill in name";
+                emailtxterrorlit.Text = "";
+                sbjtxterrorlit.Text = "Give a subject for your message";
+                msgtxterrorlit.Text = "";
+            }
+            //name and message fields are empty
+            else if (string.IsNullOrWhiteSpace(ctctxtname.Text) &&
+                (!string.IsNullOrWhiteSpace(ctctxtemail.Text)) &&
+                (!string.IsNullOrWhiteSpace(ctctxtsubject.Text)) &&
+                string.IsNullOrWhiteSpace(ctctxtmessage.Text))
+            {
+                nametxterrorlit.Text = "Please fill in name";
+                emailtxterrorlit.Text = "";
+                sbjtxterrorlit.Text = "";
+                msgtxterrorlit.Text = "Type what you want to tell us here.";
+            }
+            //name, email and subject fields are empty
+            else if (string.IsNullOrWhiteSpace(ctctxtname.Text) &&
+                string.IsNullOrWhiteSpace(ctctxtemail.Text) &&
+                string.IsNullOrWhiteSpace(ctctxtsubject.Text) &&
+                (!string.IsNullOrWhiteSpace(ctctxtmessage.Text)))
+            {
+                nametxterrorlit.Text = "Please fill in name";
+                emailtxterrorlit.Text = "Please enter your email here";
+                sbjtxterrorlit.Text = "Give your message a subject";
+                msgtxterrorlit.Text = "";
+            }
+            //name, email and message fields are empty
+            else if (string.IsNullOrWhiteSpace(ctctxtname.Text) &&
+                string.IsNullOrWhiteSpace(ctctxtemail.Text) &&
+                (!string.IsNullOrWhiteSpace(ctctxtsubject.Text)) &&
+                string.IsNullOrWhiteSpace(ctctxtmessage.Text))
+            {
+                nametxterrorlit.Text = "Please fill in name";
+                emailtxterrorlit.Text = "Please enter your email here";
+                sbjtxterrorlit.Text = "";
+                msgtxterrorlit.Text = "Type what you want to tell us here.";
+            }
+            //name, subject and message are empty
+            else if (string.IsNullOrWhiteSpace(ctctxtname.Text) &&
+                (!string.IsNullOrWhiteSpace(ctctxtemail.Text)) &&
+                string.IsNullOrWhiteSpace(ctctxtsubject.Text) &&
+                string.IsNullOrWhiteSpace(ctctxtmessage.Text))
+            {
+                nametxterrorlit.Text = "Please fill in name";
+                emailtxterrorlit.Text = "";
+                sbjtxterrorlit.Text = "Give your message a subject";
+                msgtxterrorlit.Text = "Type what you want to tell us here.";
+            }
+            //email and subject are empty
+            else if ((!string.IsNullOrWhiteSpace(ctctxtname.Text)) &&
+                string.IsNullOrWhiteSpace(ctctxtemail.Text) &&
+                string.IsNullOrWhiteSpace(ctctxtsubject.Text) &&
+                (!string.IsNullOrWhiteSpace(ctctxtmessage.Text)))
+            {
+                nametxterrorlit.Text = "";
+                emailtxterrorlit.Text = "Please enter your email here";
+                sbjtxterrorlit.Text = "Give your message a subject";
+                msgtxterrorlit.Text = "";
+            }
+            //email and message are empty
+            else if ((!string.IsNullOrWhiteSpace(ctctxtname.Text)) &&
+                string.IsNullOrWhiteSpace(ctctxtemail.Text) &&
+                (!string.IsNullOrWhiteSpace(ctctxtsubject.Text)) &&
+                string.IsNullOrWhiteSpace(ctctxtmessage.Text))
+            {
+                nametxterrorlit.Text = "";
+                emailtxterrorlit.Text = "Please enter your email here";
+                sbjtxterrorlit.Text = "";
+                msgtxterrorlit.Text = "Type what you want to tell us here.";
+            }
+            //subject and message are empty
+            else if ((!string.IsNullOrWhiteSpace(ctctxtname.Text)) &&
+                (!string.IsNullOrWhiteSpace(ctctxtemail.Text)) &&
+                string.IsNullOrWhiteSpace(ctctxtsubject.Text) &&
+                string.IsNullOrWhiteSpace(ctctxtmessage.Text))
+            {
+                nametxterrorlit.Text = "";
+                emailtxterrorlit.Text = "";
+                sbjtxterrorlit.Text = "Give your message a subject";
+                msgtxterrorlit.Text = "Type what you want to tell us here.";
+            }
+            //name field is empty
+            else if(string.IsNullOrWhiteSpace(ctctxtname.Text) &&
+                (!string.IsNullOrWhiteSpace(ctctxtemail.Text)) &&
+                (!string.IsNullOrWhiteSpace(ctctxtsubject.Text)) &&
+                (!string.IsNullOrWhiteSpace(ctctxtmessage.Text)))
+            {
+                nametxterrorlit.Text = "Please fill in name";
+                emailtxterrorlit.Text = "";
+                sbjtxterrorlit.Text = "";
+                msgtxterrorlit.Text = "";
+            }
+            //email field is empty
+            else if ((!string.IsNullOrWhiteSpace(ctctxtname.Text)) &&
+                 string.IsNullOrWhiteSpace(ctctxtemail.Text) &&
+                 (!string.IsNullOrWhiteSpace(ctctxtsubject.Text)) &&
+                 (!string.IsNullOrWhiteSpace(ctctxtmessage.Text)))
+            {
+                nametxterrorlit.Text = "";
+                emailtxterrorlit.Text = "Enter your email here.";
+                sbjtxterrorlit.Text = "";
+                msgtxterrorlit.Text = "";
+            }
+            //subject field is empty
+            else if ((!string.IsNullOrWhiteSpace(ctctxtname.Text)) &&
+                (!string.IsNullOrWhiteSpace(ctctxtemail.Text) &&
+                string.IsNullOrWhiteSpace(ctctxtsubject.Text)) &&
+                (!string.IsNullOrWhiteSpace(ctctxtmessage.Text)))
+            {
+                nametxterrorlit.Text = "";
+                emailtxterrorlit.Text = "";
+                sbjtxterrorlit.Text = "Give a subject for your message";
+                msgtxterrorlit.Text = "";
+            }
+            //message field is empty
+            else if ((!string.IsNullOrWhiteSpace(ctctxtname.Text)) &&
+                  (!string.IsNullOrWhiteSpace(ctctxtemail.Text) &&
+                  (!string.IsNullOrWhiteSpace(ctctxtsubject.Text))) &&
+                  string.IsNullOrWhiteSpace(ctctxtmessage.Text))
+            {
+                nametxterrorlit.Text = "";
+                emailtxterrorlit.Text = "";
+                sbjtxterrorlit.Text = "";
+                msgtxterrorlit.Text = "Enter your message here.";
+            }
+            //all fields are filled in correctly
+            else
+            {
+                nametxterrorlit.Text = "";
+                emailtxterrorlit.Text = "";
+                sbjtxterrorlit.Text = "";
+                msgtxterrorlit.Text = "";
+                
+
+               SmtpClient client = new SmtpClient();
+                client.DeliveryMethod = SmtpDeliveryMethod.Network;
+                client.EnableSsl = true;
+                client.Host = "smtp.gmail.com";
+                client.Port = 587;
+
+                // Smtp authentication
+                System.Net.NetworkCredential userpass = new System.Net.NetworkCredential("traderalid@gmail.com", "123456_654321");
+                client.UseDefaultCredentials = false;
+                client.Credentials = userpass;
+
+                MailMessage msg = new MailMessage();
+                msg.From = new MailAddress(ctctxtemail.Text);
+                msg.To.Add(new MailAddress("khaliddin.26@gmail.com"));
+
+                msg.Subject = ctctxtsubject.Text;
+                msg.IsBodyHtml = true;
+                msg.Body = string.Format("From: " + ctctxtname.Text + ",   Email: " + ctctxtemail.Text + ",   Message: " + ctctxtmessage.Text);
+
+                try
+                {
+                    client.Send(msg);
+                    ctcliteral.Text = "Your message has been successfully sent.";
+                }
+                catch (Exception ex)
+                {
+                    ctcliteral.Text = "Error occured while sending your message." + ex.Message;
+                }
+                ctctxtname.Text = "";
+                ctctxtemail.Text = "";
+                ctctxtsubject.Text = "";
+                ctctxtmessage.Text = "";
             }
 
 
