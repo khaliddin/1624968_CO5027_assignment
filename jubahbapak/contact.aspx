@@ -33,7 +33,8 @@
     <div id="formwrapper">
         <div class="contact"><h4>Contact us</h4>
         </div>
-        <div class="labelname"><asp:Label ID="lblname" runat="server" Text="Name: "></asp:Label>
+        <div class="labelname">&nbsp;<br />
+            <asp:Label ID="lblname" runat="server" Text="Name: "></asp:Label>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <asp:TextBox ID="ctctxtname" runat="server" Width="262px"></asp:TextBox>
         &nbsp;<asp:Literal ID="nametxterrorlit" runat="server"></asp:Literal>
@@ -62,7 +63,9 @@
         &nbsp;&nbsp;&nbsp;
         <asp:Button ID="ctcsendbtn" runat="server" Text="Send" OnClick="ctcsendbtn_Click" />
             <br />
+            <br />
             <asp:Literal ID="ctcliteral" runat="server"></asp:Literal>
+            <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="ctctxtname" ErrorMessage="Name cannot have any numeric characters." ValidationExpression="^[^\W\d_]+$"></asp:RegularExpressionValidator>
         </div>
         <br />
         <br />
