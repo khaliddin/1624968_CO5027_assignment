@@ -31,13 +31,13 @@ namespace jubahbapak {
         protected global::System.Web.UI.WebControls.FormView FormView1;
         
         /// <summary>
-        /// jubahbapak_prodTBL control.
+        /// co5027datasource control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource jubahbapak_prodTBL;
+        protected global::System.Web.UI.WebControls.SqlDataSource co5027datasource;
         
         /// <summary>
         /// GridView1 control.
@@ -47,5 +47,14 @@ namespace jubahbapak {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.GridView GridView1;
+        
+        /// <summary>
+        /// co5027DGV control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource co5027DGV;
     }
 }

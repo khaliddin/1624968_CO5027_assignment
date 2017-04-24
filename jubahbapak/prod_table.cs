@@ -17,7 +17,9 @@ namespace jubahbapak
         public int id { get; set; }
         public string prod_name { get; set; }
         public string prod_details { get; set; }
-        public double prod_price { get; set; }
-        public int prod_quantity { get; set; }
+        public string prod_price { get; set; }
+        public string prod_quantity { get; set; }
+        public string onSale { get; set; }
+        public string onFeatured { get; set; }
     }
 }

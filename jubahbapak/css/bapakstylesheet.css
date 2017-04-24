@@ -321,24 +321,113 @@ div.products
     font-weight:bold;   
 }
 
+
+
+div.itemdetail
+{
+    float:left;
+    border:5px solid burlywood;
+    margin:50px 20px 0px 100px;
+    border: 3px solid rosybrown;
+    width:500px;
+    height:400px;
+}
+
+div.itemdetail img
+{
+    height: 100%;
+    width: 100%;
+}
+div.smallimgwrap
+{
+    margin-top:470px;
+    margin-left:240px;
+    width:220px;
+    height:100px;
+
+}
+div.itemdetail1
+{
+    float:left;
+    border: 3px solid rosybrown;
+    width:100px;
+    height:100px;
+}
+
+div.itemdetail1 img
+{
+    height: 100%;
+    width: 100%;
+}
+div.itemdetail2
+{
+    border: 3px solid rosybrown;
+    margin-left:120px;
+    height:100px;
+}
+
+div.itemdetail2 img
+{
+    height: 100%;
+    width: 100%;
+}
+div.itemdetailtext
+{
+    float:left;
+    border:1px solid brown;
+    width:200px;
+    margin-left:20px;
+    margin-top:50px;
+}
+div.itemdetailtext p
+{
+    text-align:center;
+}
+
+span.priceinfo
+{
+    font-weight:bold;
+}
+
+div.addtocart
+{
+    border:1px solid brown;
+    float:left;
+    margin-left:20px;
+    margin-top:50px;
+    padding:10px;
+}
+div.addtocart a
+{
+    text-decoration:none;
+    font-weight:bold;
+}
 div#itemwrapper
 {
+    
     background-color:cornsilk;
-    width:inherit;
-    height:600px;
-    margin-left:auto;
-    margin-right:auto;
+    height:700px;
+    width:944px;
+    padding-top:10px;
     padding-left: 55px;
     overflow:auto;
 }
 
+div#productitemwrapper
+{
+    background-color:cornsilk;
+    height:500px;
+    width:996px;
+    padding-top:10px;
+    padding-left: 4px;
+    overflow:auto;
+}
 
 .item1
 {
     float:left;
-    border:5px solid burlywood;
-    margin:50px 20px 0px 60px;
     border: 3px solid rosybrown;
+    margin-left:15px;
     position:relative;
     width:200px;
     height:200px;

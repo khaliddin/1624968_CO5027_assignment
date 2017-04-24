@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="masterpage.Master" AutoEventWireup="true" CodeBehind="Product.aspx.cs" Inherits="jubahbapak.product" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="masterpage.Master" AutoEventWireup="true" CodeFile="Product.aspx.cs" Inherits="jubahbapak.product" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 
@@ -17,17 +17,15 @@
                     <a href="Contact.aspx">CONTACT US</a>
                 </li>
                 <li>
-                    <a href="#">ACCOUNT</a>
-                    <ul>
-                        <li><a href="Login.aspx">Log in</a></li>
-                        <li><a href="Login.aspx">Sign up</a></li>
-                    </ul>
+                    <a href="Login.aspx">ACCOUNT</a>
+                    
                 </li>
             </ul>
         </div>
     </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
     <div class="products"> PRODUCTS </div>
+     <div id="productitemwrapper">
     <asp:Repeater ID="prodrepeat" runat="server">
 
         <HeaderTemplate></HeaderTemplate>
@@ -35,15 +33,14 @@
         <ItemTemplate>
 
      
-        <div id="itemwrapper">
+       
              <div class="item1" id="prod1">
-           <img src="../prodImg/<%#Eval("imgName") %><%#Eval("extension") %>" alt="<%#Eval("altText") %>"/>
+           <img src="./prodImg/<%#Eval("imgName") %><%#Eval("extension") %>" alt="<%#Eval("altText") %>"/>
                 <div class="prodtext">
                     <h4><%#Eval("prod_name") %></h4>
-                    <p><%#Eval("prod_details") %></p>
                     <a class="morebutton" href="itemDetails.aspx?id=<%#Eval("id") %>" title="moreinfo">More info</a>
                 </div>
-            </div>
+            
             </div>
             </ItemTemplate>
        
@@ -51,6 +48,7 @@
 </FooterTemplate>
         
         </asp:Repeater>
+         </div>
     </asp:Content>
            
             

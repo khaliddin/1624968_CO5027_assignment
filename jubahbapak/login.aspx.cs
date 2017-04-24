@@ -22,7 +22,7 @@ namespace jubahbapak
         protected void register_Click(object sender, EventArgs e)
         {
             //create dbcontext that specified the connection string
-            var identityDbContext = new IdentityDbContext("IdentityConnectionString");
+            var identityDbContext = new IdentityDbContext("studentserverSQL");
 
             //create user store and user manager
             var userstore = new UserStore<IdentityUser>(identityDbContext);
@@ -42,16 +42,16 @@ namespace jubahbapak
                 littext1.Text = "Error occured, registration failed: " + result.Errors.FirstOrDefault();
             }
             //create edit delete roles
-            IdentityRole userRole = new IdentityRole("registeredUser");
+            IdentityRole userRole = new IdentityRole("admin");
             roleManager.Create(userRole);
-            manager.AddToRole(user.Id, "registeredUser");
+            manager.AddToRole(user.Id, "admin");
             manager.Update(user);
 
         }
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            var identityDbContext = new IdentityDbContext("IdentityConnectionString");
+            var identityDbContext = new IdentityDbContext("studentserverSQL");
             var userStore = new UserStore<IdentityUser>(identityDbContext);
             var userManager = new UserManager<IdentityUser>(userStore);
             var user = userManager.Find(loginusernametxt.Text, loginpasswordtxt.Text);

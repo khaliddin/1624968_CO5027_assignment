@@ -30,14 +30,14 @@ namespace jubahbapak
                 int width = image.Width;
                 int height = image.Height;
                 //save the image data
-                DatabaseEntities db = new DatabaseEntities();
-                tblImage imageData = new tblImage();
+                co5027Entities db = new co5027Entities();
+                image_table imageData = new image_table();
                 imageData.altText = setalttxt.Text;
                 imageData.width = width;
                 imageData.height = height;
                 imageData.extension = extension;
                 imageData.imgName = prodId;
-                db.tblImages.Add(imageData);
+                db.image_table.Add(imageData);
                 db.SaveChanges();
 
                 //assemble filename
@@ -58,8 +58,8 @@ namespace jubahbapak
                 string idString = Request.QueryString["Id"];
                 int idint = int.Parse(idString);
 
-                DatabaseEntities db = new DatabaseEntities();
-                var imgdata = db.tblImages.Single(p => p.imageID == idint);
+                co5027Entities db = new co5027Entities();
+                var imgdata = db.image_table.Single(p => p.imageID == idint);
                 string imgid = imgdata.extension;
                 string productId = Request.QueryString["Id"];
 

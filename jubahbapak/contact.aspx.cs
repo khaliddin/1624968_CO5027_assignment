@@ -18,10 +18,9 @@ namespace jubahbapak
 
         protected void ctcsendbtn_Click(object sender, EventArgs e)
         {
-            string emailFormat;
             //all fields are empty
             if (string.IsNullOrWhiteSpace(ctctxtname.Text) &&
-                string.IsNullOrWhiteSpace(ctctxtemail.Text) && 
+                string.IsNullOrWhiteSpace(ctctxtemail.Text) &&
                 string.IsNullOrWhiteSpace(ctctxtsubject.Text) &&
                 string.IsNullOrWhiteSpace(ctctxtmessage.Text))
             {
@@ -96,6 +95,17 @@ namespace jubahbapak
                 sbjtxterrorlit.Text = "Give your message a subject";
                 msgtxterrorlit.Text = "Type what you want to tell us here.";
             }
+            //email, subject and message are empty
+            else if ((!string.IsNullOrWhiteSpace(ctctxtname.Text)) &&
+                string.IsNullOrWhiteSpace(ctctxtemail.Text) &&
+                string.IsNullOrWhiteSpace(ctctxtsubject.Text) &&
+                (string.IsNullOrWhiteSpace(ctctxtmessage.Text)))
+            {
+                nametxterrorlit.Text = "";
+                emailtxterrorlit.Text = "Please enter your email here";
+                sbjtxterrorlit.Text = "Give your message a subject";
+                msgtxterrorlit.Text = "Type what you want to tell us here.";
+            }
             //email and subject are empty
             else if ((!string.IsNullOrWhiteSpace(ctctxtname.Text)) &&
                 string.IsNullOrWhiteSpace(ctctxtemail.Text) &&
@@ -130,7 +140,7 @@ namespace jubahbapak
                 msgtxterrorlit.Text = "Type what you want to tell us here.";
             }
             //name field is empty
-            else if(string.IsNullOrWhiteSpace(ctctxtname.Text) &&
+            else if (string.IsNullOrWhiteSpace(ctctxtname.Text) &&
                 (!string.IsNullOrWhiteSpace(ctctxtemail.Text)) &&
                 (!string.IsNullOrWhiteSpace(ctctxtsubject.Text)) &&
                 (!string.IsNullOrWhiteSpace(ctctxtmessage.Text)))
@@ -151,26 +161,17 @@ namespace jubahbapak
                 sbjtxterrorlit.Text = "";
                 msgtxterrorlit.Text = "";
             }
-            /*//validate email is in valid format
-            else if ((!string.IsNullOrWhiteSpace(ctctxtname.Text)) &&
-                 (!string.IsNullOrWhiteSpace(ctctxtsubject.Text)) &&
-                 (!string.IsNullOrWhiteSpace(ctctxtmessage.Text)))
-            {
-                nametxterrorlit.Text = "";
-                emailtxterrorlit.Text = "Enter your email here.";
-                sbjtxterrorlit.Text = "";
-                msgtxterrorlit.Text = "";
-            }*/
+
             //test email
             else if ((!string.IsNullOrWhiteSpace(ctctxtname.Text)) &&
                  (!string.IsNullOrWhiteSpace(ctctxtsubject.Text)) &&
-                 (!string.IsNullOrWhiteSpace(ctctxtmessage.Text)) && 
-                 (!string.IsNullOrWhiteSpace(ctctxtemail.Text))&&
+                 (!string.IsNullOrWhiteSpace(ctctxtmessage.Text)) &&
+                 (!string.IsNullOrWhiteSpace(ctctxtemail.Text)) &&
                  (!Regex.IsMatch(ctctxtemail.Text,
                 @"^(?("")("".+?(?<!\\)""@)|(([0-9a-z]((\.(?!\.))|[-!#\$%&'\*\+/=\?\^`\{\}\|~\w])*)(?<=[0-9a-z])@))" +
                 @"(?(\[)(\[(\d{1,3}\.){3}\d{1,3}\])|(([0-9a-z][-\w]*[0-9a-z]*\.)+[a-z0-9][\-a-z0-9]{0,22}[a-z0-9]))$",
                 RegexOptions.IgnoreCase, TimeSpan.FromMilliseconds(250))))
-                {
+            {
                 nametxterrorlit.Text = "";
                 emailtxterrorlit.Text = "Invalid email format";
                 sbjtxterrorlit.Text = "";
@@ -205,9 +206,9 @@ namespace jubahbapak
                 emailtxterrorlit.Text = "";
                 sbjtxterrorlit.Text = "";
                 msgtxterrorlit.Text = "";
-                
-                
-               SmtpClient client = new SmtpClient();
+
+
+                SmtpClient client = new SmtpClient();
                 client.DeliveryMethod = SmtpDeliveryMethod.Network;
                 client.EnableSsl = true;
                 client.Host = "smtp.gmail.com";
@@ -239,7 +240,10 @@ namespace jubahbapak
                 ctctxtemail.Text = "";
                 ctctxtsubject.Text = "";
                 ctctxtmessage.Text = "";
+
             }
+            
+        
 
 
 

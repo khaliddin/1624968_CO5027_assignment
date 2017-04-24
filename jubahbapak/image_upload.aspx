@@ -1,27 +1,33 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="masterpage.Master" AutoEventWireup="true" CodeFile="img_upload.aspx.cs" Inherits="jubahbapak.Itempage" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/masterpage.Master" AutoEventWireup="true" CodeBehind="image_upload.aspx.cs" Inherits="jubahbapak.image_upload" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
-    <asp:Image ID="imgselect" runat="server" />
     <br />
-    <asp:Button ID="shwimg" runat="server" OnClick="shwimg_Click" Text="show current product image" />
-    &nbsp;<asp:Literal ID="showimglit" runat="server"></asp:Literal>
-    <br />
-    <asp:FileUpload ID="selectimg" runat="server" />
-&nbsp;<asp:Button ID="cfm_img_upload" runat="server" OnClick="cfm_img_upload_Click" Text="Confirm" />
+    <asp:FileUpload ID="imageview" runat="server" />
+    &nbsp;<asp:Button ID="uploadview_btn" runat="server" OnClick="uploadview_btn_Click" Text="Upload" />
     <br />
     <br />
-    <asp:Label ID="Label1" runat="server" Text="Alternate text: "></asp:Label>
-&nbsp;<asp:TextBox ID="setalttxt" runat="server"></asp:TextBox>
+    <asp:FileUpload ID="detail_image1" runat="server" />
+    &nbsp;<asp:Button ID="upload1_btn" runat="server" OnClick="upload1_btn_Click" Text="Upload" />
     <br />
-    <asp:Literal ID="img_uploadLit" runat="server"></asp:Literal>
     <br />
+    <asp:FileUpload ID="detail_image2" runat="server" />
+    <br />
+    <br />
+    <asp:FileUpload ID="detail_image3" runat="server" />
+    <br />
+    <br />
+    <asp:FileUpload ID="feature_image" runat="server" />
+    <br />
+    <br />
+    <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Upload" />
+&nbsp;<asp:Literal ID="image_uploadLit" runat="server"></asp:Literal>
     <br />
     <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="imageID" DataSourceID="co5027imagetable">
         <Columns>
-            <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" />
+            <asp:CommandField ShowDeleteButton="True" />
             <asp:BoundField DataField="imageID" HeaderText="imageID" InsertVisible="False" ReadOnly="True" SortExpression="imageID" />
             <asp:BoundField DataField="width" HeaderText="width" SortExpression="width" />
             <asp:BoundField DataField="height" HeaderText="height" SortExpression="height" />

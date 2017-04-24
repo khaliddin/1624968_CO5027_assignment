@@ -1,21 +1,68 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/masterpage.Master" AutoEventWireup="true" CodeBehind="itemDetails.aspx.cs" Inherits="jubahbapak.WebForm2" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="masterpage.Master" AutoEventWireup="true" CodeBehind="itemDetails.aspx.cs" Inherits="jubahbapak.WebForm2" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-   
+    <div id="navbar">
+            <ul>
+                <li><a href="Default.aspx">HOME</a></li>
+                <li>
+                    <a class="selected" href="Product.aspx">PRODUCTS</a>
+                </li>
+                <li>
+                    <a href="About.aspx">ABOUT US</a>
+                </li>
+                
+                <li>
+                    <a href="Contact.aspx">CONTACT US</a>
+                </li>
+                <li>
+                    <a href="Login.aspx">ACCOUNT</a>
+                    
+                </li>
+            </ul>
+        </div>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
- 
+   
+      
 
-    <asp:Image ID="prodImage" runat="server" />
-    <br />
-    <asp:Literal ID="prodNameLit" runat="server"></asp:Literal>
-    <br />
-    <asp:Literal ID="prodDetLit" runat="server"></asp:Literal>
-    <br />
-    <asp:Literal ID="prodPriceLit" runat="server"></asp:Literal>
-    <br />
-    <asp:Literal ID="prodQtyLit" runat="server"></asp:Literal>
- 
+     <div class="products"><asp:Literal ID="prodname" runat="server"></asp:Literal></div>
+        <div id="itemwrapper">
+            
+             <div class="itemdetail">
+             <asp:HyperLink ID="HyperLink1" runat="server"><asp:Image ID="detailImage" runat="server" /></asp:HyperLink>
+             </div>
+            
+               
+                <div class="itemdetailtext">
+                    
+                    <p><span class="priceinfo"><asp:Label ID="desclbl" runat="server" Text="Description: "></asp:Label></span><asp:Literal ID="prodDesc" runat="server"></asp:Literal></p>
+                    <p><span class="priceinfo"><asp:Label ID="pricelbl" runat="server" Text="Price (BND): "></asp:Label></span><asp:Literal ID="prodprice" runat="server"></asp:Literal></p>
+                    <p><span class="priceinfo"><asp:Label ID="quantitylbl" runat="server" Text="Stock available: "></asp:Label></span> <asp:Literal ID="quantity" runat="server"></asp:Literal></p>
+                </div>
+            <div class="addtocart">
+                <a class="addtocartbtn" href="#" title="cart">BUY</a>
+            </div>
+            <div class="smallimgwrap">
+            <div class="itemdetail1">
+           <asp:HyperLink ID="HyperLink2" runat="server"><asp:Image ID="Image1" runat="server" /></asp:HyperLink>
+             </div>
+            <div class="itemdetail2">
+           <asp:HyperLink ID="HyperLink3" runat="server"><asp:Image ID="Image2" runat="server" /></asp:HyperLink>
+             </div>
+            </div>
+            </div>
+            
+       
+    
+
+    
+     <br />
+     
+    
+     <br />
+     
+     
+&nbsp;
 
 </asp:Content>

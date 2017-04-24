@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="masterpage.Master" AutoEventWireup="true" CodeBehind="Contact.aspx.cs" Inherits="jubahbapak.contact" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="masterpage.Master" AutoEventWireup="true" CodeFile="Contact.aspx.cs" Inherits="jubahbapak.contact" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAZBziKpV-qWJsz__3gYCba0BzJ855GUgo&callback=initMap"
     async defer></script>
@@ -20,11 +20,8 @@
                     <a class="selected" href="Contact.aspx">CONTACT US</a>
                 </li>
                 <li>
-                    <a href="#">ACCOUNT</a>
-                    <ul>
-                        <li><a href="Login.aspx">Log in</a></li>
-                        <li><a href="Login.aspx">Sign up</a></li>
-                    </ul>
+                    <a href="Login.aspx">ACCOUNT</a>
+                   
                 </li>
             </ul>
         </div>
@@ -34,38 +31,37 @@
         <div class="contact"><h4>Contact us</h4>
         </div>
         <div class="labelname">&nbsp;<br />
-            <asp:Label ID="lblname" runat="server" Text="Name: "></asp:Label>
+            <asp:Label ID="lblname" runat="server" Text="First Name: "></asp:Label>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <asp:TextBox ID="ctctxtname" runat="server" Width="262px"></asp:TextBox>
         &nbsp;<asp:Literal ID="nametxterrorlit" runat="server"></asp:Literal>
         <br />
         <br />
         <asp:Label ID="lblemail" runat="server" Text="Email: "></asp:Label>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <asp:TextBox ID="ctctxtemail" runat="server" Width="262px"></asp:TextBox>
             <asp:Literal ID="emailtxterrorlit" runat="server"></asp:Literal>
         <br />
         <br />
         <asp:Label ID="lblsubject" runat="server" Text="Subject: "></asp:Label>
-        &nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <asp:TextBox ID="ctctxtsubject" runat="server" Width="262px"></asp:TextBox>
             <asp:Literal ID="sbjtxterrorlit" runat="server"></asp:Literal>
         <br />
         <br />
         <asp:Label ID="lblmessage" runat="server" Text="Message: "></asp:Label>
-        &nbsp;
-        <asp:TextBox ID="ctctxtmessage" runat="server" Height="51px" TextMode="MultiLine" Width="262px"></asp:TextBox>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:TextBox ID="ctctxtmessage" runat="server" Height="51px" TextMode="MultiLine" Width="263px"></asp:TextBox>
             <asp:Literal ID="msgtxterrorlit" runat="server"></asp:Literal>
         <br />
         <br />
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <asp:Button ID="cancelbtn" runat="server" Text="Cancel" />
         &nbsp;&nbsp;&nbsp;
         <asp:Button ID="ctcsendbtn" runat="server" Text="Send" OnClick="ctcsendbtn_Click" />
             <br />
             <br />
             <asp:Literal ID="ctcliteral" runat="server"></asp:Literal>
-            <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="ctctxtname" ErrorMessage="Name cannot have any numeric characters." ValidationExpression="^[^\W\d_]+$"></asp:RegularExpressionValidator>
+            <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="ctctxtname" ErrorMessage="First Name cannot have any numeric characters." ValidationExpression="^[^\W\d_]+$"></asp:RegularExpressionValidator>
         </div>
         <br />
         <br />

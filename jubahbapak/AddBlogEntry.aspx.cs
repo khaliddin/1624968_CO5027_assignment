@@ -18,13 +18,6 @@ namespace jubahbapak
 
         protected void btnAddEntry_Click(object sender, EventArgs e)
         {
-            /*BlogEntry entry = new BlogEntry();
-            entry.Title = txtTitle.Text;
-            entry.Body = bodytxt.Text;
-            entry.Date = DateTime.Now;
-            DatabaseEntities db = new DatabaseEntities();
-            db.BlogEntries.Add(entry);
-            db.SaveChanges();*/
            
         }
 
@@ -40,13 +33,13 @@ namespace jubahbapak
                 int width = img.Width;
                 int height = img.Height;
                 //save the image data
-                DatabaseEntities db = new DatabaseEntities();
-                tblImage imageData = new tblImage();
+                co5027Entities db = new co5027Entities();
+                image_table imageData = new image_table();
                 imageData.altText = txtAltText.Text;
                 imageData.width = width;
                 imageData.height = height;
                 imageData.extension = extension;
-                db.tblImages.Add(imageData);
+                db.image_table.Add(imageData);
                 db.SaveChanges();
 
                 //assemble filename

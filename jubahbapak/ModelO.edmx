@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="co5027Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="image_table">
+          <Key>
+            <PropertyRef Name="imageID" />
+          </Key>
+          <Property Name="imageID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="width" Type="int" />
+          <Property Name="height" Type="int" />
+          <Property Name="altText" Type="varchar" MaxLength="50" />
+          <Property Name="extension" Type="varchar" MaxLength="50" />
+          <Property Name="imgName" Type="varchar" MaxLength="50" />
+          <Property Name="prevImg1" Type="varchar" MaxLength="50" />
+          <Property Name="width1" Type="int" />
+          <Property Name="height1" Type="int" />
+          <Property Name="altText1" Type="varchar" MaxLength="50" />
+          <Property Name="extension1" Type="varchar" MaxLength="50" />
+          <Property Name="prevImg2" Type="varchar" MaxLength="50" />
+          <Property Name="width2" Type="int" />
+          <Property Name="height2" Type="int" />
+          <Property Name="altText2" Type="varchar" MaxLength="50" />
+          <Property Name="extension2" Type="varchar" MaxLength="50" />
+          <Property Name="prevImg3" Type="varchar" MaxLength="50" />
+          <Property Name="width3" Type="int" />
+          <Property Name="height3" Type="int" />
+          <Property Name="altText3" Type="varchar" MaxLength="50" />
+          <Property Name="extension3" Type="varchar" MaxLength="50" />
+          <Property Name="featureImg" Type="varchar" MaxLength="50" />
+          <Property Name="fimgwidth" Type="int" />
+          <Property Name="fimgheight" Type="int" />
+          <Property Name="fimgaltText" Type="varchar" MaxLength="50" />
+          <Property Name="fimgextension" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="prod_table">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="prod_name" Type="varchar" MaxLength="50" />
+          <Property Name="prod_details" Type="varchar" MaxLength="50" />
+          <Property Name="prod_price" Type="varchar" MaxLength="50" />
+          <Property Name="prod_quantity" Type="varchar" MaxLength="50" />
+          <Property Name="onSale" Type="varchar" MaxLength="50" />
+          <Property Name="onFeatured" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityContainer Name="co5027ModelStoreContainer">
+          <EntitySet Name="image_table" EntityType="Self.image_table" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="prod_table" EntityType="Self.prod_table" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="co5027Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="image_table">
+          <Key>
+            <PropertyRef Name="imageID" />
+          </Key>
+          <Property Name="imageID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="width" Type="Int32" />
+          <Property Name="height" Type="Int32" />
+          <Property Name="altText" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="extension" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="imgName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="prevImg1" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="width1" Type="Int32" />
+          <Property Name="height1" Type="Int32" />
+          <Property Name="altText1" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="extension1" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="prevImg2" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="width2" Type="Int32" />
+          <Property Name="height2" Type="Int32" />
+          <Property Name="altText2" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="extension2" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="prevImg3" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="width3" Type="Int32" />
+          <Property Name="height3" Type="Int32" />
+          <Property Name="altText3" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="extension3" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="featureImg" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="fimgwidth" Type="Int32" />
+          <Property Name="fimgheight" Type="Int32" />
+          <Property Name="fimgaltText" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="fimgextension" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityContainer Name="co5027Entities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="image_table" EntityType="Self.image_table" />
+          <EntitySet Name="prod_table" EntityType="co5027Model.prod_table" />
+        </EntityContainer>
+        <EntityType Name="prod_table">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="prod_name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="prod_details" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="prod_price" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="prod_quantity" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="onSale" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="onFeatured" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="co5027ModelStoreContainer" CdmEntityContainer="co5027Entities">
+          <EntitySetMapping Name="image_table">
+            <EntityTypeMapping TypeName="co5027Model.image_table">
+              <MappingFragment StoreEntitySet="image_table">
+                <ScalarProperty Name="fimgextension" ColumnName="fimgextension" />
+                <ScalarProperty Name="fimgaltText" ColumnName="fimgaltText" />
+                <ScalarProperty Name="fimgheight" ColumnName="fimgheight" />
+                <ScalarProperty Name="fimgwidth" ColumnName="fimgwidth" />
+                <ScalarProperty Name="featureImg" ColumnName="featureImg" />
+                <ScalarProperty Name="extension3" ColumnName="extension3" />
+                <ScalarProperty Name="altText3" ColumnName="altText3" />
+                <ScalarProperty Name="height3" ColumnName="height3" />
+                <ScalarProperty Name="width3" ColumnName="width3" />
+                <ScalarProperty Name="prevImg3" ColumnName="prevImg3" />
+                <ScalarProperty Name="extension2" ColumnName="extension2" />
+                <ScalarProperty Name="altText2" ColumnName="altText2" />
+                <ScalarProperty Name="height2" ColumnName="height2" />
+                <ScalarProperty Name="width2" ColumnName="width2" />
+                <ScalarProperty Name="prevImg2" ColumnName="prevImg2" />
+                <ScalarProperty Name="extension1" ColumnName="extension1" />
+                <ScalarProperty Name="altText1" ColumnName="altText1" />
+                <ScalarProperty Name="height1" ColumnName="height1" />
+                <ScalarProperty Name="width1" ColumnName="width1" />
+                <ScalarProperty Name="prevImg1" ColumnName="prevImg1" />
+                <ScalarProperty Name="imageID" ColumnName="imageID" />
+                <ScalarProperty Name="width" ColumnName="width" />
+                <ScalarProperty Name="height" ColumnName="height" />
+                <ScalarProperty Name="altText" ColumnName="altText" />
+                <ScalarProperty Name="extension" ColumnName="extension" />
+                <ScalarProperty Name="imgName" ColumnName="imgName" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="prod_table">
+            <EntityTypeMapping TypeName="co5027Model.prod_table">
+              <MappingFragment StoreEntitySet="prod_table">
+                <ScalarProperty Name="onFeatured" ColumnName="onFeatured" />
+                <ScalarProperty Name="onSale" ColumnName="onSale" />
+                <ScalarProperty Name="prod_quantity" ColumnName="prod_quantity" />
+                <ScalarProperty Name="prod_price" ColumnName="prod_price" />
+                <ScalarProperty Name="prod_details" ColumnName="prod_details" />
+                <ScalarProperty Name="prod_name" ColumnName="prod_name" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

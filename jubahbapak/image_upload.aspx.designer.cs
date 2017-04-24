@@ -10,123 +10,105 @@
 namespace jubahbapak {
     
     
-    public partial class WebForm2 {
+    public partial class image_upload {
         
         /// <summary>
-        /// prodname control.
+        /// imageview control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Literal prodname;
+        protected global::System.Web.UI.WebControls.FileUpload imageview;
         
         /// <summary>
-        /// HyperLink1 control.
+        /// uploadview_btn control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink HyperLink1;
+        protected global::System.Web.UI.WebControls.Button uploadview_btn;
         
         /// <summary>
-        /// detailImage control.
+        /// detail_image1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image detailImage;
+        protected global::System.Web.UI.WebControls.FileUpload detail_image1;
         
         /// <summary>
-        /// desclbl control.
+        /// upload1_btn control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label desclbl;
+        protected global::System.Web.UI.WebControls.Button upload1_btn;
         
         /// <summary>
-        /// prodDesc control.
+        /// detail_image2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Literal prodDesc;
+        protected global::System.Web.UI.WebControls.FileUpload detail_image2;
         
         /// <summary>
-        /// pricelbl control.
+        /// detail_image3 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label pricelbl;
+        protected global::System.Web.UI.WebControls.FileUpload detail_image3;
         
         /// <summary>
-        /// prodprice control.
+        /// feature_image control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Literal prodprice;
+        protected global::System.Web.UI.WebControls.FileUpload feature_image;
         
         /// <summary>
-        /// quantitylbl control.
+        /// Button1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label quantitylbl;
+        protected global::System.Web.UI.WebControls.Button Button1;
         
         /// <summary>
-        /// quantity control.
+        /// image_uploadLit control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Literal quantity;
+        protected global::System.Web.UI.WebControls.Literal image_uploadLit;
         
         /// <summary>
-        /// HyperLink2 control.
+        /// GridView1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink HyperLink2;
+        protected global::System.Web.UI.WebControls.GridView GridView1;
         
         /// <summary>
-        /// Image1 control.
+        /// co5027imagetable control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image Image1;
-        
-        /// <summary>
-        /// HyperLink3 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink HyperLink3;
-        
-        /// <summary>
-        /// Image2 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Image Image2;
+        protected global::System.Web.UI.WebControls.SqlDataSource co5027imagetable;
     }
 }
