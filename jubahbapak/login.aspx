@@ -33,7 +33,7 @@
         <asp:TextBox ID="loginusernametxt" runat="server"></asp:TextBox></div>
         <br />
         <div class="passwordlabel">Password:
-        <asp:TextBox ID="loginpasswordtxt" runat="server"></asp:TextBox></div>
+        <asp:TextBox ID="loginpasswordtxt" runat="server" TextMode="Password"></asp:TextBox></div>
         <br />
         <div class="loginbutton"><asp:Button ID="Button1" runat="server" Text="Sign in" style="height: 26px" OnClick="Button1_Click" />
             <br />
@@ -55,10 +55,10 @@
         <asp:TextBox ID="regemailtxt" runat="server"></asp:TextBox>
         <br />
         <asp:Label ID="regpasswordlbl" runat="server" Text="Password: "></asp:Label>
-        <asp:TextBox ID="regpasswordtxt" runat="server"></asp:TextBox>
+        <asp:TextBox ID="regpasswordtxt" runat="server" TextMode="Password"></asp:TextBox>
         <br />
         <asp:Label ID="regcfmpasswordlbl" runat="server" Text="Confirm password: "></asp:Label>
-        <asp:TextBox ID="regcfmpasswordtxt" runat="server"></asp:TextBox>
+        <asp:TextBox ID="regcfmpasswordtxt" runat="server" TextMode="Password"></asp:TextBox>
         <br />
         <asp:Button ID="registerbtn" runat="server" Text="Register" OnClick="register_Click" />
         &nbsp;<asp:Literal ID="littext1" runat="server"></asp:Literal>

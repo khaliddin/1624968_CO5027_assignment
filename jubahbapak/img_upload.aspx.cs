@@ -49,6 +49,10 @@ namespace jubahbapak
                 //notify
                 img_uploadLit.Text = "<p>File successfully uploaded as " + filename + " in the prodImg folder</p>";
             }
+            else
+            {
+                img_uploadLit.Text = "invalid image file type";
+            }
         }
 
         protected void shwimg_Click(object sender, EventArgs e)
@@ -76,5 +80,81 @@ namespace jubahbapak
             }
 
         }
+
+        protected void previmg1_btn_Click(object sender, EventArgs e)
+        {
+            string prodId = Request.QueryString["Id"];
+            //get image extension
+            string extension = (System.IO.Path.GetExtension(selectprevimg.FileName).ToLower());
+            //validat extension
+            if (extension == ".jpg" || extension == ".jpeg" || extension == ".png" || extension == ".gif")
+            {
+                //determine image dimensions
+                System.Drawing.Image image1 = System.Drawing.Image.FromStream(selectprevimg.PostedFile.InputStream);
+                int width = image1.Width;
+                int height = image1.Height;
+                //save the image data
+                co5027Entities db = new co5027Entities();
+                prevImage1_table imageData = new prevImage1_table();
+                imageData.altText1 = setalttextprevimg1.Text;
+                imageData.width1 = width;
+                imageData.height = height;
+                imageData.extension1 = extension;
+                imageData.prevImg3Name = prodId;
+                db.prevImage1_table.Add(imageData);
+                db.SaveChanges();
+
+                //assemble filename
+
+                string filename = prodId + ".prev1" + extension;
+
+                //save image file
+                image1.Save(Server.MapPath("~/prodImg/" + filename));
+                //notify
+                previmg_uploadlit.Text = "<p>File successfully uploaded as " + filename + " in the prodImg folder</p>";
+            }
+            else
+            {
+                previmg_uploadlit.Text = "invalid image file type";
+            }
+        }
+
+        protected void previmg2_btn_Click(object sender, EventArgs e)
+        {
+            string prodId = Request.QueryString["Id"];
+            //get image extension
+            string extension = (System.IO.Path.GetExtension(selectprevimg2.FileName).ToLower());
+            //validat extension
+            if (extension == ".jpg" || extension == ".jpeg" || extension == ".png" || extension == ".gif")
+            {
+                //determine image dimensions
+                System.Drawing.Image image2 = System.Drawing.Image.FromStream(selectprevimg2.PostedFile.InputStream);
+                int width = image2.Width;
+                int height = image2.Height;
+                //save the image data
+                co5027Entities db = new co5027Entities();
+                prevImage2_table imageData = new prevImage2_table();
+                imageData.altText2 = setalttextprevimg1.Text;
+                imageData.width2 = width;
+                imageData.height2 = height;
+                imageData.extension = extension;
+                imageData.prevImg2Name = prodId;
+                db.prevImage2_table.Add(imageData);
+                db.SaveChanges();
+
+                //assemble filename
+
+                string filename = prodId + ".prev2" + extension;
+
+                //save image file
+                image2.Save(Server.MapPath("~/prodImg/" + filename));
+                //notify
+                previmg2_uploadlit.Text = "<p>File successfully uploaded as " + filename + " in the prodImg folder</p>";
+            }
+            else
+            {
+                previmg2_uploadlit.Text = "invalid image file type";
+            }
+        }
     }
-    }
+}

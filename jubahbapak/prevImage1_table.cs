@@ -12,13 +12,13 @@ namespace jubahbapak
     using System;
     using System.Collections.Generic;
     
-    public partial class image_table
+    public partial class prevImage1_table
     {
-        public int imageID { get; set; }
-        public Nullable<int> width { get; set; }
+        public int prevImg1 { get; set; }
+        public Nullable<int> width1 { get; set; }
         public Nullable<int> height { get; set; }
-        public string altText { get; set; }
-        public string extension { get; set; }
-        public string imgName { get; set; }
+        public string altText1 { get; set; }
+        public string extension1 { get; set; }
+        public string prevImg3Name { get; set; }
     }
 }

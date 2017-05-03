@@ -147,6 +147,7 @@
     <Content Include="AddBlogEntry.aspx" />
     <Content Include="Admin.aspx" />
     <Content Include="displayBlogentry.aspx" />
+    <Content Include="emailtest.aspx" />
     <Content Include="img\favico.png" />
     <Content Include="img\jubahbapaklogo.jpg" />
     <Content Include="img\jubahbini.jpg" />
@@ -254,6 +255,13 @@
     <Compile Include="displayBlogentry.aspx.designer.cs">
       <DependentUpon>displayBlogentry.aspx</DependentUpon>
     </Compile>
+    <Compile Include="emailtest.aspx.cs">
+      <DependentUpon>emailtest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="emailtest.aspx.designer.cs">
+      <DependentUpon>emailtest.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -295,6 +303,12 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ModelO.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="prevImage1_table.cs">
+      <DependentUpon>ModelO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="prevImage2_table.cs">
+      <DependentUpon>ModelO.tt</DependentUpon>
     </Compile>
     <Compile Include="Product.aspx.cs">
       <DependentUpon>Product.aspx</DependentUpon>

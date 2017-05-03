@@ -221,7 +221,7 @@ namespace jubahbapak
 
                 MailMessage msg = new MailMessage();
                 msg.From = new MailAddress(ctctxtemail.Text);
-                msg.To.Add(new MailAddress("khaliddin.26@gmail.com"));
+                msg.To.Add(new MailAddress(ctctxtemail.Text));
 
                 msg.Subject = ctctxtsubject.Text;
                 msg.IsBodyHtml = true;

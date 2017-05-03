@@ -45,16 +45,30 @@ namespace jubahbapak
             prodprice.Text = prodPrice;
             quantity.Text = prodQty;
 
+            //first image
             var imgdata = db.image_table.Single(p => p.imgName == getid);
             string imgexten = imgdata.extension;
             string filename = getid + imgexten;
 
             detailImage.ImageUrl = "prodImg/" + filename;
-            Image1.ImageUrl = "prodImg/" + filename;
-            Image2.ImageUrl = "prodImg/" + filename;
-            HyperLink1.NavigateUrl = "prodImg/" +filename;
-            HyperLink2.NavigateUrl = "prodImg/" + filename;
-            HyperLink3.NavigateUrl = "prodImg/" + filename;
+            HyperLink1.NavigateUrl = "prodImg/" + filename;
+
+            //second image
+            var previmg1 = db.prevImage1_table.Single(p => p.prevImg3Name == getid);
+            string previmg1exten = previmg1.extension1;
+            string previmg1filename = getid + ".prev1" + previmg1exten;
+            Image1.ImageUrl = "prodImg/" + previmg1filename;
+            HyperLink2.NavigateUrl = "prodImg/" + previmg1filename;
+
+            //third image
+            var previmg2 = db.prevImage2_table.Single(p => p.prevImg2Name == getid);
+            string previmg2exten = previmg2.extension;
+            string previmg2filename = getid + ".prev2" + previmg2exten;
+            Image2.ImageUrl = "prodImg/" + previmg2filename;
+            HyperLink3.NavigateUrl = "prodImg/" + previmg2filename;
+
+
+
         }
     }
 }
