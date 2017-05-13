@@ -13,7 +13,8 @@
 <body>
      <div class="motherdiv">
         <div class="logo">
-            <a href="Default.aspx"><img src="img/jubahbapaklogo.jpg" alt="Welcome" /></a></div>
+            <a href="Default.aspx"><img src="img/jubahbapaklogo.jpg" alt="Welcome" /></a>
+        </div>
 
          <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
         

@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="masterpage.Master" AutoEventWireup="true" CodeFile="Contact.aspx.cs" Inherits="jubahbapak.contact" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="masterpage.Master" AutoEventWireup="true" CodeBehind="Contact.aspx.cs" Inherits="jubahbapak.contact" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAZBziKpV-qWJsz__3gYCba0BzJ855GUgo&callback=initMap"
     async defer></script>
@@ -53,6 +53,12 @@
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <asp:TextBox ID="ctctxtmessage" runat="server" Height="51px" TextMode="MultiLine" Width="263px"></asp:TextBox>
             <asp:Literal ID="msgtxterrorlit" runat="server"></asp:Literal>
+            <br />
+            <asp:DropDownList ID="dpl" runat="server" Width="114px">
+                <asp:ListItem>test1</asp:ListItem>
+                <asp:ListItem>test2</asp:ListItem>
+                <asp:ListItem>test3</asp:ListItem>
+            </asp:DropDownList>
         <br />
         <br />
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;

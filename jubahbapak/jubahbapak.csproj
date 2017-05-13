@@ -144,10 +144,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="AddBlogEntry.aspx" />
     <Content Include="Admin.aspx" />
-    <Content Include="displayBlogentry.aspx" />
-    <Content Include="emailtest.aspx" />
     <Content Include="img\favico.png" />
     <Content Include="img\jubahbapaklogo.jpg" />
     <Content Include="img\jubahbini.jpg" />
@@ -178,7 +175,6 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="masterpage.Master" />
-    <Content Include="ViewBlogEntry.aspx" />
     <Content Include="WebForm1.aspx" />
     <Content Include="itemDetails.aspx" />
     <EntityDeploy Include="ModelO.edmx">
@@ -241,27 +237,6 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
-    <Compile Include="AddBlogEntry.aspx.cs">
-      <DependentUpon>AddBlogEntry.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="AddBlogEntry.aspx.designer.cs">
-      <DependentUpon>AddBlogEntry.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="displayBlogentry.aspx.cs">
-      <DependentUpon>displayBlogentry.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="displayBlogentry.aspx.designer.cs">
-      <DependentUpon>displayBlogentry.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="emailtest.aspx.cs">
-      <DependentUpon>emailtest.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="emailtest.aspx.designer.cs">
-      <DependentUpon>emailtest.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -322,13 +297,6 @@
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="startclass.cs" />
-    <Compile Include="ViewBlogEntry.aspx.cs">
-      <DependentUpon>ViewBlogEntry.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="ViewBlogEntry.aspx.designer.cs">
-      <DependentUpon>ViewBlogEntry.aspx</DependentUpon>
-    </Compile>
     <Compile Include="WebForm1.aspx.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

@@ -29,17 +29,20 @@ div.logo
 {
     background-color:sienna;
     color:white;
-    padding:40px 0 40px 0;  
+    padding:3px 0 3px 0;  
 }
 
 div#navbar
 {
     background-color:antiquewhite;
+    width:995px;
+    margin-left:auto;
+    margin-right:auto;
     text-align:center;
     z-index:3;
     position:relative;
     font-weight:bold;
-    border:5px solid black;
+    border:2px solid  black;
 }
 div#navbar ul
 {
@@ -698,17 +701,6 @@ div.aboutwrap p
     margin-left:10px;
 }
 
-div.footer
-{
-    background-color:#F8F6F6;
-    text-align:center;
-    padding: 15px 0 10px 0;
-    font-weight:bold;
-    width:1000px;
-    margin-left:auto;
-    margin-right:auto;
-    border: 2px solid black;
-}
 div.footerindex
 { 
     text-align:center;
@@ -720,6 +712,43 @@ div.footerindex
     border: 2px solid black;
 }
 
+.addProdHeader
+{
+    background-color:#F8F6F6;
+    text-align:center;
+    padding: 3px 0 3px 0;
+    font-weight:bold;
+    border:solid 1px black;
+}
+.addFormWrapper
+{
+    background-color:azure;
+    width:995px;
+    border-left: solid 2px black;
+    border-right: solid 2px black;
+    border-bottom: solid 3px black;
+    margin-bottom:10px;
+}
+
+.manageProdHeader
+{
+    background-color:#F8F6F6;
+    text-align:center;
+    padding: 3px 0 3px 0;
+    font-weight:bold;
+    border:solid 1px black; 
+}
+.datagridAdminWrapper
+{
+    background-color:antiquewhite;
+    width:995px;
+    height:200px;
+    border-left: solid 2px black;
+    border-right: solid 2px black;
+    border-bottom: solid 3px black;
+    overflow: scroll;
+    
+}
 
 
 

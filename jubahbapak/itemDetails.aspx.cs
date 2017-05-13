@@ -28,7 +28,7 @@ namespace jubahbapak
             //prodrepeat.DataSource = dt;
             //prodrepeat.DataBind();
             con.Close();*/
-            string getid = Request.QueryString["Id"];
+            string getid = Request.QueryString["id"];
             int getidint = int.Parse(getid);
 
             co5027Entities db = new co5027Entities();
