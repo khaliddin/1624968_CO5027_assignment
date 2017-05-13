@@ -41,10 +41,10 @@ namespace jubahbapak
             {
                 littext1.Text = "Error occured, registration failed: " + result.Errors.FirstOrDefault();
             }
-            //create edit delete roles
-            IdentityRole userRole = new IdentityRole("admin");
+            //create role
+            IdentityRole userRole = new IdentityRole("user");
             roleManager.Create(userRole);
-            manager.AddToRole(user.Id, "admin");
+            manager.AddToRole(user.Id, "user");
             manager.Update(user);
 
         }

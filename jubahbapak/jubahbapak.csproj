@@ -144,7 +144,8 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Admin.aspx" />
+    <Content Include="admin\Admin.aspx" />
+    <Content Include="img\cart.png" />
     <Content Include="img\favico.png" />
     <Content Include="img\jubahbapaklogo.jpg" />
     <Content Include="img\jubahbini.jpg" />
@@ -158,7 +159,7 @@
     <Content Include="img\jubahslimfit.jpg" />
     <Content Include="img\map.jpg" />
     <Content Include="img\staticmap.jpg" />
-    <Content Include="img_upload.aspx" />
+    <Content Include="admin\img_upload.aspx" />
     <Content Include="js\map.js" />
     <Content Include="ModelO.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
@@ -216,11 +217,11 @@
     <Compile Include="About.aspx.designer.cs">
       <DependentUpon>About.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Admin.aspx.cs">
+    <Compile Include="admin\Admin.aspx.cs">
       <DependentUpon>Admin.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Admin.aspx.designer.cs">
+    <Compile Include="admin\Admin.aspx.designer.cs">
       <DependentUpon>Admin.aspx</DependentUpon>
     </Compile>
     <Compile Include="Contact.aspx.cs">
@@ -243,11 +244,11 @@
     <Compile Include="image_table.cs">
       <DependentUpon>ModelO.tt</DependentUpon>
     </Compile>
-    <Compile Include="img_upload.aspx.cs">
+    <Compile Include="admin\img_upload.aspx.cs">
       <DependentUpon>img_upload.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="img_upload.aspx.designer.cs">
+    <Compile Include="admin\img_upload.aspx.designer.cs">
       <DependentUpon>img_upload.aspx</DependentUpon>
     </Compile>
     <Compile Include="Login.aspx.cs">

@@ -5,12 +5,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>Admin Page</title>
-    <link rel="stylesheet" href="css/bapakstylesheet.css" type="text/css" />
+    <link rel="stylesheet" href="../css/bapakstylesheet.css" type="text/css" />
 </head>
 <body>
      <div class="motherdiv">
          <div class="logo">
-            <a href="Default.aspx"><img src="img/jubahbapaklogo.jpg" alt="Welcome" /></a>
+            <a href="Default.aspx"><img src="../img/jubahbapaklogo.jpg" alt="Welcome" /></a>
         </div>
      <div id="navbar">
             <ul>

@@ -60,7 +60,7 @@
         <asp:Label ID="regcfmpasswordlbl" runat="server" Text="Confirm password: "></asp:Label>
         <asp:TextBox ID="regcfmpasswordtxt" runat="server" TextMode="Password"></asp:TextBox>
         <br />
-        <asp:Button ID="registerbtn" runat="server" Text="Register" OnClick="register_Click" />
+        <asp:Button ID="registerbtn" runat="server" Text="Register" OnClick="register_Click" style="height: 26px" />
         &nbsp;<asp:Literal ID="littext1" runat="server"></asp:Literal>
         <br />
 

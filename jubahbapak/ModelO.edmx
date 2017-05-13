@@ -46,7 +46,7 @@
           <Property Name="prod_name" Type="varchar" MaxLength="50" />
           <Property Name="prod_details" Type="varchar" MaxLength="50" />
           <Property Name="prod_price" Type="varchar" MaxLength="50" />
-          <Property Name="prod_quantity" Type="varchar" MaxLength="50" />
+          <Property Name="prod_quantity" Type="int" />
           <Property Name="onSale" Type="varchar" MaxLength="50" />
           <Property Name="onFeatured" Type="varchar" MaxLength="50" />
         </EntityType>
@@ -61,23 +61,11 @@
     <edmx:ConceptualModels>
       <Schema Namespace="co5027Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
         <EntityContainer Name="co5027Entities" annotation:LazyLoadingEnabled="true">
-          <EntitySet Name="prod_table" EntityType="co5027Model.prod_table" />
           <EntitySet Name="image_table" EntityType="co5027Model.image_table" />
           <EntitySet Name="prevImage1_table" EntityType="co5027Model.prevImage1_table" />
           <EntitySet Name="prevImage2_table" EntityType="co5027Model.prevImage2_table" />
+          <EntitySet Name="prod_table" EntityType="co5027Model.prod_table" />
         </EntityContainer>
-        <EntityType Name="prod_table">
-          <Key>
-            <PropertyRef Name="id" />
-          </Key>
-          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="prod_name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-          <Property Name="prod_details" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-          <Property Name="prod_price" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-          <Property Name="prod_quantity" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-          <Property Name="onSale" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-          <Property Name="onFeatured" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-        </EntityType>
         <EntityType Name="image_table">
           <Key>
             <PropertyRef Name="imageID" />
@@ -111,25 +99,24 @@
           <Property Name="extension" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
           <Property Name="prevImg2Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
         </EntityType>
+        <EntityType Name="prod_table">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="prod_name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="prod_details" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="prod_price" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="prod_quantity" Type="Int32" />
+          <Property Name="onSale" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="onFeatured" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+        </EntityType>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
         <EntityContainerMapping StorageEntityContainer="co5027ModelStoreContainer" CdmEntityContainer="co5027Entities">
-          <EntitySetMapping Name="prod_table">
-            <EntityTypeMapping TypeName="co5027Model.prod_table">
-              <MappingFragment StoreEntitySet="prod_table">
-                <ScalarProperty Name="onFeatured" ColumnName="onFeatured" />
-                <ScalarProperty Name="onSale" ColumnName="onSale" />
-                <ScalarProperty Name="prod_quantity" ColumnName="prod_quantity" />
-                <ScalarProperty Name="prod_price" ColumnName="prod_price" />
-                <ScalarProperty Name="prod_details" ColumnName="prod_details" />
-                <ScalarProperty Name="prod_name" ColumnName="prod_name" />
-                <ScalarProperty Name="id" ColumnName="id" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
           <EntitySetMapping Name="image_table">
             <EntityTypeMapping TypeName="co5027Model.image_table">
               <MappingFragment StoreEntitySet="image_table">
@@ -163,6 +150,19 @@
                 <ScalarProperty Name="height2" ColumnName="height2" />
                 <ScalarProperty Name="width2" ColumnName="width2" />
                 <ScalarProperty Name="prevImg2" ColumnName="prevImg2" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="prod_table">
+            <EntityTypeMapping TypeName="co5027Model.prod_table">
+              <MappingFragment StoreEntitySet="prod_table">
+                <ScalarProperty Name="onFeatured" ColumnName="onFeatured" />
+                <ScalarProperty Name="onSale" ColumnName="onSale" />
+                <ScalarProperty Name="prod_quantity" ColumnName="prod_quantity" />
+                <ScalarProperty Name="prod_price" ColumnName="prod_price" />
+                <ScalarProperty Name="prod_details" ColumnName="prod_details" />
+                <ScalarProperty Name="prod_name" ColumnName="prod_name" />
+                <ScalarProperty Name="id" ColumnName="id" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

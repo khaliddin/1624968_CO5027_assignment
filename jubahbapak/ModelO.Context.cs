@@ -25,9 +25,9 @@ namespace jubahbapak
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<prod_table> prod_table { get; set; }
         public virtual DbSet<image_table> image_table { get; set; }
         public virtual DbSet<prevImage1_table> prevImage1_table { get; set; }
         public virtual DbSet<prevImage2_table> prevImage2_table { get; set; }
+        public virtual DbSet<prod_table> prod_table { get; set; }
     }
 }

@@ -76,15 +76,6 @@ namespace jubahbapak {
         protected global::System.Web.UI.WebControls.Literal prodprice;
         
         /// <summary>
-        /// quantitylbl control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label quantitylbl;
-        
-        /// <summary>
         /// quantity control.
         /// </summary>
         /// <remarks>
@@ -92,6 +83,24 @@ namespace jubahbapak {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Literal quantity;
+        
+        /// <summary>
+        /// cartUrl control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HyperLink cartUrl;
+        
+        /// <summary>
+        /// addcart control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image addcart;
         
         /// <summary>
         /// HyperLink2 control.

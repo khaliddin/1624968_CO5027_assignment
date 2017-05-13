@@ -392,14 +392,30 @@ span.priceinfo
     font-weight:bold;
 }
 
+div.cart
+{
+    float:left;
+    margin-left:20px;
+    margin-top:50px;
+    width:40px;
+    height:40px;
+}
+
+div.cart img
+{
+    height: 40px;
+    width:40px;
+}
 div.addtocart
 {
     border:1px solid brown;
     float:left;
     margin-left:20px;
     margin-top:50px;
-    padding:10px;
+    width:20px;
+    height:20px;
 }
+
 div.addtocart a
 {
     text-decoration:none;
