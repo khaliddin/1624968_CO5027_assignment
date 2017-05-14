@@ -2,6 +2,7 @@
 <html>
 <head>
     <link rel="stylesheet" href="css/bapakstylesheet.css" type="text/css" />
+    <link rel="stylesheet" href="css/StyleSheet1.css" type="text/css" />
     <title>Jubah Bapak</title>
 	<meta charset="utf-8" />
 </head>
@@ -29,14 +30,57 @@
             </ul>
         </div>
 
-        <div class="bannerslider">
-            <figure>
-                <div class="bannercontent"><img src="img/bannertest.jpg"></div>
-                <div class="bannercontent"><img src="img/banner1.jpg"></div>
-                <div class="bannercontent"><img src="img/banner2.jpg"></div>
-                <div class="bannercontent"><img src="img/banner3.jpg"></div>
-                <div class="bannercontent"><img src="img/bannertest.jpg"></div>
-            </figure>
+        <!-- the reason for the tabindex is to support webkit //-->
+        <div class="css-slider-mask">
+            <!-- there are a number of add on modules which are demo-able by the javascript checkboxes added to this example page //-->
+            <ul class="css-slider with-responsive-images with-selection-disabled with-reflection with-fade-in">
+                <li class="slide" tabindex="1" id="l1">
+                    <span class="slide-outer">
+                        <span class="slide-inner">
+                            <!-- each slide-gfx needs a unique id if you wish to use reflections, you will also need to update .with-reflection in core.css //-->
+                            <span class="slide-gfx" id="s1">
+                                <img src="img/bannertest.jpg" />
+                            </span>
+                        </span>
+                    </span>
+                </li>
+                <li class="slide" tabindex="1" id="l2">
+                    <span class="slide-outer">
+                        <span class="slide-inner">
+                            <span class="slide-gfx" id="s2">
+                                <img src="img/banner1.jpg" />
+                            </span>
+                        </span>
+                    </span>
+                </li>
+                <li class="slide" tabindex="1" id="l3">
+                    <span class="slide-outer">
+                        <span class="slide-inner">
+                            <span class="slide-gfx" id="s3">
+                                <img src="img/banner2.jpg" />
+                            </span>
+                        </span>
+                    </span>
+                </li>
+                <li class="slide" tabindex="1" id="l4">
+                    <span class="slide-outer">
+                        <span class="slide-inner">
+                            <span class="slide-gfx" id="s4">
+                                <img src="img/banner3.jpg" />
+                            </span>
+                        </span>
+                    </span>
+                </li>
+                <li class="slide" tabindex="1" id="l5">
+                    <span class="slide-outer">
+                        <span class="slide-inner">
+                            <span class="slide-gfx" id="s5">
+                                <img src="img/bannertest.jpg" />
+                            </span>
+                        </span>
+                    </span>
+                </li>
+            </ul>
         </div>
 
 

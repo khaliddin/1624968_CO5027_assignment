@@ -12,22 +12,9 @@ namespace jubahbapak
 {
     public partial class WebForm2 : System.Web.UI.Page
     {
-       // SqlConnection con = new SqlConnection(@"Data Source=SQL2016.FSE.Network;Initial Catalog=db_1624968_co5027_asg;User ID=user_db_1624968_co5027_asg;Password=Co5027-asg;MultipleActiveResultSets=True;Application Name=EntityFramework");
-        
+     
         protected void Page_Load(object sender, EventArgs e)
         {
-           /* con.Open();
-            SqlCommand cmd = con.CreateCommand();
-            cmd.CommandType = System.Data.CommandType.Text;
-            cmd.CommandText = "select * from prod_table INNER JOIN image_table ON prod_table.id = image_table.imgName";
-            cmd.ExecuteNonQuery();
-
-            DataTable dt = new DataTable();
-            SqlDataAdapter da = new SqlDataAdapter(cmd);
-            da.Fill(dt);
-            //prodrepeat.DataSource = dt;
-            //prodrepeat.DataBind();
-            con.Close();*/
             string getid = Request.QueryString["id"];
             int getidint = int.Parse(getid);
 
@@ -54,7 +41,7 @@ namespace jubahbapak
             prodprice.Text = prodPrice;
             quantity.Text = stockAvailable;
             //cart
-            addcart.ImageUrl = "img/cart.png";
+            addcart.ImageUrl = "img/cart.jpg";
             cartUrl.NavigateUrl = "https://www.youtube.com/channel/UC5EaTjhEx5OYLO89kLU--Yg";
 
             //first image
@@ -89,8 +76,6 @@ namespace jubahbapak
             Image2.ImageUrl = "prodImg/" + previmg2filename;
             Image2.AlternateText = alternateTxt3rd;
             HyperLink3.NavigateUrl = "prodImg/" + previmg2filename;
-
-
 
         }
     }

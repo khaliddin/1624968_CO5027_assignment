@@ -40,9 +40,13 @@
                     <p><span class="priceinfo"><asp:Label ID="pricelbl" runat="server" Text="Price (BND): "></asp:Label></span><asp:Literal ID="prodprice" runat="server"></asp:Literal></p>
                     <p> <asp:Literal ID="quantity" runat="server"></asp:Literal></p>
                 </div>
+
+            <div class="cartwrap">
             <div class="cart">
            <asp:HyperLink ID="cartUrl" runat="server"><asp:Image ID="addcart" runat="server" /></asp:HyperLink>
              </div>
+                </div>
+
             <div class="smallimgwrap">
             <div class="itemdetail1">
            <asp:HyperLink ID="HyperLink2" runat="server"><asp:Image ID="Image1" runat="server" /></asp:HyperLink>

@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" href="css/StyleSheet1.css" type="text/css" />
+	<meta charset="utf-8" />
+</head>
+<body>
+    <!-- the reason for the tabindex is to support webkit //-->
+    <div class="css-slider-mask">
+        <!-- there are a number of add on modules which are demo-able by the javascript checkboxes added to this example page //-->
+        <ul class="css-slider with-responsive-images with-selection-disabled with-reflection with-fade-in">
+            <li class="slide" tabindex="1" id="l1">
+                <span class="slide-outer">
+                    <span class="slide-inner">
+                        <!-- each slide-gfx needs a unique id if you wish to use reflections, you will also need to update .with-reflection in core.css //-->
+                        <span class="slide-gfx" id="s1">
+                            <img src="img/bannertest.jpg" />
+                        </span>
+                    </span>
+                </span>
+            </li>
+            <li class="slide" tabindex="1" id="l2">
+                <span class="slide-outer">
+                    <span class="slide-inner">
+                        <span class="slide-gfx" id="s2">
+                            <img src="img/banner1.jpg" />
+                        </span>
+                    </span>
+                </span>
+            </li>
+            <li class="slide" tabindex="1" id="l3">
+                <span class="slide-outer">
+                    <span class="slide-inner">
+                        <span class="slide-gfx" id="s3">
+                            <img src="img/banner2.jpg" />
+                        </span>
+                    </span>
+                </span>
+            </li>
+            <li class="slide" tabindex="1" id="l4">
+                <span class="slide-outer">
+                    <span class="slide-inner">
+                        <span class="slide-gfx" id="s4">
+                            <img src="img/banner3.jpg" />
+                        </span>
+                    </span>
+                </span>
+            </li>
+            <li class="slide" tabindex="1" id="l5">
+                <span class="slide-outer">
+                    <span class="slide-inner">
+                        <span class="slide-gfx" id="s5">
+                            <img src="img/bannertest.jpg" />
+                        </span>
+                    </span>
+                </span>
+            </li>
+        </ul>
+    </div>
+    <!-- This has been added here because mask: only supports same-domain requests //-->
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+            <linearGradient gradientUnits="objectBoundingBox" id="gradient" x2="0" y2="1">
+                <stop stop-color="rgba(0,255,255,0.00)" offset="0.0" />
+                <stop stop-color="rgba(0,255,255,0.30)" offset="0.5" />
+                <stop stop-color="rgba(0,255,255,1.00)" offset="1.0" />
+            </linearGradient>
+            <radialGradient id="gradient2">
+                <stop offset="10%" stop-color="rgba(255,255,255,1)" />
+                <stop offset="100%" stop-color="rgba(255,255,255,0)" />
+            </radialGradient>
+            <mask id="mask" maskUnits="objectBoundingBox" maskContentUnits="objectBoundingBox" x="0" y="0" width="100%" height="100%">
+                <ellipse fill="url(#gradient2)" cx="0" cy="1" rx="1" ry="0.8" />
+                <ellipse fill="url(#gradient2)" cx="1" cy="1" rx="1" ry="0.8" />
+            </mask>
+        </defs>
+    </svg>
+</body>
+</html>

@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace jubahbapak.admin
 {
-    public partial class Admins : System.Web.UI.Page
+    public partial class adminMaster : System.Web.UI.MasterPage
     {
         protected void Page_Load(object sender, EventArgs e)
         {

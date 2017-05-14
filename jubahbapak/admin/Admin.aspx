@@ -1,39 +1,8 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Admin.aspx.cs" Inherits="jubahbapak.Admin" %>
-
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title>Admin Page</title>
-    <link rel="stylesheet" href="../css/bapakstylesheet.css" type="text/css" />
-</head>
-<body>
-     <div class="motherdiv">
-         <div class="logo">
-            <a href="Default.aspx"><img src="../img/jubahbapaklogo.jpg" alt="Welcome" /></a>
-        </div>
-     <div id="navbar">
-            <ul>
-                <li><a href="Default.aspx">HOME</a></li>
-                <li>
-                    <a href="Product.aspx">PRODUCTS</a>
-                </li>
-                <li>
-                    <a href="About.aspx">ABOUT US</a>
-                </li>
-                
-                <li>
-                    <a href="Contact.aspx">CONTACT US</a>
-                </li>
-                <li>
-                    <a href="Login.aspx">ACCOUNT</a>
-                    
-                </li>
-            </ul>
-        </div>
-    <form id="form1" runat="server">
-    <div>
-         <div class="addProdHeader"><h3>Add Product</h3></div>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/admin/adminMaster.Master" AutoEventWireup="true" CodeBehind="Admin.aspx.cs" Inherits="jubahbapak.admin.Admins" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
+    <div class="addProdHeader"><h3>Add Product</h3></div>
         <div class="addFormWrapper">
             
         <asp:FormView ID="FormView1" runat="server" DataKeyNames="id" DataSourceID="co5027datasource" DefaultMode="Insert">
@@ -58,16 +27,16 @@
             </EditItemTemplate>
             <InsertItemTemplate>
                 Product Name:
-                <asp:TextBox ID="prod_nameTextBox" runat="server" Text='<%# Bind("prod_name") %>' />
+                <asp:TextBox ID="TextBox1" runat="server" Text='<%# Bind("prod_name") %>' />
                 <br />
                 Product Details:
-                <asp:TextBox ID="prod_detailsTextBox" runat="server" Text='<%# Bind("prod_details") %>' />
+                <asp:TextBox ID="TextBox2" runat="server" Text='<%# Bind("prod_details") %>' />
                 <br />
                 Product Price (BND):
-                <asp:TextBox ID="prod_priceTextBox" runat="server" Text='<%# Bind("prod_price") %>' />
+                <asp:TextBox ID="TextBox3" runat="server" Text='<%# Bind("prod_price") %>' />
                 <br />
                 Product Quantity:
-                <asp:TextBox ID="prod_quantityTextBox" runat="server" Text='<%# Bind("prod_quantity") %>' />
+                <asp:TextBox ID="TextBox4" runat="server" Text='<%# Bind("prod_quantity") %>' />
                 <br />
                 <asp:LinkButton ID="InsertButton" runat="server" CausesValidation="True" CommandName="Insert" Text="Insert" />
                 &nbsp;<asp:LinkButton ID="InsertCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
@@ -173,13 +142,6 @@
         </asp:SqlDataSource>
         <br />
         <br />
-    </div>
-    </form>
-    <div class="footerindex"><b>&copy; COPYRIGHTS 2017, JUBAH BAPAK</b>
-              <a href="http://validator.w3.org/check?uri=referer">Validate HTML</a>
-        <a href="http://jigsaw.w3.org/css-validator/check/referer">Validate CSS</a>
-              <a class="selected" href="Admin.aspx">Admin</a>
-          </div>
-         </div>
-</body>
-</html>
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+</asp:Content>

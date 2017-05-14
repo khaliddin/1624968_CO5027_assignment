@@ -6,6 +6,7 @@
 <head runat="server">
     <title>JUBAH BAPAK</title>
     <link rel="stylesheet" href="css/bapakstylesheet.css" type="text/css" />
+    <link rel="stylesheet" href="css/StyleSheet1.css" type="text/css" />
     <link rel="icon" href="img/favico.png" />
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
@@ -13,18 +14,69 @@
 <body>
      <div class="motherdiv">
         <div class="logo">
-            <a href="Default.aspx"><img src="img/jubahbapaklogo.jpg" alt="Welcome" /></a>
+            <a href="Default.aspx"><img src="./img/jubahbapaklogo.jpg" alt="Welcome" /></a>
         </div>
 
          <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
         
         </asp:ContentPlaceHolder>
       
-
-        <div class="bannerslider">
+         <!-- the reason for the tabindex is to support webkit //-->
+        <div class="css-slider-mask">
+            <!-- there are a number of add on modules which are demo-able by the javascript checkboxes added to this example page //-->
+            <ul class="css-slider with-responsive-images with-selection-disabled with-reflection with-fade-in">
+                <li class="slide" tabindex="1" id="l1">
+                    <span class="slide-outer">
+                        <span class="slide-inner">
+                            <!-- each slide-gfx needs a unique id if you wish to use reflections, you will also need to update .with-reflection in core.css //-->
+                            <span class="slide-gfx" id="s1">
+                                <img src="img/bannertest.jpg" />
+                            </span>
+                        </span>
+                    </span>
+                </li>
+                <li class="slide" tabindex="1" id="l2">
+                    <span class="slide-outer">
+                        <span class="slide-inner">
+                            <span class="slide-gfx" id="s2">
+                                <img src="img/banner1.jpg" />
+                            </span>
+                        </span>
+                    </span>
+                </li>
+                <li class="slide" tabindex="1" id="l3">
+                    <span class="slide-outer">
+                        <span class="slide-inner">
+                            <span class="slide-gfx" id="s3">
+                                <img src="img/banner2.jpg" />
+                            </span>
+                        </span>
+                    </span>
+                </li>
+                <li class="slide" tabindex="1" id="l4">
+                    <span class="slide-outer">
+                        <span class="slide-inner">
+                            <span class="slide-gfx" id="s4">
+                                <img src="img/banner3.jpg" />
+                            </span>
+                        </span>
+                    </span>
+                </li>
+                <li class="slide" tabindex="1" id="l5">
+                    <span class="slide-outer">
+                        <span class="slide-inner">
+                            <span class="slide-gfx" id="s5">
+                                <img src="img/bannertest.jpg" />
+                            </span>
+                        </span>
+                    </span>
+                </li>
+            </ul>
+        </div>
+        <!--<div class="bannerslider">
             <figure>
                 <div class="banneritem" id="banneritem1">
-                <img class="bannercontent1" src="img/bannertest.jpg" alt="casual"/>
+                <img class="bannercontent1" src="../img/bannertest.jpg" alt="casual"/>
                     <div class="bannertext">
                     <h3>FEATURED</h3><br />
                     <h4>Casual</h4>
@@ -33,7 +85,7 @@
                 </div>
                 </div>
                 <div class="banneritem" id="banneritem2">
-                <img class="bannercontent" src="img/banner1.jpg" alt="cotton"/>
+                <img class="bannercontent" src="../img/banner1.jpg" alt="cotton"/>
                     <div class="bannertext">
                         <h3>FEATURED</h3><br />
                     <h4>Cotton Jubah</h4>
@@ -42,7 +94,7 @@
                 </div>
                 </div>
                 <div class="banneritem" id="banneritem3">
-                <img class="bannercontent" src="img/banner2.jpg" alt="women jubah"/>
+                <img class="bannercontent" src="../img/banner2.jpg" alt="women jubah"/>
                     <div class="bannertext">
                         <h3>FEATURED</h3><br />
                     <h4>Casual Womens Jubah</h4>
@@ -51,7 +103,7 @@
                 </div>
                 </div>
                  <div class="banneritem" id="banneritem4">
-                <img class="bannercontent" src="img/banner3.jpg" alt="children"/>
+                <img class="bannercontent" src="../img/banner3.jpg" alt="children"/>
                     <div class="bannertext">
                         <h3>FEATURED</h3><br />
                     <h4>Children Jubah</h4>
@@ -60,7 +112,7 @@
                 </div>
                 </div>
                  <div class="banneritem" id="banneritem5">
-                <img class="bannercontent" src="img/bannertest.jpg" alt="casuals"/>
+                <img class="bannercontent" src="../img/bannertest.jpg" alt="casuals"/>
                     <div class="bannertext">
                         <h3>FEATURED</h3><br />
                     <h4>Casual</h4>
@@ -70,7 +122,7 @@
                 </div>
                  
             </figure>
-        </div>
+        </div>-->
     <form id="form1" runat="server">
     <div>
         <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">

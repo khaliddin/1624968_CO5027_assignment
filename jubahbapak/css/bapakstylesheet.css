@@ -178,114 +178,6 @@ div.banneritem .bannertext a.morebutton
     padding-right:5px;
 }
 
-.bannerslider
-{
-    z-index:1;
-    overflow:hidden;
-    height:350px;
-    position:relative;
-}
-
-.bannerslider figure div
-{
-    width: 20%;
-    float:left;
-    z-index:1;
-}
-
-.bannerslider figure img
-{
-    width:100%;
-    float:left;
-    z-index:1;
-}
-
-.bannerslider figure
-{
-    position: relative;
-    width: 498%;
-    margin:0;
-    left:0;
-    animation: 25s slide infinite;
-    z-index:1;
-}
-
-@keyframes slide
-{
-    0%
-    {
-        left: 0%;
-    }
-    10%
-    {
-        left: 0%;
-    }
-    12%
-    {
-        left: -100%;
-    }
-
-    22%
-    {
-        left: -100%;
-    }
-
-    24%
-    {
-        left: -200%;
-    }
-
-    34%
-    {
-        left: -200%;
-    }
-
-    36%
-    {
-        left: -300%
-    }
-
-    46%
-    {
-        left: -300%;
-    }
-
-    48%
-    {
-        left: -200%;
-    }
-
-    58%
-    {
-        left: -200%;
-    }
-
-    60%
-    {
-        left: -100%;
-    }
-    70%
-    {
-        left: -100%;
-    }
-    72%
-    {
-        left: -100%;
-    }
-   
-  
-    94%
-    {
-        left: 0%;
-    }
- 
-
-
-}
-
-
-
-
 div.sale
 {
     background-color:sandybrown;
@@ -392,6 +284,7 @@ span.priceinfo
     font-weight:bold;
 }
 
+ 
 div.cart
 {
     float:left;
@@ -403,8 +296,8 @@ div.cart
 
 div.cart img
 {
-    height: 40px;
-    width:40px;
+    height: 100%;
+    width:100%;
 }
 div.addtocart
 {

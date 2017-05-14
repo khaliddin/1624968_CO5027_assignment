@@ -145,6 +145,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="admin\Admin.aspx" />
+    <Content Include="css\StyleSheet1.css" />
+    <Content Include="HtmlPage1.html" />
     <Content Include="img\cart.png" />
     <Content Include="img\favico.png" />
     <Content Include="img\jubahbapaklogo.jpg" />
@@ -185,6 +187,7 @@
     <Content Include="ModelO.edmx.diagram">
       <DependentUpon>ModelO.edmx</DependentUpon>
     </Content>
+    <Content Include="admin\adminMaster.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -216,6 +219,13 @@
     </Compile>
     <Compile Include="About.aspx.designer.cs">
       <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\adminMaster.Master.cs">
+      <DependentUpon>adminMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\adminMaster.Master.designer.cs">
+      <DependentUpon>adminMaster.Master</DependentUpon>
     </Compile>
     <Compile Include="admin\Admin.aspx.cs">
       <DependentUpon>Admin.aspx</DependentUpon>
