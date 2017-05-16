@@ -20,7 +20,7 @@
                     <a class="selected" href="Contact.aspx">CONTACT US</a>
                 </li>
                 <li>
-                    <a href="Login.aspx">ACCOUNT</a>
+                    <a href="Account.aspx">ACCOUNT</a>
                    
                 </li>
             </ul>
@@ -31,34 +31,29 @@
         <div class="contact"><h4>Contact us</h4>
         </div>
         <div class="labelname">&nbsp;<br />
-            <asp:Label ID="lblname" runat="server" Text="First Name: "></asp:Label>
+            <asp:Label ID="lblname" runat="server" Text="First Name: " AssociatedControlID="ctctxtname"></asp:Label>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <asp:TextBox ID="ctctxtname" runat="server" Width="262px"></asp:TextBox>
         &nbsp;<asp:Literal ID="nametxterrorlit" runat="server"></asp:Literal>
         <br />
         <br />
-        <asp:Label ID="lblemail" runat="server" Text="Email: "></asp:Label>
+        <asp:Label ID="lblemail" runat="server" Text="Email: " AssociatedControlID="ctctxtemail"></asp:Label>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <asp:TextBox ID="ctctxtemail" runat="server" Width="262px"></asp:TextBox>
             <asp:Literal ID="emailtxterrorlit" runat="server"></asp:Literal>
         <br />
         <br />
-        <asp:Label ID="lblsubject" runat="server" Text="Subject: "></asp:Label>
+        <asp:Label ID="lblsubject" runat="server" Text="Subject: " AssociatedControlID="ctctxtsubject"></asp:Label>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <asp:TextBox ID="ctctxtsubject" runat="server" Width="262px"></asp:TextBox>
             <asp:Literal ID="sbjtxterrorlit" runat="server"></asp:Literal>
         <br />
         <br />
-        <asp:Label ID="lblmessage" runat="server" Text="Message: "></asp:Label>
+        <asp:Label ID="lblmessage" runat="server" Text="Message: " AssociatedControlID="ctctxtmessage"></asp:Label>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <asp:TextBox ID="ctctxtmessage" runat="server" Height="51px" TextMode="MultiLine" Width="263px"></asp:TextBox>
             <asp:Literal ID="msgtxterrorlit" runat="server"></asp:Literal>
             <br />
-            <asp:DropDownList ID="dpl" runat="server" Width="114px">
-                <asp:ListItem>test1</asp:ListItem>
-                <asp:ListItem>test2</asp:ListItem>
-                <asp:ListItem>test3</asp:ListItem>
-            </asp:DropDownList>
         <br />
         <br />
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;

@@ -4,18 +4,21 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
-    <asp:Image ID="imgselect" runat="server" />
+
+    <asp:Image ID="imgselect" runat="server" Width="300px" Height="300px"/>
     <br />
     <asp:Button ID="shwimg" runat="server" OnClick="shwimg_Click" Text="show current product image" />
-    &nbsp;<asp:Literal ID="showimglit" runat="server"></asp:Literal>
+    &nbsp;<asp:Button ID="Button3" runat="server" OnClick="Button3_Click" Text="Hide image" />
     <br />
-    <asp:Label ID="Label4" runat="server" Text="Label"></asp:Label>
+    <asp:Literal ID="showimglit" runat="server"></asp:Literal>
+    <br />
+    <asp:Label ID="Label4" runat="server" Text="First image upload (Big / main image)"></asp:Label>
     <br />
     <asp:FileUpload ID="selectimg" runat="server" />
 &nbsp;<asp:Button ID="cfm_img_upload" runat="server" OnClick="cfm_img_upload_Click" Text="Confirm" />
     <br />
     <br />
-    <asp:Label ID="Label1" runat="server" Text="Alternate text: "></asp:Label>
+    <asp:Label ID="Label1" runat="server" Text="Alternate text: " AssociatedControlID="setalttxt"></asp:Label>
 &nbsp;<asp:TextBox ID="setalttxt" runat="server"></asp:TextBox>
     <br />
     <asp:Literal ID="img_uploadLit" runat="server"></asp:Literal>
@@ -63,12 +66,17 @@
         </UpdateParameters>
     </asp:SqlDataSource>
     <br />
-    <asp:Label ID="Label3" runat="server" Text="Label"></asp:Label>
+    <asp:Image ID="Image1" runat="server" Width="300px" Height="300px" />
+    <br />
+    <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Show current image" />
+&nbsp;<asp:Button ID="Button4" runat="server" OnClick="Button4_Click" Text="Hide image" />
+    <br />
+    <asp:Label ID="Label3" runat="server" Text="Second image upload"></asp:Label>
     <br />
     <asp:FileUpload ID="selectprevimg" runat="server" />
 &nbsp;<asp:Button ID="previmg1_btn" runat="server" OnClick="previmg1_btn_Click" Text="Confirm" />
     <br />
-    <asp:Label ID="Label2" runat="server" Text="Alternate text: "></asp:Label>
+    <asp:Label ID="Label2" runat="server" Text="Alternate text: " AssociatedControlID="setalttextprevimg1"></asp:Label>
     <asp:TextBox ID="setalttextprevimg1" runat="server"></asp:TextBox>
     <br />
     <asp:Literal ID="previmg_uploadlit" runat="server"></asp:Literal>
@@ -116,12 +124,17 @@
         </UpdateParameters>
     </asp:SqlDataSource>
     <br />
-    <asp:Label ID="Label5" runat="server" Text="Label"></asp:Label>
+    <asp:Image ID="Image2" runat="server" Width="300px" Height="300px" />
+    <br />
+    <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="Show current image" />
+&nbsp;<asp:Button ID="Button5" runat="server" OnClick="Button5_Click" Text="Hide image" />
+    <br />
+    <asp:Label ID="Label5" runat="server" Text="Third image upload"></asp:Label>
     <br />
     <asp:FileUpload ID="selectprevimg2" runat="server" />
     <asp:Button ID="previmg2_btn" runat="server" Text="Confirm" OnClick="previmg2_btn_Click" />
     <br />
-    <asp:Label ID="Label6" runat="server" Text="Alternate text: "></asp:Label>
+    <asp:Label ID="Label6" runat="server" Text="Alternate text: " AssociatedControlID="setalttextprevimg2"></asp:Label>
     <asp:TextBox ID="setalttextprevimg2" runat="server"></asp:TextBox>
     <br />
     <asp:Literal ID="previmg2_uploadlit" runat="server"></asp:Literal>

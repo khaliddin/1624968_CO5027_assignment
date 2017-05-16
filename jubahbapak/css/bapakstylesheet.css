@@ -529,19 +529,16 @@ div.logincontent
     border:1px solid black;
 }
 
-div.usernamelabel
+div.loglabel
 {
     margin-top:30px;
     margin-left:100px;
     font-weight:bold;
 }
-div.passwordlabel
-{
-    margin-left:100px;
-    font-weight:bold;
-}
+
 div.loginbutton
 {
+    margin-top:20px;
     margin-left:186px;
 }
 
@@ -567,6 +564,36 @@ div.registercontent
     width:499px;
     border:1px solid black;
 }
+
+
+div.reglabel
+
+{
+    margin-top:30px;
+    margin-left:100px;
+    font-weight:bold;
+}
+div.regtxtbox
+{
+    margin-left:100px;
+    font-weight:bold;
+}
+
+div.regbuttoncss
+{
+    margin-left:170px;
+    font-weight:bold;
+}
+
+div.lit
+{
+    margin-left:150px;
+    font-weight:bold;
+}
+
+
+
+
 
 div.faqwrapper
 {

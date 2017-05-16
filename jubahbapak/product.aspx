@@ -17,7 +17,7 @@
                     <a href="Contact.aspx">CONTACT US</a>
                 </li>
                 <li>
-                    <a href="Login.aspx">ACCOUNT</a>
+                    <a href="Account.aspx">ACCOUNT</a>
                     
                 </li>
             </ul>
@@ -32,8 +32,6 @@
         
         <ItemTemplate>
 
-     
-       
              <div class="item1" id="prod1">
            <img src="./prodImg/<%#Eval("imgName") %><%#Eval("extension") %>" alt="<%#Eval("altText") %>"/>
                 <div class="prodtext">
@@ -44,8 +42,7 @@
             </div>
             </ItemTemplate>
        
-        <FooterTemplate>    
-</FooterTemplate>
+        <FooterTemplate></FooterTemplate>
         
         </asp:Repeater>
          </div>

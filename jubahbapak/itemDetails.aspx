@@ -16,7 +16,7 @@
                     <a href="Contact.aspx">CONTACT US</a>
                 </li>
                 <li>
-                    <a href="Login.aspx">ACCOUNT</a>
+                    <a href="Account.aspx">ACCOUNT</a>
                     
                 </li>
             </ul>
@@ -26,7 +26,7 @@
    
       
 
-     <div class="products"><asp:Literal ID="prodname" runat="server"></asp:Literal></div>
+     <div class="products"><asp:Literal ID="prodnametxt" runat="server"></asp:Literal></div>
         <div id="itemwrapper">
             
              <div class="itemdetail">
@@ -36,14 +36,15 @@
                
                 <div class="itemdetailtext">
                     
-                    <p><span class="priceinfo"><asp:Label ID="desclbl" runat="server" Text="Description: "></asp:Label></span><asp:Literal ID="prodDesc" runat="server"></asp:Literal></p>
-                    <p><span class="priceinfo"><asp:Label ID="pricelbl" runat="server" Text="Price (BND): "></asp:Label></span><asp:Literal ID="prodprice" runat="server"></asp:Literal></p>
+                    <p><span class="priceinfo"><asp:Label ID="desclbl" runat="server" Text="Description: "></asp:Label></span><asp:Literal ID="proddesctxt" runat="server"></asp:Literal></p>
+                    <p><span class="priceinfo"><asp:Label ID="pricelbl" runat="server" Text="Price (BND): "></asp:Label></span><asp:Literal ID="prodpricetxt" runat="server"></asp:Literal></p>
                     <p> <asp:Literal ID="quantity" runat="server"></asp:Literal></p>
                 </div>
 
             <div class="cartwrap">
             <div class="cart">
            <asp:HyperLink ID="cartUrl" runat="server"><asp:Image ID="addcart" runat="server" /></asp:HyperLink>
+                <asp:Button ID="addtocart" runat="server" OnClick="addcart_Click" Text="Add to cart" />
              </div>
                 </div>
 

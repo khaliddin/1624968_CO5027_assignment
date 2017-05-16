@@ -16,7 +16,7 @@
                     <a href="Contact.aspx">CONTACT US</a>
                 </li>
                 <li>
-                    <a class="selected" href="Login.aspx">ACCOUNT</a>
+                    <a class="selected" href="Account.aspx">ACCOUNT</a>
                  
                 </li>
             </ul>
@@ -29,41 +29,33 @@
     </div>
     <div class="logincontent">
 
-        <div class="usernamelabel">Username:
-        <asp:TextBox ID="loginusernametxt" runat="server"></asp:TextBox></div>
-        <br />
-        <div class="passwordlabel">Password:
-        <asp:TextBox ID="loginpasswordtxt" runat="server" TextMode="Password"></asp:TextBox></div>
-        <br />
-        <div class="loginbutton"><asp:Button ID="Button1" runat="server" Text="Sign in" style="height: 26px" OnClick="Button1_Click" />
-            <br />
-            <br />
-            <asp:Literal ID="loginliteral" runat="server"></asp:Literal>
+        <div class="loglabel">Username:<asp:TextBox ID="loginusernametxt" runat="server"></asp:TextBox></div>
+        <div class="loglabel">Password:<asp:TextBox ID="loginpasswordtxt" runat="server" TextMode="Password"></asp:TextBox></div>
+        <div class="loginbutton"><asp:Button ID="Button1" runat="server" Text="Sign in" style="height: 26px" OnClick="Button1_Click" /></div>
+        <div class="lit"><asp:Literal ID="loginliteral" runat="server"></asp:Literal></div> 
         </div>
 
-     </div>
 
     <div class="registerwrap">
         <h4>Registration</h4>
     </div>
     <div class="registercontent">
 
-        <asp:Label ID="regusernamelbl" runat="server" Text="Username: "></asp:Label>
-        <asp:TextBox ID="regusernametxt" runat="server"></asp:TextBox>
-        <br />
-        <asp:Label ID="regemaillbl" runat="server" Text="E-mail: "></asp:Label>
-        <asp:TextBox ID="regemailtxt" runat="server"></asp:TextBox>
-        <br />
-        <asp:Label ID="regpasswordlbl" runat="server" Text="Password: "></asp:Label>
-        <asp:TextBox ID="regpasswordtxt" runat="server" TextMode="Password"></asp:TextBox>
-        <br />
-        <asp:Label ID="regcfmpasswordlbl" runat="server" Text="Confirm password: "></asp:Label>
-        <asp:TextBox ID="regcfmpasswordtxt" runat="server" TextMode="Password"></asp:TextBox>
-        <br />
-        <asp:Button ID="registerbtn" runat="server" Text="Register" OnClick="register_Click" style="height: 26px" />
-        &nbsp;<asp:Literal ID="littext1" runat="server"></asp:Literal>
-        <br />
+       <div class="reglabel"> <asp:Label ID="regusernamelbl" runat="server" Text="Username: "></asp:Label></div>
+        <div class="regtxtbox"><asp:TextBox ID="regusernametxt" runat="server" Width="200px"></asp:TextBox></div> 
 
-    </div>
+        <div class="reglabel"><asp:Label ID="regemaillbl" runat="server" Text="E-mail: "></asp:Label></div>
+        <div class="regtxtbox"><asp:TextBox ID="regemailtxt" runat="server" Width="200px"></asp:TextBox></div> 
+
+        <div class="reglabel"><asp:Label ID="regpasswordlbl" runat="server" Text="Password: "></asp:Label></div>
+        <div class="regtxtbox"><asp:TextBox ID="regpasswordtxt" runat="server" TextMode="Password" Width="200px"></asp:TextBox></div>
+
+        <div class="reglabel"><asp:Label ID="regcfmpasswordlbl" runat="server" Text="Confirm password: "></asp:Label></div>
+        <div class="regtxtbox"><asp:TextBox ID="regcfmpasswordtxt" runat="server" TextMode="Password" Width="200px"></asp:TextBox></div>
+        
+        <div class="regbuttoncss"><asp:Button ID="registerbtn" runat="server" Text="Register" OnClick="register_Click" style="height: 26px" /></div>
+        <div class="lit"><asp:Literal ID="littext1" runat="server"></asp:Literal></div>
+        </div>
+
     </div>
 </asp:Content>

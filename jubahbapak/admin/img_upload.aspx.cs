@@ -15,6 +15,9 @@ namespace jubahbapak
         
         protected void Page_Load(object sender, EventArgs e)
         {
+            imgselect.Visible = false;
+            Image1.Visible = false;
+            Image2.Visible = false;
         }
     
         protected void cfm_img_upload_Click(object sender, EventArgs e)
@@ -39,9 +42,11 @@ namespace jubahbapak
                 imageData.imgName = prodId;
                 db.image_table.Add(imageData);
                 db.SaveChanges();
+                //refresh gridview
+                GridView1.DataBind();
 
                 //assemble filename
-               
+
                 string filename = prodId + extension;
 
                 //save image file
@@ -73,6 +78,7 @@ namespace jubahbapak
 
                 //will be missing alternate text and dimensions
                 imgselect.ImageUrl = "~/prodImg/" + filename;
+                imgselect.Visible = true;
             }
             catch
             {
@@ -104,6 +110,9 @@ namespace jubahbapak
                 db.prevImage1_table.Add(imageData);
                 db.SaveChanges();
 
+                //refresh gridview
+
+                GridView2.DataBind();
                 //assemble filename
 
                 string filename = prodId + ".prev1" + extension;
@@ -142,6 +151,8 @@ namespace jubahbapak
                 db.prevImage2_table.Add(imageData);
                 db.SaveChanges();
 
+                //refresh gridview
+                GridView3.DataBind();
                 //assemble filename
 
                 string filename = prodId + ".prev2" + extension;
@@ -155,6 +166,77 @@ namespace jubahbapak
             {
                 previmg2_uploadlit.Text = "invalid image file type";
             }
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string idString = Request.QueryString["Id"];
+                int idint = int.Parse(idString);
+
+                co5027Entities db = new co5027Entities();
+                var imgdata = db.image_table.Single(p => p.imageID == idint);
+                string imgid = imgdata.extension;
+                string productId = Request.QueryString["Id"];
+
+                //creates filename using query string
+
+                string filename = idString + ".prev1" + imgid;
+
+                //will be missing alternate text and dimensions
+                Image1.ImageUrl = "~/prodImg/" + filename;
+                Image1.Visible = true;
+
+            }
+            catch
+            {
+                showimglit.Text = "Image not found";
+            }
+
+        }
+
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string idString = Request.QueryString["Id"];
+                int idint = int.Parse(idString);
+
+                co5027Entities db = new co5027Entities();
+                var imgdata = db.image_table.Single(p => p.imageID == idint);
+                string imgid = imgdata.extension;
+                string productId = Request.QueryString["Id"];
+
+                //creates filename using query string
+
+                string filename = idString + ".prev2" + imgid;
+
+                //will be missing alternate text and dimensions
+                
+                Image2.ImageUrl = "~/prodImg/" + filename;
+                Image2.Visible = true;
+            }
+            catch
+            {
+                showimglit.Text = "Image not found";
+            }
+
+        }
+
+        protected void Button3_Click(object sender, EventArgs e)
+        {
+            imgselect.Visible = false;
+        }
+
+        protected void Button4_Click(object sender, EventArgs e)
+        {
+            Image1.Visible = false;
+        }
+
+        protected void Button5_Click(object sender, EventArgs e)
+        {
+            Image2.Visible = false;
         }
     }
 }

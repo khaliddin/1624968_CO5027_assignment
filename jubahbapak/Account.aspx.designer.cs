@@ -10,24 +10,15 @@
 namespace jubahbapak {
     
     
-    public partial class WebForm1 {
+    public partial class Account {
         
         /// <summary>
-        /// GridView1 control.
+        /// sOut control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView GridView1;
-        
-        /// <summary>
-        /// gridviewbapaktest control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource gridviewbapaktest;
+        protected global::System.Web.UI.WebControls.Button sOut;
     }
 }

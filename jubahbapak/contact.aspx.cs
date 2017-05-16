@@ -225,7 +225,7 @@ namespace jubahbapak
 
                 msg.Subject = ctctxtsubject.Text;
                 msg.IsBodyHtml = true;
-                msg.Body = string.Format("From: " + ctctxtname.Text + ",   Email: " + ctctxtemail.Text + ",   Message: " + ctctxtmessage.Text + ", Combobox: " + dpl.SelectedItem.Value);
+                msg.Body = string.Format("From: " + ctctxtname.Text + ",   Email: " + ctctxtemail.Text + ",   Message: " + ctctxtmessage.Text);
 
                 try
                 {

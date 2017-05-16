@@ -5,63 +5,19 @@
     <div class="addProdHeader"><h3>Add Product</h3></div>
         <div class="addFormWrapper">
             
-        <asp:FormView ID="FormView1" runat="server" DataKeyNames="id" DataSourceID="co5027datasource" DefaultMode="Insert">
-            <EditItemTemplate>
-                id:
-                <asp:Label ID="idLabel1" runat="server" Text='<%# Eval("id") %>' />
-                <br />
-                prod_name:
-                <asp:TextBox ID="prod_nameTextBox" runat="server" Text='<%# Bind("prod_name") %>' />
-                <br />
-                prod_details:
-                <asp:TextBox ID="prod_detailsTextBox" runat="server" Text='<%# Bind("prod_details") %>' />
-                <br />
-                prod_price:
-                <asp:TextBox ID="prod_priceTextBox" runat="server" Text='<%# Bind("prod_price") %>' />
-                <br />
-                prod_quantity:
-                <asp:TextBox ID="prod_quantityTextBox" runat="server" Text='<%# Bind("prod_quantity") %>' />
-                <br />
-                <asp:LinkButton ID="UpdateButton" runat="server" CausesValidation="True" CommandName="Update" Text="Update" />
-                &nbsp;<asp:LinkButton ID="UpdateCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
-            </EditItemTemplate>
-            <InsertItemTemplate>
-                Product Name:
-                <asp:TextBox ID="TextBox1" runat="server" Text='<%# Bind("prod_name") %>' />
-                <br />
-                Product Details:
-                <asp:TextBox ID="TextBox2" runat="server" Text='<%# Bind("prod_details") %>' />
-                <br />
-                Product Price (BND):
-                <asp:TextBox ID="TextBox3" runat="server" Text='<%# Bind("prod_price") %>' />
-                <br />
-                Product Quantity:
-                <asp:TextBox ID="TextBox4" runat="server" Text='<%# Bind("prod_quantity") %>' />
-                <br />
-                <asp:LinkButton ID="InsertButton" runat="server" CausesValidation="True" CommandName="Insert" Text="Insert" />
-                &nbsp;<asp:LinkButton ID="InsertCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
-            </InsertItemTemplate>
-            <ItemTemplate>
-                id:
-                <asp:Label ID="idLabel" runat="server" Text='<%# Eval("id") %>' />
-                <br />
-                Product Name:
-                <asp:Label ID="prod_nameLabel" runat="server" Text='<%# Bind("prod_name") %>' />
-                <br />
-                Product Details:
-                <asp:Label ID="prod_detailsLabel" runat="server" Text='<%# Bind("prod_details") %>' />
-                <br />
-                Product Price(BND):
-                <asp:Label ID="prod_priceLabel" runat="server" Text='<%# Bind("prod_price") %>' />
-                <br />
-                Product Quantity:
-                <asp:Label ID="prod_quantityLabel" runat="server" Text='<%# Bind("prod_quantity") %>' />
-                <br />
-                <asp:LinkButton ID="EditButton" runat="server" CausesValidation="False" CommandName="Edit" Text="Edit" />
-                &nbsp;<asp:LinkButton ID="DeleteButton" runat="server" CausesValidation="False" CommandName="Delete" Text="Delete" />
-                &nbsp;<asp:LinkButton ID="NewButton" runat="server" CausesValidation="False" CommandName="New" Text="New" />
-            </ItemTemplate>
-        </asp:FormView>
+                <div class="reglabel"><asp:Label runat="server" ID="pnamelbl" Text="Product Name:" AssociatedControlID="pnametbox"></asp:Label></div>
+                <div class="regtxtbox"><asp:TextBox ID="pnametbox" runat="server" Text='<%# Bind("prod_name") %>' Width="250px" /></div>
+               
+                <div class="reglabel"><asp:Label runat="server" ID="pdetslbl" Text=" Product Details:" AssociatedControlID="pdetstxtbox"></asp:Label></div>
+               <div class="regtxtbox"><asp:TextBox ID="pdetstxtbox" runat="server" Text='<%# Bind("prod_details") %>' TextMode="MultiLine" Width="250px" /></div> 
+                
+                <div class="reglabel"><asp:Label runat="server" ID="pricelbl" Text="Product Price (BND):" AssociatedControlID="pricetxt"></asp:Label></div>
+                <div class="regtxtbox"><asp:TextBox ID="pricetxt" runat="server" Text='<%# Bind("prod_price") %>' Width="250px" /></div>
+               
+                <div class="reglabel"><asp:Label runat="server" ID="pqtylbl" Text="Product Quantity:" AssociatedControlID="pqtytxt"></asp:Label></div>
+                <div class="regtxtbox"><asp:TextBox ID="pqtytxt" runat="server" Text='<%# Bind("prod_quantity") %>' Width="250px" /></div>
+                    <div class="regbuttoncss"><asp:Button ID="Button2" runat="server" Text="Add" OnClick="Button2_Click" /></div>
+                    <div class="lit"><asp:Literal ID="insmsg" runat="server"></asp:Literal></div>
             </div>
         <asp:SqlDataSource ID="co5027datasource" runat="server" ConflictDetection="CompareAllValues" ConnectionString="<%$ ConnectionStrings:co5027asgConnectionString %>" DeleteCommand="DELETE FROM [prod_table] WHERE [id] = @original_id AND (([prod_name] = @original_prod_name) OR ([prod_name] IS NULL AND @original_prod_name IS NULL)) AND (([prod_details] = @original_prod_details) OR ([prod_details] IS NULL AND @original_prod_details IS NULL)) AND (([prod_price] = @original_prod_price) OR ([prod_price] IS NULL AND @original_prod_price IS NULL)) AND (([prod_quantity] = @original_prod_quantity) OR ([prod_quantity] IS NULL AND @original_prod_quantity IS NULL))" InsertCommand="INSERT INTO [prod_table] ([prod_name], [prod_details], [prod_price], [prod_quantity]) VALUES (@prod_name, @prod_details, @prod_price, @prod_quantity)" OldValuesParameterFormatString="original_{0}" SelectCommand="SELECT * FROM [prod_table]" UpdateCommand="UPDATE [prod_table] SET [prod_name] = @prod_name, [prod_details] = @prod_details, [prod_price] = @prod_price, [prod_quantity] = @prod_quantity WHERE [id] = @original_id AND (([prod_name] = @original_prod_name) OR ([prod_name] IS NULL AND @original_prod_name IS NULL)) AND (([prod_details] = @original_prod_details) OR ([prod_details] IS NULL AND @original_prod_details IS NULL)) AND (([prod_price] = @original_prod_price) OR ([prod_price] IS NULL AND @original_prod_price IS NULL)) AND (([prod_quantity] = @original_prod_quantity) OR ([prod_quantity] IS NULL AND @original_prod_quantity IS NULL))">
             <DeleteParameters>
@@ -95,13 +51,12 @@
         <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="id" DataSourceID="co5027DGV">
             <Columns>
                 <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" />
-                <asp:BoundField DataField="id" HeaderText="id" InsertVisible="False" ReadOnly="True" SortExpression="id" />
-                <asp:BoundField DataField="prod_name" HeaderText="prod_name" SortExpression="prod_name" />
-                <asp:BoundField DataField="prod_details" HeaderText="prod_details" SortExpression="prod_details" />
-                <asp:BoundField DataField="prod_price" HeaderText="prod_price" SortExpression="prod_price" />
-                <asp:BoundField DataField="prod_quantity" HeaderText="prod_quantity" SortExpression="prod_quantity" />
-                <asp:BoundField DataField="onSale" HeaderText="onSale" SortExpression="onSale" />
-                <asp:BoundField DataField="onFeatured" HeaderText="onFeatured" SortExpression="onFeatured" />
+                <asp:BoundField DataField="id" HeaderText="Product ID" InsertVisible="False" ReadOnly="True" SortExpression="id" />
+                <asp:BoundField DataField="prod_name" HeaderText="Product Name" SortExpression="prod_name" />
+                <asp:BoundField DataField="prod_details" HeaderText="Product Details" SortExpression="prod_details" />
+                <asp:BoundField DataField="prod_price" HeaderText="Price" SortExpression="prod_price" />
+                <asp:BoundField DataField="prod_quantity" HeaderText="Available Quantity" SortExpression="prod_quantity" />
+                <asp:BoundField DataField="onSale" HeaderText="On Sale (yes/no)" SortExpression="onSale" />
                 <asp:HyperLinkField DataNavigateUrlFields="Id" DataNavigateUrlFormatString="img_upload.aspx?id={0}" HeaderText="Set image" Text="Upload" />
             </Columns>
         </asp:GridView>
@@ -140,6 +95,7 @@
                 <asp:Parameter Name="original_onFeatured" Type="String" />
             </UpdateParameters>
         </asp:SqlDataSource>
+        <asp:Button ID="signoutbut" runat="server" Text="Sign out" OnClick="signoutbut_Click" OnClientClick="window.open('../Default.aspx', 'Default')" />
         <br />
         <br />
 </asp:Content>

@@ -13,13 +13,13 @@ namespace jubahbapak {
     public partial class WebForm2 {
         
         /// <summary>
-        /// prodname control.
+        /// prodnametxt control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Literal prodname;
+        protected global::System.Web.UI.WebControls.Literal prodnametxt;
         
         /// <summary>
         /// HyperLink1 control.
@@ -49,13 +49,13 @@ namespace jubahbapak {
         protected global::System.Web.UI.WebControls.Label desclbl;
         
         /// <summary>
-        /// prodDesc control.
+        /// proddesctxt control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Literal prodDesc;
+        protected global::System.Web.UI.WebControls.Literal proddesctxt;
         
         /// <summary>
         /// pricelbl control.
@@ -67,13 +67,13 @@ namespace jubahbapak {
         protected global::System.Web.UI.WebControls.Label pricelbl;
         
         /// <summary>
-        /// prodprice control.
+        /// prodpricetxt control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Literal prodprice;
+        protected global::System.Web.UI.WebControls.Literal prodpricetxt;
         
         /// <summary>
         /// quantity control.
@@ -101,6 +101,15 @@ namespace jubahbapak {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Image addcart;
+        
+        /// <summary>
+        /// addtocart control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button addtocart;
         
         /// <summary>
         /// HyperLink2 control.
