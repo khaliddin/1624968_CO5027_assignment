@@ -235,7 +235,7 @@ div.itemdetail img
 }
 div.smallimgwrap
 {
-    margin-top:470px;
+    margin-top:300px;
     margin-left:240px;
     width:220px;
     height:100px;
@@ -591,8 +591,22 @@ div.lit
     font-weight:bold;
 }
 
+div.imguploadmargin
+{
+    margin-left:130px;
+}
 
-
+div.imguploadheader
+{
+    text-align:center;
+    font-weight:bold;
+}
+div.upimgwrap
+{
+    background-color:sandybrown;
+    height:700px;
+    border:1px solid brown;
+}
 
 
 div.faqwrapper

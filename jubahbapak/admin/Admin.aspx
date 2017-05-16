@@ -96,8 +96,6 @@
             </UpdateParameters>
         </asp:SqlDataSource>
         <asp:Button ID="signoutbut" runat="server" Text="Sign out" OnClick="signoutbut_Click" OnClientClick="window.open('../Default.aspx', 'Default')" />
-        <br />
-        <br />
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 </asp:Content>

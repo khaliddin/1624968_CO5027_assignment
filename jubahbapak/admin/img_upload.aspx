@@ -4,26 +4,18 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
-
-    <asp:Image ID="imgselect" runat="server" Width="300px" Height="300px"/>
-    <br />
-    <asp:Button ID="shwimg" runat="server" OnClick="shwimg_Click" Text="show current product image" />
-    &nbsp;<asp:Button ID="Button3" runat="server" OnClick="Button3_Click" Text="Hide image" />
-    <br />
-    <asp:Literal ID="showimglit" runat="server"></asp:Literal>
-    <br />
-    <asp:Label ID="Label4" runat="server" Text="First image upload (Big / main image)"></asp:Label>
-    <br />
-    <asp:FileUpload ID="selectimg" runat="server" />
-&nbsp;<asp:Button ID="cfm_img_upload" runat="server" OnClick="cfm_img_upload_Click" Text="Confirm" />
-    <br />
-    <br />
-    <asp:Label ID="Label1" runat="server" Text="Alternate text: " AssociatedControlID="setalttxt"></asp:Label>
-&nbsp;<asp:TextBox ID="setalttxt" runat="server"></asp:TextBox>
-    <br />
-    <asp:Literal ID="img_uploadLit" runat="server"></asp:Literal>
-    <br />
-    <br />
+    <div class="imguploadheader"><asp:Label ID="Label8" runat="server" Text="Main Image"></asp:Label></div>
+    <div class="upimgwrap">
+    <div class="imguploadmargin"><asp:Image ID="imgselect" runat="server" Width="300px" Height="300px"/></div>
+    <div class="regbuttoncss"><asp:Button ID="shwimg" runat="server" OnClick="shwimg_Click" Text="show current product image" /><asp:Button ID="Button3" runat="server" OnClick="Button3_Click" Text="Hide image" /></div>
+    <div class="lit"><asp:Literal ID="showimglit" runat="server"></asp:Literal></div>
+    <div class="loglabel"><asp:Label ID="Label4" runat="server" Text="First image upload (Big / main image)"></asp:Label></div>
+    <div class="loglabel"><asp:FileUpload ID="selectimg" runat="server" /></div>
+    <div class="loglabel"><asp:Label ID="Label1" runat="server" Text="Alternate text: " AssociatedControlID="setalttxt"></asp:Label><asp:TextBox ID="setalttxt" runat="server"></asp:TextBox></div>
+    <div class="loginbutton"><asp:Button ID="cfm_img_upload" runat="server" OnClick="cfm_img_upload_Click" Text="Confirm" /></div>
+    
+    <div><asp:Literal ID="img_uploadLit" runat="server"></asp:Literal></div>
+    
     <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="imageID" DataSourceID="co5027imagetable">
         <Columns>
             <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" />
@@ -35,6 +27,7 @@
             <asp:BoundField DataField="imgName" HeaderText="imgName" SortExpression="imgName" />
         </Columns>
     </asp:GridView>
+        
     <asp:SqlDataSource ID="co5027imagetable" runat="server" ConflictDetection="CompareAllValues" ConnectionString="<%$ ConnectionStrings:co5027asgConnectionString %>" DeleteCommand="DELETE FROM [image_table] WHERE [imageID] = @original_imageID AND (([width] = @original_width) OR ([width] IS NULL AND @original_width IS NULL)) AND (([height] = @original_height) OR ([height] IS NULL AND @original_height IS NULL)) AND (([altText] = @original_altText) OR ([altText] IS NULL AND @original_altText IS NULL)) AND (([extension] = @original_extension) OR ([extension] IS NULL AND @original_extension IS NULL)) AND (([imgName] = @original_imgName) OR ([imgName] IS NULL AND @original_imgName IS NULL))" InsertCommand="INSERT INTO [image_table] ([width], [height], [altText], [extension], [imgName]) VALUES (@width, @height, @altText, @extension, @imgName)" OldValuesParameterFormatString="original_{0}" SelectCommand="SELECT * FROM [image_table]" UpdateCommand="UPDATE [image_table] SET [width] = @width, [height] = @height, [altText] = @altText, [extension] = @extension, [imgName] = @imgName WHERE [imageID] = @original_imageID AND (([width] = @original_width) OR ([width] IS NULL AND @original_width IS NULL)) AND (([height] = @original_height) OR ([height] IS NULL AND @original_height IS NULL)) AND (([altText] = @original_altText) OR ([altText] IS NULL AND @original_altText IS NULL)) AND (([extension] = @original_extension) OR ([extension] IS NULL AND @original_extension IS NULL)) AND (([imgName] = @original_imgName) OR ([imgName] IS NULL AND @original_imgName IS NULL))">
         <DeleteParameters>
             <asp:Parameter Name="original_imageID" Type="Int32" />
@@ -65,23 +58,17 @@
             <asp:Parameter Name="original_imgName" Type="String" />
         </UpdateParameters>
     </asp:SqlDataSource>
-    <br />
-    <asp:Image ID="Image1" runat="server" Width="300px" Height="300px" />
-    <br />
-    <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Show current image" />
-&nbsp;<asp:Button ID="Button4" runat="server" OnClick="Button4_Click" Text="Hide image" />
-    <br />
-    <asp:Label ID="Label3" runat="server" Text="Second image upload"></asp:Label>
-    <br />
-    <asp:FileUpload ID="selectprevimg" runat="server" />
-&nbsp;<asp:Button ID="previmg1_btn" runat="server" OnClick="previmg1_btn_Click" Text="Confirm" />
-    <br />
-    <asp:Label ID="Label2" runat="server" Text="Alternate text: " AssociatedControlID="setalttextprevimg1"></asp:Label>
-    <asp:TextBox ID="setalttextprevimg1" runat="server"></asp:TextBox>
-    <br />
-    <asp:Literal ID="previmg_uploadlit" runat="server"></asp:Literal>
-    <br />
-    <br />
+        </div>
+    <div class="imguploadheader"><asp:Label ID="Label7" runat="server" Text="Second Image"></asp:Label></div>
+    <div class="upimgwrap">
+    <div class="imguploadmargin"><asp:Image ID="Image1" runat="server" Width="300px" Height="300px" /></div>
+    <div class="regbuttoncss"><asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Show current image" /><asp:Button ID="Button4" runat="server" OnClick="Button4_Click" Text="Hide image" /></div>
+    <div class="loglabel"><asp:Label ID="Label3" runat="server" Text="Second image upload"></asp:Label></div>
+    <div class="loglabel"><asp:FileUpload ID="selectprevimg" runat="server" /></div>
+    
+    <div class="loglabel"><asp:Label ID="Label2" runat="server" Text="Alternate text: " AssociatedControlID="setalttextprevimg1"></asp:Label><asp:TextBox ID="setalttextprevimg1" runat="server"></asp:TextBox></div>
+    <div class="loginbutton"><asp:Button ID="previmg1_btn" runat="server" OnClick="previmg1_btn_Click" Text="Confirm" /></div>
+    <div class="lit"><asp:Literal ID="previmg_uploadlit" runat="server"></asp:Literal></div>
     <asp:GridView ID="GridView2" runat="server" AutoGenerateColumns="False" DataKeyNames="prevImg1" DataSourceID="co5027previmage1table">
         <Columns>
             <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" />
@@ -123,23 +110,15 @@
             <asp:Parameter Name="original_prevImg3Name" Type="String" />
         </UpdateParameters>
     </asp:SqlDataSource>
-    <br />
-    <asp:Image ID="Image2" runat="server" Width="300px" Height="300px" />
-    <br />
-    <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="Show current image" />
-&nbsp;<asp:Button ID="Button5" runat="server" OnClick="Button5_Click" Text="Hide image" />
-    <br />
-    <asp:Label ID="Label5" runat="server" Text="Third image upload"></asp:Label>
-    <br />
-    <asp:FileUpload ID="selectprevimg2" runat="server" />
-    <asp:Button ID="previmg2_btn" runat="server" Text="Confirm" OnClick="previmg2_btn_Click" />
-    <br />
-    <asp:Label ID="Label6" runat="server" Text="Alternate text: " AssociatedControlID="setalttextprevimg2"></asp:Label>
-    <asp:TextBox ID="setalttextprevimg2" runat="server"></asp:TextBox>
-    <br />
-    <asp:Literal ID="previmg2_uploadlit" runat="server"></asp:Literal>
-    <br />
-    <br />
+         </div>
+    <div class="imguploadheader"><asp:Label ID="Label9" runat="server" Text="Main Image"></asp:Label></div>
+    <div class="upimgwrap">
+    <div class="imguploadmargin"><asp:Image ID="Image2" runat="server" Width="300px" Height="300px" /></div>
+    <div class="regbuttoncss"><asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="Show current image" /><asp:Button ID="Button5" runat="server" OnClick="Button5_Click" Text="Hide image" /></div>
+    <div class="loglabel"><asp:FileUpload ID="selectprevimg2" runat="server" /></div>
+    <div class="loglabel"><asp:Label ID="Label6" runat="server" Text="Alternate text: " AssociatedControlID="setalttextprevimg2"></asp:Label><asp:TextBox ID="setalttextprevimg2" runat="server"></asp:TextBox></div>
+        <div class="loginbutton"><asp:Button ID="previmg2_btn" runat="server" Text="Confirm" OnClick="previmg2_btn_Click" /></div>
+    <div><asp:Literal ID="previmg2_uploadlit" runat="server"></asp:Literal></div>
     <asp:GridView ID="GridView3" runat="server" AutoGenerateColumns="False" DataKeyNames="prevImg2" DataSourceID="co5027previmage2table">
         <Columns>
             <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" />
@@ -181,4 +160,5 @@
             <asp:Parameter Name="original_prevImg2Name" Type="String" />
         </UpdateParameters>
     </asp:SqlDataSource>
+    </div>
 </asp:Content>
