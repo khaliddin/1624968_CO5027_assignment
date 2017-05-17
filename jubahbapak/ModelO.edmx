@@ -44,10 +44,9 @@
           </Key>
           <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="prod_name" Type="varchar" MaxLength="50" />
-          <Property Name="prod_details" Type="varchar" MaxLength="50" />
+          <Property Name="prod_details" Type="varchar" MaxLength="200" />
           <Property Name="prod_price" Type="varchar" MaxLength="50" />
           <Property Name="prod_quantity" Type="int" />
-          <Property Name="onSale" Type="varchar" MaxLength="50" />
           <Property Name="onFeatured" Type="varchar" MaxLength="50" />
         </EntityType>
         <EntityContainer Name="co5027ModelStoreContainer">
@@ -105,10 +104,9 @@
           </Key>
           <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="prod_name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-          <Property Name="prod_details" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="prod_details" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
           <Property Name="prod_price" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
           <Property Name="prod_quantity" Type="Int32" />
-          <Property Name="onSale" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
           <Property Name="onFeatured" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
         </EntityType>
       </Schema>
@@ -157,7 +155,6 @@
             <EntityTypeMapping TypeName="co5027Model.prod_table">
               <MappingFragment StoreEntitySet="prod_table">
                 <ScalarProperty Name="onFeatured" ColumnName="onFeatured" />
-                <ScalarProperty Name="onSale" ColumnName="onSale" />
                 <ScalarProperty Name="prod_quantity" ColumnName="prod_quantity" />
                 <ScalarProperty Name="prod_price" ColumnName="prod_price" />
                 <ScalarProperty Name="prod_details" ColumnName="prod_details" />

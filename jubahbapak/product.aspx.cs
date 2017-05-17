@@ -11,22 +11,29 @@ namespace jubahbapak
 {
     public partial class product : System.Web.UI.Page
     {
-        SqlConnection con = new SqlConnection(@"Data Source=SQL2016.FSE.Network;Initial Catalog=db_1624968_co5027_asg;User ID=user_db_1624968_co5027_asg;Password=Co5027-asg;MultipleActiveResultSets=True;Application Name=EntityFramework");
+        SqlConnection sqlConnect = new SqlConnection(@"Data Source=SQL2016.FSE.Network;Initial Catalog=db_1624968_co5027_asg;User ID=user_db_1624968_co5027_asg;Password=Co5027-asg;MultipleActiveResultSets=True;Application Name=EntityFramework");
         
         protected void Page_Load(object sender, EventArgs e)
         {
-            con.Open();
-            SqlCommand cmd = con.CreateCommand();
-            cmd.CommandType = System.Data.CommandType.Text;
-            cmd.CommandText = "select * from prod_table INNER JOIN image_table ON prod_table.id = image_table.imgName";
-            cmd.ExecuteNonQuery();
+            try
+            {
+            sqlConnect.Open();
+            SqlCommand sqlcmd = sqlConnect.CreateCommand();
+            sqlcmd.CommandType = System.Data.CommandType.Text;
+            sqlcmd.CommandText = "select * from prod_table INNER JOIN image_table ON prod_table.id = image_table.imgName";
+            sqlcmd.ExecuteNonQuery();
 
-            DataTable dt = new DataTable();
-            SqlDataAdapter da = new SqlDataAdapter(cmd);
-            da.Fill(dt);
-            prodrepeat.DataSource = dt;
+            DataTable dbtable = new DataTable();
+            SqlDataAdapter sqladapter = new SqlDataAdapter(sqlcmd);
+            sqladapter.Fill(dbtable);
+            prodrepeat.DataSource = dbtable;
             prodrepeat.DataBind();
-            con.Close();
+            sqlConnect.Close();
+            }
+            catch
+            {
+                Literal1.Text = "connection error";
+            }
 
         }
 

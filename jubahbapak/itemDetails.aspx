@@ -36,8 +36,7 @@
                 </div>
             <div class="cartwrap">
             <div class="cart">
-           <asp:HyperLink ID="cartUrl" runat="server"><asp:Image ID="addcart" runat="server" /></asp:HyperLink>
-                <asp:Button ID="addtocart" runat="server" OnClick="addcart_Click" Text="Add to cart" />
+                <asp:Button ID="addtocart" runat="server" OnClick="addcart_Click" Text="Buy" style="width: 37px" />
              </div>
             </div>
             <div class="smallimgwrap">

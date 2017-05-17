@@ -150,22 +150,9 @@
   <ItemGroup>
     <Content Include="Account.aspx" />
     <Content Include="admin\Admin.aspx" />
-    <Content Include="cart.aspx" />
     <Content Include="css\carauselOnly.css" />
-    <Content Include="HtmlPage1.html" />
-    <Content Include="img\cart.png" />
     <Content Include="img\favico.png" />
     <Content Include="img\jubahbapaklogo.jpg" />
-    <Content Include="img\jubahbini.jpg" />
-    <Content Include="img\jubahcordova.jpg" />
-    <Content Include="img\jubahcotton.jpg" />
-    <Content Include="img\jubahhisan.jpg" />
-    <Content Include="img\jubahlaki.jpg" />
-    <Content Include="img\jubahmoroko.jpg" />
-    <Content Include="img\jubahoblongmorocco.jpg" />
-    <Content Include="img\jubahputih.jpg" />
-    <Content Include="img\jubahslimfit.jpg" />
-    <Content Include="img\map.jpg" />
     <Content Include="img\staticmap.jpg" />
     <Content Include="admin\img_upload.aspx" />
     <Content Include="js\map.js" />
@@ -211,7 +198,6 @@
     <Content Include="img\banner2.jpg" />
     <Content Include="img\banner3.jpg" />
     <Content Include="img\bannertest.jpg" />
-    <Content Include="index.html" />
     <Content Include="Login.aspx" />
     <Content Include="Product.aspx" />
     <Content Include="Web.config">
@@ -246,13 +232,6 @@
     </Compile>
     <Compile Include="admin\Admin.aspx.designer.cs">
       <DependentUpon>Admin.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="cart.aspx.cs">
-      <DependentUpon>cart.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="cart.aspx.designer.cs">
-      <DependentUpon>cart.aspx</DependentUpon>
     </Compile>
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>

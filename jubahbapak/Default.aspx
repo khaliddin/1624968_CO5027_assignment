@@ -25,7 +25,9 @@
     </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
 
-       <div class="sale"> ON SALE </div>
+       <div class="sale"> Featured 
+           <asp:Literal ID="Literal1" runat="server"></asp:Literal>
+       </div>
         <div class="newitemwrapper">
          <asp:Repeater ID="prodrepeat" runat="server">
 
@@ -52,7 +54,7 @@
 
         </div>
 
-    <div class="new"> NEW </div>
+    <div class="new"> NEW<asp:Literal ID="Literal2" runat="server"></asp:Literal></div>
           <div class="newitemwrapper">
          <asp:Repeater ID="Repeater1" runat="server">
 

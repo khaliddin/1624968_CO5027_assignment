@@ -1,6 +1,6 @@
 ﻿body
 { 
-    background-color:rosybrown;
+    background-color:#BC8F8F;
     font-family:Arial;
 
 }
@@ -13,7 +13,7 @@ div.motherdiv
     margin: 10px auto;
     vertical-align:top;
     width:1000px;
-    background-color:rosybrown;
+    background-color:#BC8F8F;
 }
 div.logo
 {
@@ -27,14 +27,14 @@ div.logo
 
 .selected
 {
-    background-color:sienna;
-    color:white;
+    background-color:#79F0FF;
+    color:#000000;
     padding:3px 0 3px 0;  
 }
 
 div#navbar
 {
-    background-color:antiquewhite;
+    background-color:#FFA879;
     width:995px;
     margin-left:auto;
     margin-right:auto;
@@ -65,54 +65,14 @@ div#navbar ul li a
  
 div#navbar ul li:hover
 {
-    background-color: azure;
+    background-color: #F0FFFF;
     text-decoration:none;
     border:3px solid black;
 }
-
-div#navbar ul li:hover ul
-{
-    display:block;
-}
-
-div#navbar ul ul
-{
-    display: none;
-    position:absolute;
-    background-color:azure;
-    border:3px solid black;
-    border-top:none;
-    width:120px;
-}
-
-div#navbar ul ul li
-{
-    display:block;
-    padding-bottom:30px;
-    padding-top:30px;
-    margin-left:-20px;
-}
-div#navbar ul ul li:hover
-{
-    background-color: sandybrown;
-    text-decoration:none;
-}
-
-div#navbar ul ul li a
-{
-    display:block;
-    text-align:center;
-    text-decoration:none;
-}
-
-
-
-
-
 
 .banneritem
 {
-    border: 3px solid rosybrown;
+    border: 3px solid #BC8F8F;
     position:relative;
     
     overflow:hidden;
@@ -121,7 +81,7 @@ div#navbar ul ul li a
 
 .banneritem .bannertext
 {
-     position:absolute;
+    position:absolute;
     top: -100%;
     left: 0px;
     background: rgba(0, 0, 0, 0.5);
@@ -129,58 +89,13 @@ div#navbar ul ul li a
     height:100%;
     color: #fff;
     transition: all 0.3s cubic-bezier(0.4, 0, 1, 1) 0s;
-    transition:all 0.3s cubic-bezier(0.4, 0, 1, 1) 0s;
-    transition: all 0.3s cubic-bezier(0.4, 0, 1, 1) 0s;
-    transition: all 0.3s cubic-bezier(0.4, 0, 1, 1) 0s;
 }
 
-.banneritem:hover .bannertext
-{
-    top:0px;
-}
 
-div.banneritem .bannertext a.morebutton
-{
-    width: 100px;
-    text-align: center;
-    padding:10px 0px;
-    display:block;
-    color:#fff;
-    background:rosybrown;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    margin: 0px auto 0px auto;
-}
-
-.banneritem .bannertext h3
-{
-    font-size: 20px;
-    text-align: center;
-}
-
-.banneritem .bannertext h4
-{
-     font-size: 15px;
-    font-weight:bold;
-    text-align:center;
-    border-top: 1px solid brown;
-    border-bottom: 1px solid brown;
-    padding-top:10px;
-    padding-bottom:10px;
-    margin-top: 10px;   
-}
-
-.banneritem .bannertext p
-{
-    margin: 15px 0px;
-    text-align: center;
-    padding-left:5px;
-    padding-right:5px;
-}
 
 div.sale
 {
-    background-color:sandybrown;
+    background-color:#D2B48C;
     text-align:center;
     padding: 15px 0 10px 0;
     font-weight:bold;
@@ -189,7 +104,7 @@ div.sale
 
 div.new
 {
-    background-color:sandybrown;
+    background-color:#D2B48C;
     text-align:center;
     padding: 15px 0 10px 0;
     font-weight:bold;
@@ -197,7 +112,7 @@ div.new
 
 div.newitemwrapper
 {
-    background-color:cornsilk;
+    background-color:#FFF8DC;
     height:250px;
     width:996px;
     margin:auto;
@@ -210,7 +125,7 @@ div.newitemwrapper
 
 div.products
 {
-    background-color:sandybrown;
+    background-color:#D2B48C;
     text-align:center;
     padding: 15px 0 10px 0;
     font-weight:bold;   
@@ -223,7 +138,7 @@ div.itemdetail
     float:left;
     border:5px solid burlywood;
     margin:50px 20px 0px 100px;
-    border: 3px solid rosybrown;
+    border: 3px solid #BC8F8F;
     width:500px;
     height:400px;
 }
@@ -244,7 +159,7 @@ div.smallimgwrap
 div.itemdetail1
 {
     float:left;
-    border: 3px solid rosybrown;
+    border: 3px solid #BC8F8F;
     width:100px;
     height:100px;
 }
@@ -256,7 +171,7 @@ div.itemdetail1 img
 }
 div.itemdetail2
 {
-    border: 3px solid rosybrown;
+    border: 3px solid #BC8F8F;
     margin-left:120px;
     height:100px;
 }
@@ -338,7 +253,7 @@ div#productitemwrapper
 .item1
 {
     float:left;
-    border: 3px solid rosybrown;
+    border: 3px solid #FF7F50;
     margin-left:15px;
     position:relative;
     width:200px;
@@ -362,9 +277,6 @@ div#productitemwrapper
     height:100%;
     color: #fff;
     transition: all 0.3s cubic-bezier(0.4, 0, 1, 1) 0s;
-    transition:all 0.3s cubic-bezier(0.4, 0, 1, 1) 0s;
-    transition: all 0.3s cubic-bezier(0.4, 0, 1, 1) 0s;
-    transition: all 0.3s cubic-bezier(0.4, 0, 1, 1) 0s;
 }
 
 
@@ -377,7 +289,7 @@ div#productitemwrapper
     font-size: 15px;
     font-weight:bold;
     text-align:center;
-    border-bottom: 1px solid brown;
+    border-bottom: 1px solid #FFFAF0;
     padding-bottom:10px;
     margin-top: 10px;
 }
@@ -398,8 +310,8 @@ div.item1 .prodtext a.morebutton
     text-align: center;
     padding:10px 0px;
     display:block;
-    color:#fff;
-    background:rosybrown;
+    color: #010101;
+    background:	#FAFAFA;
     margin-bottom: 10px;
     border-radius: 5px;
     margin: 0px auto 0px auto;
@@ -407,7 +319,8 @@ div.item1 .prodtext a.morebutton
 
 div.item1 .prodtext a.morebutton:hover
 {
-    background:antiquewhite;
+    background:	#010101;
+    color: #FAFAFA;
 }
 
 
@@ -417,7 +330,7 @@ div.item1 .prodtext a.morebutton:hover
 div#formwrapper
 {
     background-color:blanchedalmond;
-    height:400px;
+    height:500px;
 }
 div.contact h4
 {
@@ -606,6 +519,7 @@ div.upimgwrap
     background-color:sandybrown;
     height:700px;
     border:1px solid brown;
+    overflow:scroll;
 }
 
 

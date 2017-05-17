@@ -28,54 +28,28 @@
     </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
     <div id="formwrapper">
-        <div class="contact"><h4>Contact us</h4>
-        </div>
-        <div class="labelname">&nbsp;<br />
-            <asp:Label ID="lblname" runat="server" Text="First Name: " AssociatedControlID="ctctxtname"></asp:Label>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <asp:TextBox ID="ctctxtname" runat="server" Width="262px"></asp:TextBox>
-        &nbsp;<asp:Literal ID="nametxterrorlit" runat="server"></asp:Literal>
-        <br />
-        <br />
-        <asp:Label ID="lblemail" runat="server" Text="Email: " AssociatedControlID="ctctxtemail"></asp:Label>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <asp:TextBox ID="ctctxtemail" runat="server" Width="262px"></asp:TextBox>
-            <asp:Literal ID="emailtxterrorlit" runat="server"></asp:Literal>
-        <br />
-        <br />
-        <asp:Label ID="lblsubject" runat="server" Text="Subject: " AssociatedControlID="ctctxtsubject"></asp:Label>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <asp:TextBox ID="ctctxtsubject" runat="server" Width="262px"></asp:TextBox>
-            <asp:Literal ID="sbjtxterrorlit" runat="server"></asp:Literal>
-        <br />
-        <br />
-        <asp:Label ID="lblmessage" runat="server" Text="Message: " AssociatedControlID="ctctxtmessage"></asp:Label>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <asp:TextBox ID="ctctxtmessage" runat="server" Height="51px" TextMode="MultiLine" Width="263px"></asp:TextBox>
-            <asp:Literal ID="msgtxterrorlit" runat="server"></asp:Literal>
-            <br />
-        <br />
-        <br />
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;
-        <asp:Button ID="ctcsendbtn" runat="server" Text="Send" OnClick="ctcsendbtn_Click" />
-            <br />
-            <br />
-            <asp:Literal ID="ctcliteral" runat="server"></asp:Literal>
-            <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="ctctxtname" ErrorMessage="First Name cannot have any numeric characters." ValidationExpression="^[^\W\d_]+$"></asp:RegularExpressionValidator>
-        </div>
-        <br />
-        <br />
-        
-        
-
-
+        <div class="contact"><h4>Contact us</h4> </div>
+         <div class="loglabel"><asp:Label ID="lblname" runat="server" Text="First Name: " AssociatedControlID="ctctxtname"></asp:Label><asp:TextBox ID="ctctxtname" runat="server" Width="262px"></asp:TextBox></div>
+           <div class="lit"><asp:Literal ID="nametxterrorlit" runat="server"></asp:Literal></div> 
+       <div class="loglabel"><asp:Label ID="lblemail" runat="server" Text="Email: " AssociatedControlID="ctctxtemail"></asp:Label><asp:TextBox ID="ctctxtemail" runat="server" Width="262px"></asp:TextBox></div>
+         <div class="lit"><asp:Literal ID="emailtxterrorlit" runat="server"></asp:Literal></div>   
+       <div class="loglabel"><asp:Label ID="lblsubject" runat="server" Text="Subject: " AssociatedControlID="ctctxtsubject"></asp:Label><asp:TextBox ID="ctctxtsubject" runat="server" Width="262px"></asp:TextBox></div> 
+         <div class="lit"><asp:Literal ID="sbjtxterrorlit" runat="server"></asp:Literal></div>   
+       <div class="loglabel"><asp:Label ID="lblmessage" runat="server" Text="Message: " AssociatedControlID="ctctxtmessage"></asp:Label><asp:TextBox ID="ctctxtmessage" runat="server" Height="51px" TextMode="MultiLine" Width="263px"></asp:TextBox></div>
+          <div class="lit"> <asp:Literal ID="msgtxterrorlit" runat="server"></asp:Literal></div> 
+        <div class="loginbutton"><asp:Button ID="ctcsendbtn" runat="server" Text="Send" OnClick="ctcsendbtn_Click" /></div>
+            <div class="lit"><asp:Literal ID="ctcliteral" runat="server"></asp:Literal></div>
+           <div class="lit"><asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="ctctxtname" ErrorMessage="First Name cannot have any numeric characters." ValidationExpression="^[^\W\d_]+$"></asp:RegularExpressionValidator></div> 
+   
     </div>
+
+
     <div class="mapwrapper">
         <h4>Find us</h4>
         <div class="maplabel">
             <h5>Google Map</h5>
         </div>
+        <!-- google map javaScript code learnt from https://developers.google.com/maps/documentation/javascript/examples/marker-simple -->
         <div id="map">
             
         </div>

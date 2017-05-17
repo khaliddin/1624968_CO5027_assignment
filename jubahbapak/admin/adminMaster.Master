@@ -2,7 +2,7 @@
 
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head runat="server">
     <link rel="stylesheet" href="../css/bapakstylesheet.css" type="text/css" />
     <title></title>
@@ -44,7 +44,7 @@
         </asp:ContentPlaceHolder>
     </div>
     </form>
-           <div class="footerindex"><b>&copy; COPYRIGHTS 2017, JUBAH BAPAK</b>
+           <div class="footerindex"><strong>&copy; COPYRIGHTS 2017, JUBAH BAPAK</strong>
               <a href="http://validator.w3.org/check?uri=referer">Validate HTML</a>
         <a href="http://jigsaw.w3.org/css-validator/check/referer">Validate CSS</a>
               <a class="selected" href="Admin.aspx">Admin</a>

@@ -22,7 +22,7 @@ namespace jubahbapak.admin
         
         protected void Button1_Click(object sender, EventArgs e)
         {
-            GridView1.DataBind();
+            GridView3.DataBind();
             insmsg.Text = "";
         }
 
@@ -42,7 +42,7 @@ namespace jubahbapak.admin
                 saveDB.SaveChanges();
 
 
-                GridView1.DataBind();
+                GridView3.DataBind();
                 insmsg.Text = "Product successfully added";
             }
             catch

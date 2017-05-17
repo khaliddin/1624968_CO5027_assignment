@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="masterpage.Master" AutoEventWireup="true" CodeFile="Product.aspx.cs" Inherits="jubahbapak.product" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="masterpage.Master" AutoEventWireup="true" CodeBehind="Product.aspx.cs" Inherits="jubahbapak.product" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 
@@ -24,7 +24,9 @@
         </div>
     </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
-    <div class="products"> PRODUCTS </div>
+    <div class="products"> PRODUCTS 
+        <asp:Literal ID="Literal1" runat="server"></asp:Literal>
+    </div>
      <div id="productitemwrapper">
     <asp:Repeater ID="prodrepeat" runat="server">
 

@@ -2,7 +2,7 @@
 
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head runat="server">
     <title>JUBAH BAPAK</title>
     <link rel="stylesheet" href="css/bapakstylesheet.css" type="text/css" />
@@ -20,17 +20,15 @@
          <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
         
         </asp:ContentPlaceHolder>
-      
-         <!-- the reason for the tabindex is to support webkit //-->
+      <!-- slider code obtained from http://jsfiddle.net/q4d9m/2/-->
         <div class="css-slider-mask">
-            <!-- there are a number of add on modules which are demo-able by the javascript checkboxes added to this example page //-->
             <ul class="css-slider with-responsive-images with-selection-disabled with-reflection with-fade-in">
                 <li class="slide" tabindex="1" id="l1">
                     <span class="slide-outer">
                         <span class="slide-inner">
-                            <!-- each slide-gfx needs a unique id if you wish to use reflections, you will also need to update .with-reflection in core.css //-->
+                            
                             <span class="slide-gfx" id="s1">
-                                <img src="img/bannertest.jpg" />
+                                <img src="img/bannertest.jpg" alt="waleed jubahs" />
                             </span>
                         </span>
                     </span>
@@ -39,7 +37,7 @@
                     <span class="slide-outer">
                         <span class="slide-inner">
                             <span class="slide-gfx" id="s2">
-                                <img src="img/banner1.jpg" />
+                                <img src="img/banner1.jpg" alt="thirty-eight dream jubah" />
                             </span>
                         </span>
                     </span>
@@ -48,7 +46,7 @@
                     <span class="slide-outer">
                         <span class="slide-inner">
                             <span class="slide-gfx" id="s3">
-                                <img src="img/banner2.jpg" />
+                                <img src="img/banner2.jpg" alt="women jubah coming soon" />
                             </span>
                         </span>
                     </span>
@@ -57,7 +55,7 @@
                     <span class="slide-outer">
                         <span class="slide-inner">
                             <span class="slide-gfx" id="s4">
-                                <img src="img/banner3.jpg" />
+                                <img src="img/banner3.jpg" alt="children jubahs coming soon" />
                             </span>
                         </span>
                     </span>
@@ -66,63 +64,14 @@
                     <span class="slide-outer">
                         <span class="slide-inner">
                             <span class="slide-gfx" id="s5">
-                                <img src="img/bannertest.jpg" />
+                                <img src="img/bannertest.jpg" alt="waleed jubahs" />
                             </span>
                         </span>
                     </span>
                 </li>
             </ul>
         </div>
-        <!--<div class="bannerslider">
-            <figure>
-                <div class="banneritem" id="banneritem1">
-                <img class="bannercontent1" src="../img/bannertest.jpg" alt="casual"/>
-                    <div class="bannertext">
-                    <h3>FEATURED</h3><br />
-                    <h4>Casual</h4>
-                    <p>Jubah suitable for men of any age and sizes for use for everyday routines.</p>
-                    <a class="morebutton" href="#" title="moreinfo">More info</a>
-                </div>
-                </div>
-                <div class="banneritem" id="banneritem2">
-                <img class="bannercontent" src="../img/banner1.jpg" alt="cotton"/>
-                    <div class="bannertext">
-                        <h3>FEATURED</h3><br />
-                    <h4>Cotton Jubah</h4>
-                    <p>Thirty8Dreams JUBAH line-up, confortable on the skin and on the heart</p>
-                    <a class="morebutton" href="#" title="moreinfo">More info</a>
-                </div>
-                </div>
-                <div class="banneritem" id="banneritem3">
-                <img class="bannercontent" src="../img/banner2.jpg" alt="women jubah"/>
-                    <div class="bannertext">
-                        <h3>FEATURED</h3><br />
-                    <h4>Casual Womens Jubah</h4>
-                    <p>Jubah suitable for women of any age and sizes</p>
-                    <a class="morebutton" href="#" title="moreinfo">More info</a>
-                </div>
-                </div>
-                 <div class="banneritem" id="banneritem4">
-                <img class="bannercontent" src="../img/banner3.jpg" alt="children"/>
-                    <div class="bannertext">
-                        <h3>FEATURED</h3><br />
-                    <h4>Children Jubah</h4>
-                    <p>Jubah suitable for younger men, as young as 4 years old</p>
-                    <a class="morebutton" href="#" title="moreinfo">More info</a>
-                </div>
-                </div>
-                 <div class="banneritem" id="banneritem5">
-                <img class="bannercontent" src="../img/bannertest.jpg" alt="casuals"/>
-                    <div class="bannertext">
-                        <h3>FEATURED</h3><br />
-                    <h4>Casual</h4>
-                    <p>Jubah suitable for men of any age and sizes</p>
-                    <a class="morebutton" href="#" title="moreinfo">More info</a>
-                </div>
-                </div>
-                 
-            </figure>
-        </div>-->
+       <!-- end of slider -->
     <form id="form1" runat="server">
     <div>
         <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
@@ -131,9 +80,10 @@
     </div>
     </form>
 
-          <div class="footerindex"><b>&copy; COPYRIGHTS 2017, JUBAH BAPAK</b>
+          <div class="footerindex">
+              <strong>&copy; COPYRIGHTS 2017, JUBAH BAPAK</strong>
               <a href="http://validator.w3.org/check?uri=referer">Validate HTML</a>
-        <a href="http://jigsaw.w3.org/css-validator/check/referer">Validate CSS</a>
+              <a href="http://jigsaw.w3.org/css-validator/check/referer">Validate CSS</a>
               <a href="./admin/Admin.aspx">Admin</a>
           </div>
          </div>

@@ -7,6 +7,7 @@ using System.Web.UI.WebControls;
 using System.Data.SqlClient;
 using System.Data;
 using System.Data.Entity;
+using PayPal.Api;
 
 namespace jubahbapak
 {
@@ -48,9 +49,6 @@ namespace jubahbapak
             proddesctxt.Text = prodDet;
             prodpricetxt.Text = prodPrice;
             quantity.Text = stockAvailable;
-            //cart
-            //addcart.ImageUrl = "img/cart.jpg";
-            cartUrl.NavigateUrl = "cart.aspx?id=" + getid;
 
             //first image
             //get data from database
@@ -89,38 +87,93 @@ namespace jubahbapak
 
         protected void addcart_Click(object sender, EventArgs e)
         {
+            co5027Entities itemDB = new co5027Entities();
+            prod_table pd = new prod_table();
+            //available quantity
+            var itemQty = pd.prod_quantity;
+            int intItemQty = Convert.ToInt32(itemQty);
+            //packing cost
+
+            decimal packingcost = 1.0m;
+            //item price
+            decimal itemprice = int.Parse(prodpricetxt.Text);
+            //number of item bought
+            int quantityofitem = 1;
+            //total of items without shipping
+            decimal subtotal = (quantityofitem * itemprice);
+            //cost of aftershipping
+            decimal total = subtotal + packingcost;
+
+            //authenticate paypal
+            var config = ConfigManager.Instance.GetProperties();
+            var accessToken = new OAuthTokenCredential("ARi2nXIMDuEfS496R3CUPsoI33sOHFRPxd67pIy09844v6vAQNphaQGjEl1sLf264ZnWKtXban8ypwQk", "EINK0glsrrSG01NVDblVWeQfxQ5mFTGQFYZx9lkZIzHGu0OcmgjlFnnO1iTKMvm3mvUsFSfByQOTwG1A").GetAccessToken();
+
+            //Get APIcontext 
+            var apiContext = new APIContext(accessToken);
+            apiContext.Config = config;
+
+            //items transaction and payment objects
+            var jubahItem = new Item();
+            jubahItem.name = "jubah satu";
+            jubahItem.currency = "GBP";
+            jubahItem.price = itemprice.ToString();
+            jubahItem.sku = "PEPCO5027";
+            jubahItem.quantity = quantityofitem.ToString();
+
+            //subtotal
+            var transactionDets = new Details();
+            transactionDets.tax = "0";
+            transactionDets.shipping = packingcost.ToString();
+            transactionDets.subtotal = subtotal.ToString();
+
+            //amount object compromising total amount
+            var transactionAmount = new Amount();
+            transactionAmount.currency = "GBP";
+            transactionAmount.total = total.ToString("0.00");
+            transactionAmount.details = transactionDets;
+
+            //transaction object
+            var transobj = new Transaction();
+            transobj.description = "your items";
+            transobj.invoice_number = Guid.NewGuid().ToString();
+            transobj.amount = transactionAmount;
+            transobj.item_list = new ItemList
+            {
+                items = new List<Item> { jubahItem }
+            };
+
+            //buyer object
+            var buyer = new Payer();
+            buyer.payment_method = "paypal";
+
+            //redirect to avoid error 404
+            var redirection = new RedirectUrls();
+            redirection.cancel_url = "http://1624968.studentwebserver.co.uk/CO5027/Product.aspx";
+            redirection.return_url = "http://1624968.studentwebserver.co.uk/CO5027/purchased.aspx";
+
+            //payment object
+            var pay = Payment.Create(apiContext, new Payment
+            {
+                intent = "sale",
+                payer = buyer,
+                transactions = new List<Transaction> { transobj },
+                redirect_urls = redirection
+            }
+                );
+
+            //create session
+            Session["paymentId"] = pay.id;
+
+            //URL to send user to from the links in the payment object
+            foreach (var link in pay.links)
+            {
+                if (link.rel.ToLower().Trim().Equals("approval_url"))
+                {
+                    //send user to the appropritate link if link is found
+                    Response.Redirect(link.href);
+                }
+            }
          
-            con.Open();
-            SqlCommand cmd = con.CreateCommand();
-            cmd.CommandType = System.Data.CommandType.Text;
-            cmd.CommandText = "select * from prod_table INNER JOIN image_table ON prod_table.id = image_table.imgName WHERE id=" + id + "";
-            cmd.ExecuteNonQuery();
-
-            DataTable dt = new DataTable();
-            SqlDataAdapter da = new SqlDataAdapter(cmd);
-            da.Fill(dt);
-            foreach (DataRow drow in dt.Rows)
-            {
-                pname = drow["prod_name"].ToString();
-                pdesc = drow["prod_details"].ToString();
-                pprice = drow["prod_price"].ToString();
-                prodquant = drow["prod_quantity"].ToString();
-                pqty = Convert.ToInt32(prodquant);
-            }
-            con.Close();
-
-            if (Request.Cookies["aa"] == null)
-            {
-                Response.Cookies["aa"].Value = pname.ToString() + "," + pdesc.ToString() + "," + pprice.ToString() + "," + prodquant.ToString();
-                Response.Cookies["aa"].Expires = DateTime.Now.AddDays(1);
-            }
-            else
-            {
-                Response.Cookies["aa"].Value = Request.Cookies["aa"].Value + "|" + pname.ToString() + "," + pdesc.ToString() + "," + pprice.ToString() + "," + prodquant.ToString();
-                Response.Cookies["aa"].Expires = DateTime.Now.AddDays(1);
-            }
-
-
         }
     }
 }
